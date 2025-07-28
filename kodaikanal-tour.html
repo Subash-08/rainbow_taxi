@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Kodaikanal Tour Package from Salem</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!--- Font awesome Link--->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        .bg_container {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/tour/kodai\ bg.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Topbar Start -->
+    <div class="container-fluid topbar bg-secondary d-none d-xl-block w-100">
+        <div class="container">
+            <div class="row gx-0 align-items-center" style="height: 45px;">
+                <div class="col-lg-6 text-center text-lg-start mb-lg-0">
+                    <div class="d-flex flex-wrap">
+                        <a href="#" class="text-muted me-4"><i class="fas fa-map-marker-alt text-primary me-2"></i>Find
+                            A Location</a>
+                        <a href="tel:+01234567890" class="text-muted me-4"><i
+                                class="fas fa-phone-alt text-primary me-2"></i>+01234567890</a>
+                        <a href="mailto:example@gmail.com" class="text-muted me-0"><i
+                                class="fas fa-envelope text-primary me-2"></i>Example@gmail.com</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center text-lg-end">
+                    <div class="d-flex align-items-center justify-content-end">
+                        <a href="#" class="btn btn-light btn-sm-square rounded-circle me-3"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="btn btn-light btn-sm-square rounded-circle me-3"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="#" class="btn btn-light btn-sm-square rounded-circle me-3"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="#" class="btn btn-light btn-sm-square rounded-circle me-0"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid nav-bar sticky-top px-0 px-lg-4 py-2 py-lg-0">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a href="#" class="navbar-brand p-0">
+                    <h1 class="display-6 text-primary"><i class="fas fa-car-alt me-3"></i>Rainbow</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav mx-auto py-0">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <!-- Car Rental Dropdown -->
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Car Rental</a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-submenu">
+                                    <a href="#" class="dropdown-item dropdown-toggle">4 Seater Cars</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="swift_dzire.html" class="dropdown-item">Swift Dzire</a></li>
+                                        <li><a href="suzuki_swift.html" class="dropdown-item">Suzuki Swift</a></li>
+                                        <li><a href="etios.html" class="dropdown-item">Toyota Etios</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Nested Dropdown -->
+                                <li class="dropdown-submenu">
+                                    <a href="#" class="dropdown-item dropdown-toggle">7 Seater Cars</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="crysta.html" class="dropdown-item">Innova Crysta</a></li>
+                                        <li><a href="innova.html" class="dropdown-item">Innova</a></li>
+                                        <li><a href="ertiga.html" class="dropdown-item">Suzuki Ertiga</a></li>
+
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a href="#" class="dropdown-item dropdown-toggle">Van Rental</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="coach.html" class="dropdown-item">407 Coach </a></li>
+                                        <li><a href="tourister.html" class="dropdown-item">Mahindra Tourister</a></li>
+                                        <li><a href="traveller.html" class="dropdown-item">Tempo Traveller</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Package Tour</a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-submenu">
+                                    <a href="#" class="dropdown-item dropdown-toggle">Temple Tours</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="tirupati-tour.html" class="dropdown-item">Tirupati Temple</a></li>
+                                        <li><a href="sabarimala-tour.html" class="dropdown-item">Sabarimala Temple</a>
+                                        </li>
+                                        <li><a href="south-india-tour.html" class="dropdown-item">South India Temple
+                                                Tour</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a href="#" class="dropdown-item dropdown-toggle">Vacation Tours</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="ooty-tour.html" class="dropdown-item">Ooty Hills Tour</a></li>
+                                        <li><a href="kodaikanal-tour.html" class="dropdown-item">Kodaikanal Tour</a>
+                                        </li>
+                                        <li><a href="yercaud-tour.html" class="dropdown-item">Yercadu Tour</a></li>
+                                        <li><a href="kerala-tour.html" class="dropdown-item">Kerala Tour</a></li>
+                                        <li><a href="valparai-tour.html" class="dropdown-item">Valparai Tour</a></li>
+                                        <li><a href="yercaud-tour.html" class="dropdown-item">Yelagiri</a></li>
+                                        <li><a href="kerala-tour.html" class="dropdown-item">Kollimalai</a></li>
+                                        <li><a href="valparai-tour.html" class="dropdown-item">Coorg</a></li>
+                                        <li><a href="vellimalai.html" class="dropdown-item">Vellimalai</a></li>
+                                        <li><a href="pachamalai.html" class="dropdown-item">Pachamalai</a></li>
+                                        <li><a href="javaathu.html" class="dropdown-item">Javaathu Malai</a></li>
+
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="AboutUs.html" class="nav-item nav-link">About Us</a>
+                        <a href="countactus.html" class="nav-item nav-link">Contact Us</a>
+                    </div>
+                    <a href="#" class="btn btn-primary rounded-pill py-2 px-4">Get Started</a>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar & Hero End -->
+
+    <!-- Header Start -->
+    <div class="container-fluid bg_container">
+        <div class="container text-center py-5" style="max-width: 900px;">
+            <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Kodaikanal Hills Tour</h4>
+            <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+                <li class="text-light breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                <li class="breadcrumb-item active text-primary">Kodaikanal Hills Tour</li>
+            </ol>
+        </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- Contant Start -->
+    <div class="container-fluid mt-5">
+        <div class="container">
+            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
+                <h1 class="display-5 text-capitalize mb-3">Best Kodaikanal Tour Package <br> <span
+                        class="text-primary">from
+                        Salem</span>
+                </h1>
+                ---------- <i class="fa-solid fa-car fa-beat-fade" style="color: #010005;"></i> ----------
+                <p class="mb-0" style="line-height: 25px; font-size: 15px;">Kodaikanal, a hill station of Tamil Nadu,
+                    India, was established in 1845 by British civil servants and American missionaries. It was created
+                    as a summer retreat for British officials to escape the heat and tropical diseases of the plains.
+                    <span style="font-size: 17px; color: rgb(1, 161, 161); font-weight: 400;">Rainbow Call Taxi</span>
+                    has
+                    had its presence in chauffeur-driven car rental sector for more than 30 years.
+                    We continuously strive to ensure that we provide reliable, quality and timely cab services. We have
+                    wide range of car options right from sedans to hatchbacks and Vans.
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-12 wow fadeInUp" data-wow-delay="0.2s">
+                    <img src="img/bg-remove/15.png" class="img-fluid mt-5">
+                </div>
+                <div class="col-lg-6 col-md-12 pt-4 wow fadeInUp" data-wow-delay="0.2s">
+                    <p style="line-height: 25px; font-size: 15px;">Kodaikanal is a place where it demands people to come
+                        again and again unconditionally for its beauty and fresh natural pathways. It tends tourists
+                        from Chennai to visit the beauty of Kodaikanal year after year and entertains with new
+                        experiences the next time you have been there. A happy tour to Kodaikanal is about planning well
+                        before reaching the destination. A better plan comprises transportation, accommodation,
+                        hospitality with lovely foods, and great knowledge about the touring spot. So, when you plan a
+                        trip to Kodaikanal, the best solution is to pot for <span style="font-weight: bold;">Kodaikanal
+                            Tour packages from Salem</span> with a customer-friendly travel partner.</p>
+                    <p>Now, If you look for a customer-friendly travel partner to plan your tour package from Salem to
+                        Kodaikanal. Then, <span class="text-info">Rainbow Call Taxi</span> provides customizable <span
+                            style="font-weight: bold;">Kodaikanal Tour packages from Salem</span> as per customer wish
+                        and matches their budget for a happy trip to Kodaikanal. The unique feature of Rainbow Call Taxi
+                        is to acts as a guide to visit the complete heavenly beauties of Kodaikanal by visiting the
+                        Silver cascade falls to Coaker’s walk to Green Valley to Pine forests to Fairy Falls to Lake
+                        area to Bryant Park to shopping zones to taste the heavenly beauties with fresh homemade
+                        chocolates.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mb-5"
+        style="background: linear-gradient(to top, #ffffffd5, #6d7879); margin-top: 100px;"><br><br>
+        <h1 class="text-center text-secondary wow fadeInUp" data-wow-delay="0.1s">Salem to Kodaikanal Tour Package in
+            Famous Place</h1>
+        <div class="container text-center text-dark">
+            ---------- <i class="fa-solid fa-car fa-beat-fade" style="color: #010005;"></i> ----------
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 wow fadeInUp" data-wow-delay="0.1s">
+                    <img src="img/tour/kodai1.png" class="img-fluid">
+                </div><br>
+                <div class="col-lg-6 col-md-12 wow fadeInUp mt-4" data-wow-delay="0.1s">
+                    <h2 style="font-weight: 550;">Coakers Walk</h2>
+                    <p style="line-height: 25px; font-size: 16px;">Enjoy a mystic walk among the clouds at the Coakers
+                        walk, near Kodaikanal Lake. Nature enthusiasts and shutterbugs should not miss the place, for
+                        the view and ambience it offers are indescribable. Open from 7 am to 7 pm, the walkway is very
+                        near the Kodaikanal Lake.</p>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-lg-6 col-md-12 wow fadeInUp mt-5" data-wow-delay="0.1s">
+                    <h2 style="font-weight: 550;">Kodaikanal lake</h2>
+                    <p style="line-height: 25px; font-size: 16px;">Over the years a boat club, boathouse and boat
+                        service (with rowing boats and pedalling boats and a public ferry) for the public and tourists
+                        has become fully functional and is of aesthetic significance for tourism. With our <span
+                            style="font-weight: bold;">Salem to Kodaikanal trip</span>, we make sure that you enjoy the
+                        best
+                        of Kodaikanal and its lake. </p>
+                </div>
+                <div class="col-lg-6 col-md-12 wow fadeInUp" data-wow-delay="0.1s">
+                    <img src="img/tour/kodai4.jpg" class="img-fluid">
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-lg-6 col-md-12 pt-3 wow fadeInUp" data-wow-delay="0.1s">
+                    <img src="img/tour/kodai2.webp" class="img-fluid">
+                </div>
+                <div class="col-lg-6 col-md-12 mt-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <h2 style="font-weight: 550;">Guna cave</h2>
+                    <p style="line-height: 25px; font-size: 16px;">Situated at an altitude of 2,200 metres, the Guna
+                        Caves are a thing of mystery and wonder that attracts travellers in hordes. Known earlier as
+                        'Devil’s Kitchen', the place got its name 'Guna' after the 1992 Tamil blockbuster movie “Guna''
+                        was shot here.</p>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mt-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <h2 style="font-weight: 550;">Pine Forest</h2>
+                    <p style="line-height: 25px; font-size: 16px;">Pine Forests are cloaked in a rustic charm, and
+                        walking under the canopy of these old pine trees will offer much-needed solitude for those
+                        seeking it.</p>
+                    <p style="line-height: 25px; font-size: 16px;">In local parlance, there are two sets of pine forests
+                        viz. Pine Forest 1 and Pine Forest 2. While Pine Forest 1 is situated near the Solar
+                        Observatory, Pine Forest 2 is located near Moir Point. And the best way to go there is to book
+                        <span style="font-weight: bold;">Ooty holiday
+                            tour packages</span> with <span style="font-weight: bold;">Rainbow Call Taxi</span>.
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-12 wow fadeInUp" data-wow-delay="0.1s">
+                    <img src="img/tour/kodai3.avif" class="img-fluid">
+                </div>
+            </div>
+            <div class="row wow fadeInUp" data-wow-delay="0.2s">
+                <div class="table-responsive">
+                    <table class="table table-striped text-center">
+                        <thead class="table-dark">
+                            <tr>
+                                <th scope="col">Car Type</th>
+                                <th scope="col">Seats</th>
+                                <th scope="col">Per Day</th>
+                                <th scope="col">Per k/m</th>
+                                <th scope="col">Contact</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-dark">
+                            <tr>
+                                <th scope="row">Innova Fortuner</th>
+                                <td>6 + 1 = [ 7 ]</td>
+                                <td>Rs. 8000 /-</td>
+                                <td>Rs. 350 /-</td>
+                                <td><a href="#"><button class="btn btn-primary"
+                                            style="height: 35px; padding-bottom: 3px;">Book Now</button></a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Suzuki Dzire</th>
+                                <td>4 + 1 = [ 5 ]</td>
+                                <td>Rs. 8000 /-</td>
+                                <td>Rs. 350 /-</td>
+                                <td><a href="#"><button class="btn btn-primary"
+                                            style="height: 35px; padding-bottom: 3px;">Book Now</button></a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Toyota Etios</th>
+                                <td>4 + 1 = [ 5 ]</td>
+                                <td>Rs. 8000 /-</td>
+                                <td>Rs. 350 /-</td>
+                                <td><a href="#"><button class="btn btn-primary"
+                                            style="height: 35px; padding-bottom: 3px;">Book Now</button></a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Mahendira Xuv</th>
+                                <td>6 + 1 = [ 7 ]</td>
+                                <td>Rs. 8000 /-</td>
+                                <td>Rs. 350 /-</td>
+                                <td><a href="#"><button class="btn btn-primary"
+                                            style="height: 35px; padding-bottom: 3px;">Book Now</button></a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Chevrolet Tavera</th>
+                                <td>6 + 1 = [ 7 ]</td>
+                                <td>Rs. 8000 /-</td>
+                                <td>Rs. 350 /-</td>
+                                <td><a href="#"><button class="btn btn-primary"
+                                            style="height: 35px; padding-bottom: 3px;">Book Now</button></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mb-5 mt-4">
+        <h1 style="text-align: center;" class="wow fadeInUp" data-wow-delay="0.1s">Salem to Kodaikanal Group Tour
+            Package</h1>
+        <div class="container text-center">
+            ---------- <i class="fa-solid fa-car fa-beat-fade al" style="color: #010005;"></i> ----------
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 wow fadeInUp d-flex justify-content-center" data-wow-delay="0.1s">
+                <img src="img/bg-remove/minibus.png" class="img-fluid">
+            </div>
+            <div class="col-lg-12 col-md-12 pt-3 wow fadeInUp" data-wow-delay="0.1s">
+                <p style="line-height: 25px; font-size: 16px; font-weight: bold;">1 Night / 2 Days</p>
+                <p style="line-height: 25px; font-size: 16px;"><span class="text-danger" style="font-weight: bold;">Day
+                        1:-</span> Salem Departure at 8:00 PM to Kodaikanal Overnight journey</p>
+                <p style="line-height: 25px; font-size: 16px;"><span class="text-danger" style="font-weight: bold;">Day
+                        2:-</span> Arrival Kodaikanal Bus Stand Pickup to Hotel transfer and After refresh & Breakfast
+                    Visit to Kodaikanal Sight Seeing Corker’s Walk, Green Valley View, Golf Course, Pillar Rocks, Devils
+                    Kitchen (Guna Gave), Pine Tree Forest, Moier Point, Kodai City View, Kurinji andavar Temple, Palani
+                    View, Chettiar Park, Brayant Park and evening Drop At Hotel – Night Stay At hotel.</p>
+                <p style="line-height: 25px; font-size: 16px;"><span class="text-danger" style="font-weight: bold;">Day
+                        3:-</span> Today Morning After Breakfast Checkout the Hotel Visit to Bear Shola Falls, La Salath
+                    Church, 500 Year Old Tree, Dolphine Nose, Mountain Beauty, Pambur falls, Fairy falls and Evening
+                    Drop At Kodaikanal Bus Stand.</p>
+                <p style="line-height: 25px; font-size: 16px;"><span class="text-danger" style="font-weight: bold;">Day
+                        4:-</span> Arrival Salem.</p>
+
+            </div>
+        </div>
+
+        <div class="row pt-3">
+            <div class="col-lg-6 col-md-12 pt-3 wow fadeInUp" data-wow-delay="0.1s">
+                <h3 style="font-weight: 600;">Salem to Kodaikanal Package Tour</h3>
+                <p style="line-height: 25px; font-size: 16px; font-weight: bold;">2 Night / 3 Days</p>
+                <p style="line-height: 25px; font-size: 16px;"><span class="text-danger" style="font-weight: bold;">Day
+                        1:-</span> Salem Departure at 8:00 PM to Kodaikanal overnight journey</p>
+                <p style="line-height: 25px; font-size: 16px;"><span class="text-danger" style="font-weight: bold;">Day
+                        2:-</span> Arrival Kodaikanal Bus Stand Pickup to Hotel transfer and After refresh & Breakfast
+                    Visit to Kodaikanal Sight Seeing Corker’s Walk , Green Valley View , Golf Course , Pillar Rocks ,
+                    Devils Kitchen (Guna Gave) , Pine Tree Forest , Moier Point , Kodai City View , Kurinji andavar
+                    Temple , Palani View , Chettiar Park , Brayant Park and evening Drop At Hotel – Night Stay At hotel.
+                </p>
+            </div>
+            <div class="col-lg-6 col-md-12 wow fadeInUp" data-wow-delay="0.1s">
+                <img src="img/bg-remove/22-removebg1.png" class="img-fluid mt-2">
+            </div>
+        </div>
+
+        <div class="row pt-3">
+            <div class="col-lg-6 col-md-12 wow fadeInUp" data-wow-delay="0.1s">
+                <img src="img/bg-remove/9-removebg1.png" class="img-fluid">
+            </div>
+            <div class="col-lg-6 col-md-12 pt-3 mt-3 wow fadeInUp" data-wow-delay="0.1s">
+                <p style="line-height: 25px; font-size: 16px;"><span class="text-danger" style="font-weight: bold;">Day
+                        3:-</span> Today Morning After Breakfast Visit to Bear Shola Falls , La Salath Church , 500 Year
+                    Old Tree, Dolphine Nose , Mountain Beauty , Pambur falls , Fairy falls and Evening Drop At Hotel. –
+                    Night Stay at Hotel.</p>
+                <p style="line-height: 25px; font-size: 16px;"><span class="text-danger" style="font-weight: bold;">Day
+                        4:-</span> Today Morning After Breakfast Checkout the hotel Visit to Kodaikanal Forest tour-
+                    Silent Vally View , Fire Tower, Berijam Lake View, Caps Fly Valley, Berijam Lake and Evening drop At
+                    Kodaikanal Bus Stand.</p>
+                <p style="line-height: 25px; font-size: 16px;"><span class="text-danger" style="font-weight: bold;">Day
+                        5:-</span> Arrival Salem.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mb-5">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 wow fadeInUp" data-wow-delay="0.1s">
+                <h3 style="font-weight: 600;">Terms & conditions</h3>
+                <ul>
+                    <li style="line-height: 25px; font-size: 16px;">For Booking Conformation please pay the 60% as
+                        Advance before 20 Days and Remaining 40% to be Settled Before the tour Starts (hand Over the
+                        Driver).</li>
+                    <li style="line-height: 25px; font-size: 16px;"><b>Distance Calculation:</b> We calculate starting
+                        and closing kilometers per hour from our garage to your destination.</li>
+                    <li style="line-height: 25px; font-size: 16px;"><b>Cancellation Policy:</b> We will charge a
+                        cancellation fee if you cancel after the vehicle leaves our garage or does not show up.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Contant End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <div class="footer-item">
+                            <img src="logo.png" alt="logoimage">
+                            <p class="mb-3" style="color: #fff;">Rainbow Call Taxi Salem — your trusted ride partner for
+                                city travel, outstation trips, and rentals. Safe, comfortable, and on-time service —
+                                just a call away!</p>
+                        </div>
+                        <div class="position-relative">
+                            <input class="form-control rounded-pill w-100 py-3 ps-4 pe-5" type="text"
+                                placeholder="Enter your email">
+                            <button type="button"
+                                class="btn btn-secondary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="text-white mb-4">Quick Links</h4>
+                        <a href="index.html"><i class="fas fa-angle-right me-2"></i>Home</a>
+                        <a href="AboutUs.html"><i class="fas fa-angle-right me-2"></i> About</a>
+                        <a href="swift_dzire.html"><i class="fas fa-angle-right me-2"></i> Rental Cars</a>
+                        <a href="tirupati-tour.html"><i class="fas fa-angle-right me-2"></i> Trip and Tours</a>
+                        <a href="contactus.html"><i class="fas fa-angle-right me-2"></i> Contact us</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Terms & Conditions</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="text-white mb-4">Business Hours</h4>
+                        <div class="mb-3">
+                            <h6 class="text-muted mb-0">Mon - Friday:</h6>
+                            <p class="text-white mb-0">09.00 am to 07.00 pm</p>
+                        </div>
+                        <div class="mb-3">
+                            <h6 class="text-muted mb-0">Saturday:</h6>
+                            <p class="text-white mb-0">10.00 am to 05.00 pm</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="text-white mb-4">Contact Info</h4>
+                        <a href="#"><i class="fa fa-map-marker-alt me-2"></i> SAIBABA TEMPLE, 144/2, near MULLAI
+                            NAGAR, Suramangalam, Salem, Tamil Nadu 636005</a>
+                        <a href="#"><i class="fas fa-envelope me-2"></i> example@gmail.com</a>
+                        <a href="#"><i class="fas fa-phone me-2"></i> +91 9894338777</a>
+                        <a href="#" class="mb-3"><i class="fas fa-print me-2"></i> +012 345 67890</a>
+                        <div class="d-flex">
+                            <a class="btn btn-secondary btn-md-square rounded-circle me-3" href=""><i
+                                    class="fab fa-facebook-f text-white"></i></a>
+                            <a class="btn btn-secondary btn-md-square rounded-circle me-3" href=""><i
+                                    class="fab fa-twitter text-white"></i></a>
+                            <a class="btn btn-secondary btn-md-square rounded-circle me-3" href=""><i
+                                    class="fab fa-instagram text-white"></i></a>
+                            <a class="btn btn-secondary btn-md-square rounded-circle me-0" href=""><i
+                                    class="fa-brands fa-youtube text-white"></i></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-3">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-md-0">
+                    <span class="text-body">www.rainbowcalltaxi.com © 2024 Powered By <a
+                            href="https://nkmoderntechnology.com/">NK Modern Technology</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-secondary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
