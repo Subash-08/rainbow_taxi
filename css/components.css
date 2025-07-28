@@ -1382,3 +1382,451 @@
     opacity: 0.5;
   }
 }
+nav {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.93);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+  box-shadow: var(--glow);
+  transition: background 0.3s;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.navbar-inner {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-weight: bold;
+  font-size: 1.28rem;
+  color: var(--primary);
+  cursor: pointer;
+  user-select: none;
+}
+.logo-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9px;
+  background: var(--secondary-color);
+}
+/* Styling for the SVG icon within logo-icon */
+.logo-icon img {
+  width: 23px; /* Adjusted to match original icon size */
+  height: 23px;
+  filter: brightness(0) invert(1); /* To make the car icon white */
+}
+ul,
+.nav-list,
+.mobile-nav-list,
+.dropdown,
+.menu-items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a,
+.dropdown-link,
+.mobile-nav-link,
+.mobile-sub-link {
+  text-decoration: none !important;
+  outline: none;
+}
+/* DESKTOP NAV */
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.nav-link,
+.nav-trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 9px 18px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--foreground);
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 7px;
+  transition: background 0.22s, color 0.18s;
+  position: relative;
+}
+.nav-link {
+  color: var(--primary);
+}
+.nav-link:hover,
+.nav-trigger:hover,
+.nav-link.active,
+.nav-trigger.open {
+  color: var(--accent);
+  background: var(--muted);
+}
+/* Styling for chevron icon */
+.nav-trigger > img.icon-chevron-down {
+  width: 17px; /* Adjusted to match original icon size */
+  height: 17px;
+  margin-left: -3px;
+  margin-top: 2px;
+  transition: transform 0.2s;
+  filter: var(--foreground-filter, none); /* Apply filter for color change */
+}
+.nav-trigger.open > img.icon-chevron-down {
+  transform: rotate(180deg);
+}
+/* Hover/active state for chevron */
+.nav-link:hover > img.icon-chevron-down,
+.nav-trigger:hover > img.icon-chevron-down,
+.nav-link.active > img.icon-chevron-down,
+.nav-trigger.open > img.icon-chevron-down {
+  filter: var(--accent-filter, none); /* Apply filter for accent color */
+}
+
+.dropdown {
+  position: absolute;
+  /* left: 0; */
+  top: 110%;
+  display: none;
+  width: max-content;
+  padding: 25px 30px 20px 30px;
+  background: var(--background);
+  border: 1px solid var(--border);
+  border-radius: 13px;
+  box-shadow: 0 4px 32px rgba(50, 120, 249, 0.08);
+  margin-top: 5px;
+  z-index: 100;
+  transition: opacity 0.2s, transform 0.2s;
+  opacity: 0;
+  pointer-events: none;
+}
+.nav-item:hover > .dropdown,
+.nav-trigger.open + .dropdown {
+  display: flex !important;
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0px);
+}
+.dropdown {
+  /* ... existing properties ... */
+  opacity: 0;
+  pointer-events: none; /* Crucial: default to none */
+  transform: translateY(
+    0px
+  ); /* Keep this as it's the resting state for animation */
+}
+
+/* This rule makes it appear on hover or when clicked (via 'open' class) */
+.nav-item:hover > .dropdown,
+.nav-trigger.open + .dropdown {
+  /* Ensure this rule makes it visible */
+  display: block; /* Make sure it's block to start transition */
+  opacity: 1;
+  background-color: white;
+  pointer-events: auto; /* Enable pointer events when visible */
+  transform: translateY(0px); /* Already at 0, but good to keep for clarity */
+}
+.dropdown.grid3 {
+  width: 600px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 65px;
+}
+.dropdown.grid2 {
+  width: 500px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 65px;
+}
+.menu-category {
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 7px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 1rem;
+}
+/* Styling for category icons */
+.menu-category img {
+  width: 15px; /* Adjusted to match original icon size */
+  height: 15px;
+  filter: var(--primary-filter, none); /* Apply filter for primary color */
+}
+.menu-items {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.dropdown-link {
+  color: #8092ad;
+  font-size: 0.97rem;
+  border-radius: 3px;
+  padding: 2.5px 0 2.5px 8px;
+  transition: color 0.16s, background 0.15s;
+}
+.dropdown-link:hover {
+  color: var(--primary);
+  background: #f4f7fc;
+  text-decoration: underline !important;
+}
+.get-started-btn {
+  display: inline-flex;
+  align-items: center;
+  height: 38px;
+  padding: 0 26px;
+  background: var(--primary-dark);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: var(--glow);
+  cursor: pointer;
+  transition: box-shadow 0.3s, background 0.17s, transform 0.12s;
+  outline: none;
+}
+.get-started-btn:hover {
+  box-shadow: 0 2px 20px 1px rgba(0, 150, 140, 0.22);
+  transform: translateY(-1.5px) scale(1.025);
+}
+/* MOBILE NAV */
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--foreground);
+  font-size: 2rem;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  z-index: 1002;
+  line-height: 1;
+}
+/* Styling for mobile menu button icons */
+.mobile-menu-btn img {
+  width: 28px; /* Slightly larger for touch */
+  height: 28px;
+  filter: var(--foreground-filter, none);
+}
+.mobile-nav {
+  display: none; /* Hidden by default, shown by JS */
+}
+.mobile-nav.open {
+  position: fixed;
+  top: 64px;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  min-height: calc(100vh - 64px);
+  background: rgba(255, 255, 255, 0.99);
+  box-shadow: 0 8px 32px rgba(41, 80, 135, 0.1);
+  padding-bottom: 20px;
+  animation: menuFade 0.28s;
+  z-index: 1001;
+  display: block; /* Show when open */
+}
+@keyframes menuFade {
+  from {
+    opacity: 0;
+    transform: translateY(-25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.mobile-nav-list {
+  display: flex;
+  flex-direction: column;
+  padding: 18px 14px;
+  gap: 2px;
+}
+.mobile-nav-link {
+  display: flex; /* Changed to flex to align icon and text */
+  align-items: center;
+  font-size: 1.09rem;
+  color: var(--primary);
+  background: none;
+  border: none;
+  padding: 13px 5px 10px 5px;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 6px;
+  text-align: left;
+  text-decoration: none;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #e7ebf7;
+}
+/* Styling for mobile nav link icons */
+.mobile-nav-link img {
+  width: 20px; /* Adjust size as needed */
+  height: 20px;
+  margin-right: 7px;
+  filter: var(--primary-filter, none);
+}
+.mobile-category {
+  font-size: 1.01rem;
+  color: var(--primary);
+  font-weight: 800;
+  margin: 12px 0 6px 0;
+  padding: 9.5px 10px; /* Adjusted padding */
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 5px;
+  background: #f6faff;
+  border: 1px solid #e4f1fd;
+  padding-right: 15px; /* Added for chevron spacing */
+}
+/* Styling for mobile category icons */
+.mobile-category img {
+  width: 20px; /* Adjust size as needed */
+  height: 20px;
+  margin-right: 7px;
+  filter: var(--primary-filter, none);
+}
+.mobile-category img.icon-chevron-down {
+  transition: transform 0.2s;
+  margin-left: auto;
+  margin-right: 0;
+  width: 17px;
+  height: 17px;
+  filter: var(--primary-filter, none);
+}
+.mobile-category.expanded img.icon-chevron-down {
+  transform: rotate(180deg);
+}
+.mobile-dropdown-panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out; /* Smoother transition */
+  background: #f4f8ff;
+  border-radius: 0 0 8px 8px;
+  margin-bottom: 7px;
+  border-left: 3px solid #7edbf6;
+  box-shadow: 0 1px 7px rgba(0, 0, 0, 0.05); /* Adjusted shadow */
+}
+.mobile-dropdown-panel.open {
+  max-height: 550px; /* Increased max-height to accommodate more items */
+  padding-bottom: 8px;
+  border-top: 1px solid #e4f1fd;
+}
+.mobile-dropdown-list {
+  padding-left: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+.mobile-item-label {
+  font-size: 0.98rem;
+  color: #1367b9;
+  font-weight: 700;
+  margin-top: 11px;
+  margin-bottom: 1.5px;
+}
+.mobile-sub-link {
+  font-size: 0.93rem;
+  color: #4171a0;
+  background: none;
+  border: none;
+  padding: 6.2px 0 6.2px 22px;
+  cursor: pointer;
+  border-radius: 3px;
+  display: block;
+  text-align: left;
+  text-decoration: none;
+  transition: color 0.17s, background 0.12s;
+  letter-spacing: 0.01em;
+}
+.mobile-sub-link:hover {
+  background: #eaf2fc;
+  color: var(--primary);
+  text-decoration: underline !important;
+}
+.get-started-btn.mobile-btn {
+  margin-top: 22px;
+}
+/* Hide nav-list and desktop btn on <1024px, show mobile btn */
+@media (max-width: 1023px) {
+  .nav-list,
+  .get-started-btn.desktop {
+    display: none;
+  }
+  .mobile-menu-btn {
+    display: flex;
+  }
+  .dropdown {
+    display: none !important;
+    pointer-events: none !important;
+  }
+}
+@media (min-width: 1024px) {
+  .mobile-menu-btn,
+  .mobile-nav {
+    display: none !important;
+  }
+  .nav-list {
+    display: flex;
+  }
+  .get-started-btn.desktop {
+    display: inline-flex;
+  }
+}
+@media (max-width: 900px) {
+  .dropdown.grid3 {
+    width: 410px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .dropdown.grid2 {
+    width: 320px;
+  }
+}
+@media (max-width: 540px) {
+  .container {
+    padding: 0 5px;
+  }
+  nav {
+    font-size: 95%;
+  }
+  .logo-area {
+    font-size: 1.15rem; /* Adjusted for smaller screens */
+  }
+}
+
+/* SVG color filtering for dynamic coloring based on CSS variables */
+/* These filters convert a black SVG to the desired color */
+.filter-primary {
+  filter: invert(29%) sepia(99%) saturate(4684%) hue-rotate(209deg)
+    brightness(97%) contrast(92%);
+}
+.filter-foreground {
+  filter: invert(10%) sepia(0%) saturate(2%) hue-rotate(345deg) brightness(98%)
+    contrast(90%);
+}
+.filter-accent {
+  filter: invert(72%) sepia(93%) saturate(579%) hue-rotate(120deg)
+    brightness(101%) contrast(107%);
+}

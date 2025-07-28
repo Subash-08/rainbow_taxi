@@ -43,32 +43,254 @@
     </div>
 
     <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-      <div class="nav-container">
-        <div class="nav-brand">
-          <i class="fas fa-taxi brand-icon"></i>
-          <span class="brand-text">Rainbow Call Taxi</span>
-        </div>
+    <nav>
+      <div class="container">
+        <div class="navbar-inner">
+          <div class="logo-area">
+            <div class="logo-icon">
+              <img
+                src="https://unpkg.com/lucide-static@latest/icons/car.svg"
+                alt="Car Icon"
+              />
+            </div>
+            <span>Rainbow call taxi</span>
+          </div>
 
-        <div class="nav-menu" id="nav-menu">
-          <a href="#home" class="nav-link active">Home</a>
-          <a href="#services" class="nav-link">Services</a>
-          <a href="#fleet" class="nav-link">Our Fleet</a>
-          <a href="#about" class="nav-link">About</a>
-          <a href="#testimonials" class="nav-link">Reviews</a>
-          <a href="#contact" class="nav-link">Contact</a>
-        </div>
-
-        <div class="nav-actions">
-          <a href="tel:+919894338777" class="btn btn-primary btn-call">
-            <i class="fas fa-phone"></i>
-            Call Now
-          </a>
-          <button class="nav-toggle" id="nav-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
+          <ul class="nav-list" id="main-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item nav-dropdown" tabindex="-1">
+              <button
+                class="nav-trigger"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Car Rental
+                <img
+                  src="https://unpkg.com/lucide-static@latest/icons/chevron-down.svg"
+                  alt="Dropdown Arrow"
+                  class="icon-chevron-down"
+                />
+              </button>
+              <div class="dropdown grid3" aria-label="Car Rental dropdown">
+                <div>
+                  <div class="menu-category">
+                    <img
+                      src="https://unpkg.com/lucide-static@latest/icons/car.svg"
+                      alt="Car Icon"
+                      class="filter-primary"
+                    />
+                    4 Seater Cars
+                  </div>
+                  <div class="menu-items">
+                    <a class="dropdown-link" href="#">Swift Dzire</a>
+                    <a class="dropdown-link" href="#">Suzuki Swift</a>
+                    <a class="dropdown-link" href="#">Toyota Etios</a>
+                  </div>
+                </div>
+                <div>
+                  <div class="menu-category">
+                    <img
+                      src="https://unpkg.com/lucide-static@latest/icons/users.svg"
+                      alt="Users Icon"
+                      class="filter-primary"
+                    />
+                    7 Seater Cars
+                  </div>
+                  <div class="menu-items">
+                    <a class="dropdown-link" href="#">Innova Crysta</a>
+                    <a class="dropdown-link" href="#">Innova</a>
+                    <a class="dropdown-link" href="#">Suzuki Ertiga</a>
+                  </div>
+                </div>
+                <div>
+                  <div class="menu-category">
+                    <img
+                      src="https://unpkg.com/lucide-static@latest/icons/car.svg"
+                      alt="Car Icon"
+                      class="filter-primary"
+                    />
+                    Van Rental
+                  </div>
+                  <div class="menu-items">
+                    <a class="dropdown-link" href="#">407 Coach</a>
+                    <a class="dropdown-link" href="#">Mahindra Tourister</a>
+                    <a class="dropdown-link" href="#">Tempo Traveller</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item nav-dropdown">
+              <button
+                class="nav-trigger"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Package Tour
+                <img
+                  src="https://unpkg.com/lucide-static@latest/icons/chevron-down.svg"
+                  alt="Dropdown Arrow"
+                  class="icon-chevron-down"
+                />
+              </button>
+              <div class="dropdown grid2" aria-label="Package Tours dropdown">
+                <div>
+                  <div class="menu-category">
+                    <img
+                      src="https://unpkg.com/lucide-static@latest/icons/map-pin.svg"
+                      alt="Map Pin Icon"
+                      class="filter-primary"
+                    />
+                    Temple Tours
+                  </div>
+                  <div class="menu-items">
+                    <a class="dropdown-link" href="#">Tirupati Temple</a>
+                    <a class="dropdown-link" href="#">Sabarimala Temple</a>
+                    <a class="dropdown-link" href="#"
+                      >South India Temple Tour</a
+                    >
+                  </div>
+                </div>
+                <div>
+                  <div class="menu-category">
+                    <img
+                      src="https://unpkg.com/lucide-static@latest/icons/map-pin.svg"
+                      alt="Map Pin Icon"
+                      class="filter-primary"
+                    />
+                    Vacation Tours
+                  </div>
+                  <div class="menu-items">
+                    <a class="dropdown-link" href="#">Ooty Hills Tour</a>
+                    <a class="dropdown-link" href="#">Kodaikanal Tour</a>
+                    <a class="dropdown-link" href="#">Yercadu Tour</a>
+                    <a class="dropdown-link" href="#">Kerala Tour</a>
+                    <a class="dropdown-link" href="#">Valparai Tour</a>
+                    <a class="dropdown-link" href="#">Yelagiri</a>
+                    <a class="dropdown-link" href="#">Kollimalai</a>
+                    <a class="dropdown-link" href="#">Coorg</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+          </ul>
+          <button class="get-started-btn desktop">Get Started</button>
+          <button
+            class="mobile-menu-btn"
+            id="mobileMenuBtn"
+            aria-label="Open menu"
+            style="margin-left: 12px"
+          >
+            <img
+              src="https://unpkg.com/lucide-static@latest/icons/menu.svg"
+              alt="Menu Icon"
+            />
           </button>
+        </div>
+        <div class="mobile-nav" id="mobileNav">
+          <div class="mobile-nav-list">
+            <a class="mobile-nav-link" href="#">
+              <img
+                src="https://unpkg.com/lucide-static@latest/icons/home.svg"
+                alt="Home Icon"
+              />
+              Home
+            </a>
+
+            <div class="mobile-category" data-accordion="carRental">
+              <img
+                src="https://unpkg.com/lucide-static@latest/icons/car.svg"
+                alt="Car Icon"
+              />
+              Car Rental
+              <img
+                src="https://unpkg.com/lucide-static@latest/icons/chevron-down.svg"
+                alt="Dropdown Arrow"
+                class="icon-chevron-down"
+              />
+            </div>
+            <div class="mobile-dropdown-panel" data-panel="carRental">
+              <div class="mobile-dropdown-list">
+                <div>
+                  <div class="mobile-item-label">4 Seater Cars</div>
+                  <a class="mobile-sub-link" href="#">Swift Dzire</a>
+                  <a class="mobile-sub-link" href="#">Suzuki Swift</a>
+                  <a class="mobile-sub-link" href="#">Toyota Etios</a>
+                </div>
+                <div>
+                  <div class="mobile-item-label">7 Seater Cars</div>
+                  <a class="mobile-sub-link" href="#">Innova Crysta</a>
+                  <a class="mobile-sub-link" href="#">Innova</a>
+                  <a class="mobile-sub-link" href="#">Suzuki Ertiga</a>
+                </div>
+                <div>
+                  <div class="mobile-item-label">Van Rental</div>
+                  <a class="mobile-sub-link" href="#">407 Coach</a>
+                  <a class="mobile-sub-link" href="#">Mahindra Tourister</a>
+                  <a class="mobile-sub-link" href="#">Tempo Traveller</a>
+                </div>
+              </div>
+            </div>
+            <div class="mobile-category" data-accordion="packageTour">
+              <img
+                src="https://unpkg.com/lucide-static@latest/icons/package.svg"
+                alt="Package Icon"
+              />
+              Package Tour
+              <img
+                src="https://unpkg.com/lucide-static@latest/icons/chevron-down.svg"
+                alt="Dropdown Arrow"
+                class="icon-chevron-down"
+              />
+            </div>
+            <div class="mobile-dropdown-panel" data-panel="packageTour">
+              <div class="mobile-dropdown-list">
+                <div>
+                  <div class="mobile-item-label">Temple Tours</div>
+                  <a class="mobile-sub-link" href="#">Tirupati Temple</a>
+                  <a class="mobile-sub-link" href="#">Sabarimala Temple</a>
+                  <a class="mobile-sub-link" href="#"
+                    >South India Temple Tour</a
+                  >
+                </div>
+                <div>
+                  <div class="mobile-item-label">Vacation Tours</div>
+                  <a class="mobile-sub-link" href="#">Ooty Hills Tour</a>
+                  <a class="mobile-sub-link" href="#">Kodaikanal Tour</a>
+                  <a class="mobile-sub-link" href="#">Yercadu Tour</a>
+                  <a class="mobile-sub-link" href="#">Kerala Tour</a>
+                  <a class="mobile-sub-link" href="#">Valparai Tour</a>
+                  <a class="mobile-sub-link" href="#">Yelagiri</a>
+                  <a class="mobile-sub-link" href="#">Kollimalai</a>
+                  <a class="mobile-sub-link" href="#">Coorg</a>
+                </div>
+              </div>
+            </div>
+            <a class="mobile-nav-link" href="#">
+              <img
+                src="https://unpkg.com/lucide-static@latest/icons/info.svg"
+                alt="Info Icon"
+              />
+              About Us
+            </a>
+            <a class="mobile-nav-link" href="#">
+              <img
+                src="https://unpkg.com/lucide-static@latest/icons/phone.svg"
+                alt="Phone Icon"
+              />
+              Contact Us
+            </a>
+            <button class="get-started-btn mobile-btn" style="width: 100%">
+              Get Started
+            </button>
+          </div>
         </div>
       </div>
     </nav>
@@ -921,5 +1143,180 @@
     <script type="module" src="js/components.js"></script>
     <script type="module" src="js/animations.js"></script>
     <script type="module" src="js/main.js"></script>
+
+    <script>
+      // Desktop dropdowns
+      document.querySelectorAll(".nav-dropdown").forEach((navItem) => {
+        const trigger = navItem.querySelector(".nav-trigger");
+        const dropdown = navItem.querySelector(".dropdown");
+
+        // Function to open a dropdown
+        function openDropdown() {
+          // Close any other open dropdowns first
+          document.querySelectorAll(".nav-dropdown").forEach((otherNavItem) => {
+            if (otherNavItem !== navItem) {
+              const otherTrigger = otherNavItem.querySelector(".nav-trigger");
+              const otherDropdown = otherNavItem.querySelector(".dropdown");
+              if (otherTrigger.classList.contains("open")) {
+                otherTrigger.classList.remove("open");
+                otherTrigger.setAttribute("aria-expanded", "false");
+                // Instant hide for others to prevent visual glitches
+                otherDropdown.style.opacity = 0;
+                otherDropdown.style.pointerEvents = "none"; // Ensure others are not interactive
+                otherDropdown.style.display = "none";
+              }
+            }
+          });
+
+          // Open current dropdown
+          trigger.classList.add("open");
+          trigger.setAttribute("aria-expanded", "true");
+          dropdown.style.display = "block"; // Ensure it's displayed for transition
+          // Set pointer-events to auto immediately so mouse can enter
+          dropdown.style.pointerEvents = "auto";
+          setTimeout(() => {
+            dropdown.style.opacity = 1;
+          }, 20); // Small delay to allow display change to register before opacity transition
+        }
+
+        // Function to close a dropdown
+        function closeDropdown() {
+          trigger.classList.remove("open");
+          trigger.setAttribute("aria-expanded", "false");
+          dropdown.style.opacity = 0;
+          // DELAY pointer-events: none; until after the opacity transition
+          setTimeout(() => {
+            dropdown.style.pointerEvents = "none";
+            dropdown.style.display = "none";
+          }, 150); // Match CSS transition duration
+        }
+
+        // Handle click on the trigger
+        trigger.addEventListener("click", (e) => {
+          if (window.innerWidth < 1024) return; // Skip on mobile
+          e.stopPropagation(); // Prevent document click from immediately closing
+
+          if (trigger.classList.contains("open")) {
+            closeDropdown();
+          } else {
+            openDropdown();
+          }
+        });
+
+        // Handle hover (mouseenter/mouseleave) for the entire nav item
+        navItem.addEventListener("mouseenter", () => {
+          if (window.innerWidth < 1024) return; // Skip on mobile
+          // If it's not already explicitly open by click, or if it was just closed by blur, open it
+          // The 'open' class on the trigger dictates if it's considered "open" by JS/click
+          if (!trigger.classList.contains("open")) {
+            openDropdown();
+          }
+        });
+
+        navItem.addEventListener("mouseleave", (e) => {
+          if (window.innerWidth < 1024) return; // Skip on mobile
+
+          // Check if the mouse is leaving the navItem and not entering a child of the dropdown
+          // This is the core fix: if e.relatedTarget is within the dropdown, don't close.
+          if (
+            !navItem.contains(e.relatedTarget) &&
+            !dropdown.contains(e.relatedTarget)
+          ) {
+            closeDropdown();
+          }
+        });
+
+        // Close dropdown when trigger loses focus (important for keyboard navigation)
+        trigger.addEventListener("blur", (e) => {
+          // If focus moves outside the dropdown (e.g., to another nav item or elsewhere)
+          // and the dropdown is currently considered open
+          if (
+            !dropdown.contains(e.relatedTarget) &&
+            trigger.classList.contains("open")
+          ) {
+            closeDropdown();
+          }
+        });
+
+        // Close all dropdowns on document click
+        document.addEventListener("click", function (e) {
+          if (window.innerWidth < 1024) return; // Skip on mobile
+          // If a dropdown is open and the click is outside this nav item
+          if (
+            trigger.classList.contains("open") &&
+            !navItem.contains(e.target)
+          ) {
+            closeDropdown();
+          }
+        });
+      });
+
+      // --- Mobile Menu and Accordion remain the same as previous version ---
+
+      // Mobile Menu
+      const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+      const mobileNav = document.getElementById("mobileNav");
+      let menuOpen = false;
+
+      function updateMobileBtn() {
+        mobileMenuBtn.innerHTML = menuOpen
+          ? '<img src="https://unpkg.com/lucide-static@latest/icons/x.svg" alt="Close Menu" />'
+          : '<img src="https://unpkg.com/lucide-static@latest/icons/menu.svg" alt="Open Menu" />';
+      }
+
+      mobileMenuBtn.addEventListener("click", function () {
+        menuOpen = !menuOpen;
+        mobileNav.classList.toggle("open", menuOpen);
+        updateMobileBtn();
+      });
+
+      document
+        .querySelectorAll(".mobile-nav-link, .mobile-sub-link")
+        .forEach((link) => {
+          link.addEventListener("click", () => {
+            mobileNav.classList.remove("open");
+            menuOpen = false;
+            updateMobileBtn();
+          });
+        });
+
+      // Lock background scroll when menu open
+      const scrollLock = (lock) => {
+        document.body.style.overflow = lock ? "hidden" : "";
+      };
+      const observer = new MutationObserver(() => {
+        scrollLock(mobileNav.classList.contains("open"));
+      });
+      observer.observe(mobileNav, {
+        attributes: true,
+      });
+
+      // Mobile accordion
+      document.querySelectorAll(".mobile-category").forEach((cat) => {
+        cat.addEventListener("click", function () {
+          const key = cat.getAttribute("data-accordion");
+          const panel = document.querySelector(
+            '.mobile-dropdown-panel[data-panel="' + key + '"]'
+          );
+
+          if (cat.classList.contains("expanded")) {
+            cat.classList.remove("expanded");
+            panel.classList.remove("open");
+          } else {
+            // Close all other accordions
+            document
+              .querySelectorAll(".mobile-category.expanded")
+              .forEach((c) => c.classList.remove("expanded"));
+            document
+              .querySelectorAll(".mobile-dropdown-panel.open")
+              .forEach((p) => p.classList.remove("open"));
+
+            // Open the clicked accordion
+            cat.classList.add("expanded");
+            panel.classList.add("open");
+          }
+        });
+      });
+    </script>
   </body>
 </html>
