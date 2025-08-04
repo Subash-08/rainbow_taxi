@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rainbow Call Taxi - Premium Taxi Services in Salem</title>
+    <meta
+      name="description"
+      content="Professional taxi services in Salem. Book reliable rides for local trips, outstation tours, and airport transfers. Available 24/7."
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/about.css" />
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div id="preloader" class="preloader">
+      <div class="preloader-content">
+        <div class="taxi-animation">
+          <i class="fas fa-taxi"></i>
+        </div>
+        <div class="loading-text">Loading...</div>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+      <div class="container">
+        <div class="navbar-inner">
+          <div class="logo-area">
+            <div class="logo-icon">
+              <img
+                src="https://unpkg.com/lucide-static@latest/icons/car.svg"
+                alt="Car Icon"
+              />
+            </div>
+            <span>Rainbow call taxi</span>
+          </div>
+
+          <ul class="nav-list" id="nav-menu">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item nav-dropdown" tabindex="-1">
+              <button
+                class="nav-trigger"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Car Rental
+                <img
+                  src="https://unpkg.com/lucide-static@latest/icons/chevron-down.svg"
+                  alt="Dropdown Arrow"
+                  class="icon-chevron-down"
+                />
+              </button>
+              <div class="dropdown grid3" aria-label="Car Rental dropdown">
+                <div>
+                  <div class="menu-category">
+                    <img
+                      src="https://unpkg.com/lucide-static@latest/icons/car.svg"
+                      alt="Car Icon"
+                      class="filter-primary"
+                    />
+                    4 Seater Cars
+                  </div>
+                  <div class="menu-items">
+                    <a class="dropdown-link" href="#">Swift Dzire</a>
+                    <a class="dropdown-link" href="#">Suzuki Swift</a>
+                    <a class="dropdown-link" href="#">Toyota Etios</a>
+                  </div>
+                </div>
+                <div>
+                  <div class="menu-category">
+                    <img
+                      src="https://unpkg.com/lucide-static@latest/icons/users.svg"
+                      alt="Users Icon"
+                      class="filter-primary"
+                    />
+                    7 Seater Cars
+                  </div>
+                  <div class="menu-items">
+                    <a class="dropdown-link" href="#">Innova Crysta</a>
+                    <a class="dropdown-link" href="#">Innova</a>
+                    <a class="dropdown-link" href="#">Suzuki Ertiga</a>
+                  </div>
+                </div>
+                <div>
+                  <div class="menu-category">
+                    <img
+                      src="https://unpkg.com/lucide-static@latest/icons/car.svg"
+                      alt="Car Icon"
+                      class="filter-primary"
+                    />
+                    Van Rental
+                  </div>
+                  <div class="menu-items">
+                    <a class="dropdown-link" href="#">407 Coach</a>
+                    <a class="dropdown-link" href="#">Mahindra Tourister</a>
+                    <a class="dropdown-link" href="#">Tempo Traveller</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item nav-dropdown">
+              <button
+                class="nav-trigger"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Package Tour
+                <img
+                  src="https://unpkg.com/lucide-static@latest/icons/chevron-down.svg"
+                  alt="Dropdown Arrow"
+                  class="icon-chevron-down"
+                />
+              </button>
+              <div class="dropdown grid2" aria-label="Package Tours dropdown">
+                <div>
+                  <div class="menu-category">
+                    <img
+                      src="https://unpkg.com/lucide-static@latest/icons/map-pin.svg"
+                      alt="Map Pin Icon"
+                      class="filter-primary"
+                    />
+                    Temple Tours
+                  </div>
+                  <div class="menu-items">
+                    <a class="dropdown-link" href="#">Tirupati Temple</a>
+                    <a class="dropdown-link" href="#">Sabarimala Temple</a>
+                    <a class="dropdown-link" href="#"
+                      >South India Temple Tour</a
+                    >
+                  </div>
+                </div>
+                <div>
+                  <div class="menu-category">
+                    <img
+                      src="https://unpkg.com/lucide-static@latest/icons/map-pin.svg"
+                      alt="Map Pin Icon"
+                      class="filter-primary"
+                    />
+                    Vacation Tours
+                  </div>
+                  <div class="menu-items">
+                    <a class="dropdown-link" href="#">Ooty Hills Tour</a>
+                    <a class="dropdown-link" href="#">Kodaikanal Tour</a>
+                    <a class="dropdown-link" href="#">Yercadu Tour</a>
+                    <a class="dropdown-link" href="#">Kerala Tour</a>
+                    <a class="dropdown-link" href="#">Valparai Tour</a>
+                    <a class="dropdown-link" href="#">Yelagiri</a>
+                    <a class="dropdown-link" href="#">Kollimalai</a>
+                    <a class="dropdown-link" href="#">Coorg</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+          </ul>
+          <button class="get-started-btn desktop">Get Started</button>
+          <button
+            class="mobile-menu-btn"
+            id="mobileMenuBtn"
+            aria-label="Open menu"
+            style="margin-left: 12px"
+          >
+            <img
+              src="https://unpkg.com/lucide-static@latest/icons/menu.svg"
+              alt="Menu Icon"
+            />
+          </button>
+        </div>
+        <div class="mobile-nav" id="mobileNav">
+          <div class="mobile-nav-list">
+            <a class="mobile-nav-link" href="#">
+              <img
+                src="https://unpkg.com/lucide-static@latest/icons/home.svg"
+                alt="Home Icon"
+              />
+              Home
+            </a>
+
+            <div class="mobile-category" data-accordion="carRental">
+              <img
+                src="https://unpkg.com/lucide-static@latest/icons/car.svg"
+                alt="Car Icon"
+              />
+              Car Rental
+              <img
+                src="https://unpkg.com/lucide-static@latest/icons/chevron-down.svg"
+                alt="Dropdown Arrow"
+                class="icon-chevron-down"
+              />
+            </div>
+            <div class="mobile-dropdown-panel" data-panel="carRental">
+              <div class="mobile-dropdown-list">
+                <div>
+                  <div class="mobile-item-label">4 Seater Cars</div>
+                  <a class="mobile-sub-link" href="#">Swift Dzire</a>
+                  <a class="mobile-sub-link" href="#">Suzuki Swift</a>
+                  <a class="mobile-sub-link" href="#">Toyota Etios</a>
+                </div>
+                <div>
+                  <div class="mobile-item-label">7 Seater Cars</div>
+                  <a class="mobile-sub-link" href="#">Innova Crysta</a>
+                  <a class="mobile-sub-link" href="#">Innova</a>
+                  <a class="mobile-sub-link" href="#">Suzuki Ertiga</a>
+                </div>
+                <div>
+                  <div class="mobile-item-label">Van Rental</div>
+                  <a class="mobile-sub-link" href="#">407 Coach</a>
+                  <a class="mobile-sub-link" href="#">Mahindra Tourister</a>
+                  <a class="mobile-sub-link" href="#">Tempo Traveller</a>
+                </div>
+              </div>
+            </div>
+            <div class="mobile-category" data-accordion="packageTour">
+              <img
+                src="https://unpkg.com/lucide-static@latest/icons/package.svg"
+                alt="Package Icon"
+              />
+              Package Tour
+              <img
+                src="https://unpkg.com/lucide-static@latest/icons/chevron-down.svg"
+                alt="Dropdown Arrow"
+                class="icon-chevron-down"
+              />
+            </div>
+            <div class="mobile-dropdown-panel" data-panel="packageTour">
+              <div class="mobile-dropdown-list">
+                <div>
+                  <div class="mobile-item-label">Temple Tours</div>
+                  <a class="mobile-sub-link" href="#">Tirupati Temple</a>
+                  <a class="mobile-sub-link" href="#">Sabarimala Temple</a>
+                  <a class="mobile-sub-link" href="#"
+                    >South India Temple Tour</a
+                  >
+                </div>
+                <div>
+                  <div class="mobile-item-label">Vacation Tours</div>
+                  <a class="mobile-sub-link" href="#">Ooty Hills Tour</a>
+                  <a class="mobile-sub-link" href="#">Kodaikanal Tour</a>
+                  <a class="mobile-sub-link" href="#">Yercadu Tour</a>
+                  <a class="mobile-sub-link" href="#">Kerala Tour</a>
+                  <a class="mobile-sub-link" href="#">Valparai Tour</a>
+                  <a class="mobile-sub-link" href="#">Yelagiri</a>
+                  <a class="mobile-sub-link" href="#">Kollimalai</a>
+                  <a class="mobile-sub-link" href="#">Coorg</a>
+                </div>
+              </div>
+            </div>
+            <a class="mobile-nav-link" href="#">
+              <img
+                src="https://unpkg.com/lucide-static@latest/icons/info.svg"
+                alt="Info Icon"
+              />
+              About Us
+            </a>
+            <a class="mobile-nav-link" href="#">
+              <img
+                src="https://unpkg.com/lucide-static@latest/icons/phone.svg"
+                alt="Phone Icon"
+              />
+              Contact Us
+            </a>
+            <button class="get-started-btn mobile-btn" style="width: 100%">
+              Get Started
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="overlay"></div>
+      <div class="container text-center">
+        <span class="badge">About Our Company</span>
+        <h1>Your Trusted Travel Partner</h1>
+        <p>
+          Making your journey memorable with reliable car rentals and expertly
+          curated tour packages across South India
+        </p>
+      </div>
+    </section>
+
+    <section class="story">
+      <div class="container grid">
+        <div class="text">
+          <span class="badge outline">Our Story</span>
+          <h2>15 Years of Excellence in Travel Services</h2>
+          <p>
+            Founded in 2009, we started as a small car rental service with just
+            3 vehicles. Today, we're proud to be one of South India's most
+            trusted travel partners, serving thousands of customers annually.
+          </p>
+          <p>
+            Our journey began with a simple mission: to provide safe, reliable,
+            and comfortable transportation that enhances your travel experience.
+            Over the years, we've expanded our services to include temple tours,
+            vacation packages, and corporate travel solutions.
+          </p>
+        </div>
+        <div class="stats">
+          <div class="card">
+            <div class="number">15+</div>
+            <div>Years of Experience</div>
+          </div>
+          <div class="card">
+            <div class="number">10,000+</div>
+            <div>Happy Customers</div>
+          </div>
+          <div class="card">
+            <div class="number">50+</div>
+            <div>Destinations Covered</div>
+          </div>
+          <div class="card">
+            <div class="number">100+</div>
+            <div>Vehicles in Fleet</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="container text-center">
+        <span class="badge outline">Why Choose Us</span>
+        <h2>What Makes Us Different</h2>
+        <p>
+          We’re not just another car rental service. We’re your travel
+          companions.
+        </p>
+        <div class="grid cards">
+          <div class="card">
+            <div class="icon"><i class="fas fa-shield-alt"></i></div>
+            <h3>Trusted & Reliable</h3>
+            <p>
+              Over 15 years of experience in providing safe and reliable
+              transportation services across South India.
+            </p>
+          </div>
+          <div class="card">
+            <div class="icon"><i class="fas fa-clock"></i></div>
+            <h3>24/7 Support</h3>
+            <p>
+              Round-the-clock customer support to assist you anytime during your
+              journey.
+            </p>
+          </div>
+          <div class="card">
+            <div class="icon"><i class="fas fa-users"></i></div>
+            <h3>Expert Drivers</h3>
+            <p>
+              Professional, licensed drivers with extensive knowledge of local
+              routes and destinations.
+            </p>
+          </div>
+          <div class="card">
+            <div class="icon"><i class="fas fa-star"></i></div>
+            <h3>Premium Quality</h3>
+            <p>
+              Well-maintained, clean vehicles with regular servicing to ensure
+              your comfort and safety.
+            </p>
+          </div>
+          <div class="card">
+            <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+            <h3>Wide Coverage</h3>
+            <p>
+              Comprehensive coverage across Tamil Nadu, Kerala, Karnataka, and
+              Andhra Pradesh.
+            </p>
+          </div>
+          <div class="card">
+            <div class="icon"><i class="fas fa-car"></i></div>
+            <h3>Diverse Fleet</h3>
+            <p>
+              From 4-seater cars to luxury coaches, we have the perfect vehicle
+              for every need.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mission">
+      <div class="container grid">
+        <div class="card">
+          <div class="icon"><i class="fas fa-trophy"></i></div>
+          <h3>Our Mission</h3>
+          <p>
+            To provide exceptional travel experiences through reliable
+            transportation and personalized attention.
+          </p>
+        </div>
+        <div class="card">
+          <div class="icon"><i class="fas fa-heart"></i></div>
+          <h3>Our Vision</h3>
+          <p>
+            To be the most trusted and preferred travel partner in South India.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="team">
+      <div class="container text-center">
+        <span class="badge outline">Our Team</span>
+        <h2>Meet the People Behind Your Journey</h2>
+        <p>
+          Our experienced team is dedicated to ensuring your travel experience
+          exceeds expectations.
+        </p>
+        <div class="grid cards">
+          <div class="card">
+            <div class="icon"><i class="fas fa-user-tie"></i></div>
+            <h3>Rajesh Kumar</h3>
+            <p>
+              <strong>Founder & CEO</strong><br />20+ years in tourism industry
+            </p>
+          </div>
+          <div class="card">
+            <div class="icon"><i class="fas fa-users-cog"></i></div>
+            <h3>Priya Sharma</h3>
+            <p>
+              <strong>Operations Manager</strong><br />15+ years in fleet
+              management
+            </p>
+          </div>
+          <div class="card">
+            <div class="icon"><i class="fas fa-headset"></i></div>
+            <h3>Amit Patel</h3>
+            <p>
+              <strong>Customer Relations</strong><br />12+ years in customer
+              service
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container text-center">
+        <h2>Ready to Start Your Journey?</h2>
+        <p>
+          Get in touch with us today to plan your perfect trip or book your
+          ideal vehicle.
+        </p>
+        <div class="cta-buttons">
+          <button><i class="fas fa-phone-alt"></i> Call Now</button>
+          <button><i class="fas fa-envelope"></i> Email Us</button>
+          <button><i class="fas fa-calendar-alt"></i> Book Online</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="customer-reviews-section">
+      <div class="main-container">
+        <div class="center-text mb-16">
+          <span class="tagline"> Customer Reviews </span>
+          <h2 class="section-title">What Our Customers Say</h2>
+          <p class="section-description">
+            Discover why thousands of travelers trust us for their journeys
+            across South India
+          </p>
+        </div>
+        <div class="testimonial-carousel">
+          <div id="testimonial-slider" class="testimonial-slide-wrapper">
+            <!-- Review 1 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-content">
+                <div class="star-rating">
+                  <i class="fas fa-star star-filled"></i>
+                  <i class="fas fa-star star-filled"></i>
+                  <i class="fas fa-star star-filled"></i>
+                  <i class="fas fa-star star-filled"></i>
+                  <i class="fas fa-star star-filled"></i>
+                </div>
+                <p class="testimonial-text">
+                  "Excellent service! The driver was professional and punctual.
+                  Our family trip to Ooty was memorable thanks to their
+                  well-maintained Innova Crysta. Highly recommended for temple
+                  tours and family outings."
+                </p>
+                <div class="customer-info">
+                  <div class="customer-avatar">RK</div>
+                  <div>
+                    <h4 class="customer-name">Ravi Krishnan</h4>
+                    <p class="customer-location">Chennai, Tamil Nadu</p>
+                    <span class="service-tag">7 Seater Car Rental</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Review 2 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-content">
+                <div class="star-rating">
+                  <i class="fas fa-star star-filled"></i>
+                  <i class="fas fa-star star-filled"></i>
+                  <i class="fas fa-star star-filled"></i>
+                  <i class="fas fa-star star-filled"></i>
+                  <i class="fas fa-star star-filled"></i>
+                </div>
+                <p class="testimonial-text">
+                  "Outstanding experience with their Tirupati temple tour
+                  package. Everything was well-organized, from accommodation to
+                  transportation. The driver's knowledge of routes saved us so
+                  much time."
+                </p>
+                <div class="customer-info">
+                  <div class="customer-avatar">PN</div>
+                  <div>
+                    <h4 class="customer-name">Priya Nair</h4>
+                    <p class="customer-location">Kochi, Kerala</p>
+                    <span class="service-tag">Temple Tour Package</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Review 3 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-content">
+                <div class="star-rating">
+                  <i class="fas fa-star star-filled"></i>
+                  <i class="fas fa-star star-filled"></i>
+                  <i class="fas fa-star star-filled"></i>
+                  <i class="fas fa-star star-filled"></i>
+                  <i class="fas fa-star star-filled"></i>
+                </div>
+                <p class="testimonial-text">
+                  "Used their Swift Dzire for our weekend getaway to Kodaikanal.
+                  Clean car, reasonable pricing, and excellent customer support.
+                  The booking process was smooth and hassle-free."
+                </p>
+                <div class="customer-info">
+                  <div class="customer-avatar">AS</div>
+                  <div>
+                    <h4 class="customer-name">Amit Sharma</h4>
+                    <p class="customer-location">Bangalore, Karnataka</p>
+                    <span class="service-tag">4 Seater Car Rental</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Review 4 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-content">
+                <div class="star-rating">
+                  <i class="fas fa-star star-filled"></i>
+                  <i class="fas fa-star star-filled"></i>
+                  <i class="fas fa-star star-filled"></i>
+                  <i class="fas fa-star star-filled"></i>
+                  <i class="fas fa-star star-filled"></i>
+                </div>
+                <p class="testimonial-text">
+                  "Their Kerala tour package exceeded our expectations. The
+                  tempo traveller was comfortable for our group of 12. Every
+                  detail was taken care of, making our vacation truly relaxing."
+                </p>
+                <div class="customer-info">
+                  <div class="customer-avatar">LV</div>
+                  <div>
+                    <h4 class="customer-name">Lakshmi Venkatesh</h4>
+                    <p class="customer-location">Coimbatore, Tamil Nadu</p>
+                    <span class="service-tag">Van Rental & Tour</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Review 5 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-content">
+                <div class="star-rating">
+                  <i class="fas fa-star star-filled"></i>
+                  <i class="fas fa-star star-filled"></i>
+                  <i class="fas fa-star star-filled"></i>
+                  <i class="fas fa-star star-filled"></i>
+                  <i class="fas fa-star star-filled"></i>
+                </div>
+                <p class="testimonial-text">
+                  "Reliable and trustworthy service. I've been using their cars
+                  for business trips for 2 years now. Always on time, clean
+                  vehicles, and professional drivers. Value for money!"
+                </p>
+                <div class="customer-info">
+                  <div class="customer-avatar">SR</div>
+                  <div>
+                    <h4 class="customer-name">Suresh Reddy</h4>
+                    <p class="customer-location">Hyderabad, Telangana</p>
+                    <span class="service-tag">Corporate Travel</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Review 6 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-content">
+                <div class="star-rating">
+                  <i class="fas fa-star star-filled"></i>
+                  <i class="fas fa-star star-filled"></i>
+                  <i class="fas fa-star star-filled"></i>
+                  <i class="fas fa-star star-filled"></i>
+                  <i class="fas fa-star star-filled"></i>
+                </div>
+                <p class="testimonial-text">
+                  "Perfect for our Sabarimala pilgrimage. The driver was
+                  respectful of our religious sentiments and knew all the best
+                  routes. Made our spiritual journey comfortable and safe."
+                </p>
+                <div class="customer-info">
+                  <div class="customer-avatar">MI</div>
+                  <div>
+                    <h4 class="customer-name">Meera Iyer</h4>
+                    <p class="customer-location">Salem, Tamil Nadu</p>
+                    <span class="service-tag">Temple Tour</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="pagination-dots" class="pagination-dots"></div>
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-value">4.9/5</div>
+            <div class="stat-label">Average Rating</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">10,000+</div>
+            <div class="stat-label">Happy Customers</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">99%</div>
+            <div class="stat-label">Customer Satisfaction</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">15+</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section" data-aos="fade-up" data-aos-delay="100">
+            <div class="footer-brand">
+              <i class="fas fa-taxi brand-icon"></i>
+              <span class="brand-text">Rainbow Call Taxi</span>
+            </div>
+            <p class="footer-description">
+              Your trusted ride partner for city travel, outstation trips, and
+              rentals. Safe, comfortable, and on-time service — just a call
+              away!
+            </p>
+            <div class="social-links">
+              <a href="#" class="social-link"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-link"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-section" data-aos="fade-up" data-aos-delay="200">
+            <h4 class="footer-title">Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#fleet">Our Fleet</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section" data-aos="fade-up" data-aos-delay="300">
+            <h4 class="footer-title">Services</h4>
+            <ul class="footer-links">
+              <li><a href="#">Local Rides</a></li>
+              <li><a href="#">Airport Transfers</a></li>
+              <li><a href="#">Outstation Tours</a></li>
+              <li><a href="#">Corporate Travel</a></li>
+              <li><a href="#">Wedding Transportation</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section" data-aos="fade-up" data-aos-delay="400">
+            <h4 class="footer-title">Contact Info</h4>
+            <div class="contact-info">
+              <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <span>+91 9894338777</span>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <span>example@gmail.com</span>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Salem, Tamil Nadu</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="footer-bottom-content">
+            <p>&copy; 2024 Rainbow Call Taxi. All rights reserved.</p>
+            <div class="footer-bottom-links">
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms of Service</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="module" src="js/utils.js"></script>
+    <script type="module" src="js/components.js"></script>
+    <script type="module" src="js/animations.js"></script>
+    <script type="module" src="js/main.js"></script>
+
+    <script>
+      // Desktop dropdowns
+      document.querySelectorAll(".nav-dropdown").forEach((navItem) => {
+        const trigger = navItem.querySelector(".nav-trigger");
+        const dropdown = navItem.querySelector(".dropdown");
+
+        // Function to open a dropdown
+        function openDropdown() {
+          // Close any other open dropdowns first
+          document.querySelectorAll(".nav-dropdown").forEach((otherNavItem) => {
+            if (otherNavItem !== navItem) {
+              const otherTrigger = otherNavItem.querySelector(".nav-trigger");
+              const otherDropdown = otherNavItem.querySelector(".dropdown");
+              if (otherTrigger.classList.contains("open")) {
+                otherTrigger.classList.remove("open");
+                otherTrigger.setAttribute("aria-expanded", "false");
+                // Instant hide for others to prevent visual glitches
+                otherDropdown.style.opacity = 0;
+                otherDropdown.style.pointerEvents = "none"; // Ensure others are not interactive
+                otherDropdown.style.display = "none";
+              }
+            }
+          });
+
+          // Open current dropdown
+          trigger.classList.add("open");
+          trigger.setAttribute("aria-expanded", "true");
+          dropdown.style.display = "block"; // Ensure it's displayed for transition
+          // Set pointer-events to auto immediately so mouse can enter
+          dropdown.style.pointerEvents = "auto";
+          setTimeout(() => {
+            dropdown.style.opacity = 1;
+          }, 20); // Small delay to allow display change to register before opacity transition
+        }
+
+        // Function to close a dropdown
+        function closeDropdown() {
+          trigger.classList.remove("open");
+          trigger.setAttribute("aria-expanded", "false");
+          dropdown.style.opacity = 0;
+          // DELAY pointer-events: none; until after the opacity transition
+          setTimeout(() => {
+            dropdown.style.pointerEvents = "none";
+            dropdown.style.display = "none";
+          }, 150); // Match CSS transition duration
+        }
+
+        // Handle click on the trigger
+        trigger.addEventListener("click", (e) => {
+          if (window.innerWidth < 1024) return; // Skip on mobile
+          e.stopPropagation(); // Prevent document click from immediately closing
+
+          if (trigger.classList.contains("open")) {
+            closeDropdown();
+          } else {
+            openDropdown();
+          }
+        });
+
+        // Handle hover (mouseenter/mouseleave) for the entire nav item
+        navItem.addEventListener("mouseenter", () => {
+          if (window.innerWidth < 1024) return; // Skip on mobile
+          // If it's not already explicitly open by click, or if it was just closed by blur, open it
+          // The 'open' class on the trigger dictates if it's considered "open" by JS/click
+          if (!trigger.classList.contains("open")) {
+            openDropdown();
+          }
+        });
+
+        navItem.addEventListener("mouseleave", (e) => {
+          if (window.innerWidth < 1024) return; // Skip on mobile
+
+          // Check if the mouse is leaving the navItem and not entering a child of the dropdown
+          // This is the core fix: if e.relatedTarget is within the dropdown, don't close.
+          if (
+            !navItem.contains(e.relatedTarget) &&
+            !dropdown.contains(e.relatedTarget)
+          ) {
+            closeDropdown();
+          }
+        });
+
+        // Close dropdown when trigger loses focus (important for keyboard navigation)
+        trigger.addEventListener("blur", (e) => {
+          // If focus moves outside the dropdown (e.g., to another nav item or elsewhere)
+          // and the dropdown is currently considered open
+          if (
+            !dropdown.contains(e.relatedTarget) &&
+            trigger.classList.contains("open")
+          ) {
+            closeDropdown();
+          }
+        });
+
+        // Close all dropdowns on document click
+        document.addEventListener("click", function (e) {
+          if (window.innerWidth < 1024) return; // Skip on mobile
+          // If a dropdown is open and the click is outside this nav item
+          if (
+            trigger.classList.contains("open") &&
+            !navItem.contains(e.target)
+          ) {
+            closeDropdown();
+          }
+        });
+      });
+
+      // --- Mobile Menu and Accordion remain the same as previous version ---
+
+      // Mobile Menu
+      const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+      const mobileNav = document.getElementById("mobileNav");
+      let menuOpen = false;
+
+      function updateMobileBtn() {
+        mobileMenuBtn.innerHTML = menuOpen
+          ? '<img src="https://unpkg.com/lucide-static@latest/icons/x.svg" alt="Close Menu" />'
+          : '<img src="https://unpkg.com/lucide-static@latest/icons/menu.svg" alt="Open Menu" />';
+      }
+
+      mobileMenuBtn.addEventListener("click", function () {
+        menuOpen = !menuOpen;
+        mobileNav.classList.toggle("open", menuOpen);
+        updateMobileBtn();
+      });
+
+      document
+        .querySelectorAll(".mobile-nav-link, .mobile-sub-link")
+        .forEach((link) => {
+          link.addEventListener("click", () => {
+            mobileNav.classList.remove("open");
+            menuOpen = false;
+            updateMobileBtn();
+          });
+        });
+
+      // Lock background scroll when menu open
+      const scrollLock = (lock) => {
+        document.body.style.overflow = lock ? "hidden" : "";
+      };
+      const observer = new MutationObserver(() => {
+        scrollLock(mobileNav.classList.contains("open"));
+      });
+      observer.observe(mobileNav, {
+        attributes: true,
+      });
+
+      // Mobile accordion
+      document.querySelectorAll(".mobile-category").forEach((cat) => {
+        cat.addEventListener("click", function () {
+          const key = cat.getAttribute("data-accordion");
+          const panel = document.querySelector(
+            '.mobile-dropdown-panel[data-panel="' + key + '"]'
+          );
+
+          if (cat.classList.contains("expanded")) {
+            cat.classList.remove("expanded");
+            panel.classList.remove("open");
+          } else {
+            // Close all other accordions
+            document
+              .querySelectorAll(".mobile-category.expanded")
+              .forEach((c) => c.classList.remove("expanded"));
+            document
+              .querySelectorAll(".mobile-dropdown-panel.open")
+              .forEach((p) => p.classList.remove("open"));
+
+            // Open the clicked accordion
+            cat.classList.add("expanded");
+            panel.classList.add("open");
+          }
+        });
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const wrapper = document.getElementById("testimonial-slider");
+        const slides = Array.from(
+          wrapper.querySelectorAll(".testimonial-slide")
+        );
+        const dotsContainer = document.getElementById("pagination-dots");
+        let currentIndex = 0;
+        let slidesPerPage = 3;
+        let totalPages = 0;
+        let paginationDots;
+
+        function getSlidesPerPage() {
+          if (window.innerWidth <= 768) return 1;
+          else if (window.innerWidth <= 1024) return 2;
+          else return 3;
+        }
+
+        function createPaginationDots() {
+          dotsContainer.innerHTML = "";
+          slidesPerPage = getSlidesPerPage();
+          totalPages = Math.ceil(slides.length / slidesPerPage);
+          for (let i = 0; i < totalPages; i++) {
+            const dot = document.createElement("span");
+            dot.classList.add("pagination-dot");
+            dot.dataset.pageIndex = i;
+            dot.addEventListener("click", () => {
+              currentIndex = i * slidesPerPage;
+              updateSlider();
+            });
+            dotsContainer.appendChild(dot);
+          }
+          paginationDots = Array.from(
+            document.querySelectorAll(".pagination-dot")
+          );
+        }
+
+        function updateSlider() {
+          const maxStartIndex = slides.length - slidesPerPage;
+          if (currentIndex > maxStartIndex)
+            currentIndex = maxStartIndex > 0 ? maxStartIndex : 0;
+          if (currentIndex < 0) currentIndex = 0;
+
+          if (slides.length <= slidesPerPage) {
+            wrapper.style.transform = `translateX(0px)`;
+            updateDots();
+            return;
+          }
+
+          const slideWidth = slides[0].offsetWidth;
+          const computedStyle = getComputedStyle(wrapper);
+          const gap = parseFloat(computedStyle.gap) || 0;
+          const offset = -currentIndex * (slideWidth + gap);
+          wrapper.style.transform = `translateX(${offset}px)`;
+          updateDots();
+        }
+
+        function updateDots() {
+          if (!paginationDots || paginationDots.length === 0) return;
+          paginationDots.forEach((d) => d.classList.remove("active"));
+          const active = Math.floor(currentIndex / slidesPerPage);
+          if (paginationDots[active])
+            paginationDots[active].classList.add("active");
+        }
+
+        // Initialize
+        createPaginationDots();
+        currentIndex = 0;
+        updateSlider();
+
+        window.addEventListener("resize", () => {
+          const prevSlidesPerPage = slidesPerPage;
+          const newSlidesPerPage = getSlidesPerPage();
+          if (newSlidesPerPage !== prevSlidesPerPage) {
+            currentIndex = 0;
+            createPaginationDots();
+          }
+          updateSlider();
+        });
+      });
+    </script>
+  </body>
+</html>
