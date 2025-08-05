@@ -1732,7 +1732,7 @@ a,
   box-shadow: 0 1px 7px rgba(0, 0, 0, 0.05); /* Adjusted shadow */
 }
 .mobile-dropdown-panel.open {
-  max-height: 550px; /* Increased max-height to accommodate more items */
+  max-height: 600px; /* Increased max-height to accommodate more items */
   padding-bottom: 8px;
   border-top: 1px solid #e4f1fd;
 }

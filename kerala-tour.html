@@ -3,14 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Rainbow Call Taxi - 407 Coach Rentals in Salem | Group Travel & Tours
-    </title>
+    <title>Rainbow Call Taxi - Premium Taxi Services in Salem</title>
     <meta
       name="description"
-      content="Rent a 407 Coach for comfortable group travel in Salem. Ideal for outstation tours, family trips, and corporate events. Spacious and reliable."
+      content="Professional taxi services in Salem. Book reliable rides for local trips, outstation tours, and airport transfers. Available 24/7."
     />
 
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,18 +17,45 @@
       rel="stylesheet"
     />
 
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
 
+    <!-- AOS Animation Library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/components.css" />
     <link rel="stylesheet" href="css/animations.css" />
+
+    <!-- inline_css -->
+    <style>
+      .bg_container {
+        margin-top: 5rem;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+          ),
+          url(img/tour/kerala-bg.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 300px;
+      }
+    </style>
   </head>
   <body>
+    <!-- Preloader -->
     <div id="preloader" class="preloader">
       <div class="preloader-content">
         <div class="taxi-animation">
@@ -39,6 +65,7 @@
       </div>
     </div>
 
+    <!-- Navigation -->
     <nav id="navbar">
       <div class="container">
         <div class="navbar-inner">
@@ -372,435 +399,502 @@
         </div>
       </div>
     </nav>
-    >
-    <div class="min-h-screen bg-gradient-to-br">
-      <section
-        class="relative h-screen flex items-center justify-center overflow-hidden"
-      >
-        <div class="absolute inset-0 z-0">
-          <img
-            src="./img/hero-car-mountains.jpg"
-            alt="407 Coach on a scenic road"
-            class="w-full h-full object-cover"
-          />
-          <div
-            class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent"
-          ></div>
-        </div>
+    <!-- Navigation End -->
 
-        <div
-          class="relative z-10 text-center text-white max-w-4xl mx-auto px-6"
-        >
-          <div class="animate-fade-in">
-            <span class="badge mb-6 bg-primary/20 text-white border-primary/30">
-              Group Travel
-            </span>
-            <h1 class="text-5xl md:text-7xl font-bold mb-6 animate-scale-in">
-              407 Coach
-            </h1>
-            <div class="text-xl md:text-2xl mb-8 space-y-2">
-              <div class="animate-fade-in" style="animation-delay: 0.2s">
-                Ideal for Large Groups. Spacious. Comfortable.
-              </div>
-              <div class="animate-fade-in" style="animation-delay: 0.4s">
-                Travel Together, Explore More.
-              </div>
-            </div>
-            <div class="animate-fade-in" style="animation-delay: 0.6s">
-              <a
-                href="#booking-section"
-                class="button size-lg bg-primary text-white px-8 py-4 text-lg"
-              >
-                Book Your Group Ride Now
-              </a>
-            </div>
-          </div>
-
-          <div
-            class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce"
-          >
-            <div
-              class="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center"
-            >
-              <div class="w-1 h-3 bg-white/50 rounded-full mt-2"></div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="car-details" class="py-20 px-6">
-        <div class="max-w-7xl mx-auto">
-          <div class="grid lg:grid-cols-2 gap-12 items-center">
-            <div class="animate-fade-in carousel-container">
-              <div class="carousel-content mb-5">
-                <div class="carousel-item">
-                  <div
-                    class="aspect-video rounded-2xl overflow-hidden shadow-2xl"
-                  >
-                    <img
-                      src="./img/option3.jpg"
-                      alt="407 Coach Exterior"
-                      class="w-full h-full object-cover hover-scale"
-                    />
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div
-                    class="aspect-video rounded-2xl overflow-hidden shadow-2xl"
-                  >
-                    <img
-                      src="./img/option1.jpg"
-                      alt="407 Coach Interior"
-                      class="w-full h-full object-cover hover-scale"
-                    />
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div
-                    class="aspect-video rounded-2xl overflow-hidden shadow-2xl"
-                  >
-                    <img
-                      src="./img/option4.jpg"
-                      alt="407 Coach Side View"
-                      class="w-full h-full object-cover hover-scale"
-                    />
-                  </div>
-                </div>
-              </div>
-              <button class="carousel-button carousel-prev left-4">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-chevron-left"
-                >
-                  <path d="m15 18-6-6 6-6" />
-                </svg>
-              </button>
-              <button class="carousel-button carousel-next right-4">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-chevron-right"
-                >
-                  <path d="m9 18 6-6-6-6" />
-                </svg>
-              </button>
-              <div
-                class="bg-gradient-to-r from-primary/10 to-primary/5 rounded-2xl p-6 mt-4"
-              >
-                <div class="text-center">
-                  <h3 class="text-xl font-semibold text-foreground mb-4">
-                    Ready to Experience Comfortable Group Travel?
-                  </h3>
-                  <a href="#booking-section" class="button size-lg hover-scale">
-                    <i class="fas icon-phone icon"></i>
-                    Book Your 407 Coach
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div class="space-y-8">
-              <div>
-                <h2 class="text-4xl font-bold text-foreground mb-4">
-                  Rent a 407 Coach / Tempo Traveller
-                </h2>
-                <p class="text-muted-foreground leading-relaxed">
-                  Our 407 Coach, also known as a Tempo Traveller, is perfect for
-                  accommodating larger groups , ensuring everyone travels
-                  together in comfort. With spacious seating arrangements and
-                  ample room for luggage, it's the ideal choice for family
-                  outings, corporate trips and long-distance tours. Experience a
-                  smooth and reliable journey with our well-maintained fleet and
-                  professional drivers.
-                </p>
-              </div>
-
-              <div class="grid grid-cols-2 gap-4">
-                <div
-                  class="card border-border/50 hover:border-primary/50 transition-colors"
-                >
-                  <div class="card-content p-4 text-center">
-                    <i
-                      class="fas icon-users feature-icon text-primary mx-auto mb-2"
-                    ></i>
-                    <h3 class="font-semibold text-foreground">12-20 Seater</h3>
-                    <p class="text-sm text-muted-foreground">
-                      Ideal for group travel and tours
-                    </p>
-                  </div>
-                </div>
-
-                <div
-                  class="card border-border/50 hover:border-primary/50 transition-colors"
-                >
-                  <div class="card-content p-4 text-center">
-                    <i
-                      class="fas fa-suitcase feature-icon text-primary mx-auto mb-2"
-                    ></i>
-                    <h3 class="font-semibold text-foreground">
-                      Ample Luggage Space
-                    </h3>
-                    <p class="text-sm text-muted-foreground">
-                      Plenty of storage for all your bags
-                    </p>
-                  </div>
-                </div>
-
-                <div
-                  class="card border-border/50 hover:border-primary/50 transition-colors"
-                >
-                  <div class="card-content p-4 text-center">
-                    <i
-                      class="fas icon-user-check feature-icon text-primary mx-auto mb-2"
-                    ></i>
-                    <h3 class="font-semibold text-foreground">
-                      Experienced Driver
-                    </h3>
-                    <p class="text-sm text-muted-foreground">
-                      Professional and courteous drivers
-                    </p>
-                  </div>
-                </div>
-                <div
-                  class="card border-border/50 hover:border-primary/50 transition-colors"
-                >
-                  <div class="card-content p-4 text-center">
-                    <i
-                      class="fas fa-shield-alt feature-icon text-primary mx-auto mb-2"
-                    ></i>
-                    <h3 class="font-semibold text-foreground">
-                      Insurance Covered
-                    </h3>
-                    <p class="text-sm text-muted-foreground">
-                      Comprehensive insurance protection
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="py-20 px-6 bg-muted/30">
-        <div class="max-w-7xl mx-auto">
-          <div class="grid lg:grid-cols-2 gap-16 items-center mb-20">
-            <div class="order-1 lg:order-1">
-              <img
-                src="./img/option4.jpg"
-                alt="Bus driver ensuring safety"
-                class="w-full h-96 object-cover rounded-2xl shadow-xl hover-scale"
-              />
-            </div>
-            <div class="order-2 lg:order-2 space-y-6">
-              <h2 class="text-4xl font-bold text-foreground">
-                Enhanced Safety for Your Group
-              </h2>
-              <p class="text-lg text-muted-foreground leading-relaxed">
-                Our 407 Coaches are equipped with essential safety features
-                designed to ensure a secure journey for all passengers. These
-                include a robust chassis, anti-lock braking system (ABS) for
-                stable stopping, and regular maintenance checks to meet
-                stringent safety standards. Your peace of mind is our priority
-                when you travel with us.
-              </p>
-              <div class="grid grid-cols-2 gap-4">
-                <div class="flex items-center space-x-3">
-                  <i class="fas fa-shield-alt detail-icon text-primary"></i>
-                  <span class="text-foreground font-medium"
-                    >Robust Construction</span
-                  >
-                </div>
-                <div class="flex items-center space-x-3">
-                  <i class="fas fa-shield-alt detail-icon text-primary"></i>
-                  <span class="text-foreground font-medium">ABS Brakes</span>
-                </div>
-                <div class="flex items-center space-x-3">
-                  <i class="fas fa-medkit detail-icon text-primary"></i>
-                  <span class="text-foreground font-medium"
-                    >First Aid Kit Onboard</span
-                  >
-                </div>
-                <div class="flex items-center space-x-3">
-                  <i class="fas fa-user-tie detail-icon text-primary"></i>
-                  <span class="text-foreground font-medium"
-                    >Trained Drivers</span
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="grid lg:grid-cols-2 gap-16 items-center">
-            <div class="order-2 lg:order-1 space-y-6">
-              <h2 class="text-4xl font-bold text-foreground">
-                Comfortable Interiors & Group Entertainment
-              </h2>
-              <p class="text-lg text-muted-foreground leading-relaxed">
-                Travel in comfort with our 407 Coaches, featuring well-cushioned
-                seats, ample legroom, and a dedicated entertainment system to
-                keep your group engaged during long journeys. We ensure a
-                pleasant and relaxing environment for everyone on board, making
-                every trip enjoyable.
-              </p>
-              <div class="grid grid-cols-2 gap-4">
-                <div class="flex items-center space-x-3">
-                  <i class="fas fa-chair detail-icon text-primary"></i>
-                  <span class="text-foreground font-medium"
-                    >Comfortable Seating</span
-                  >
-                </div>
-                <div class="flex items-center space-x-3">
-                  <i class="fas icon-snowflake detail-icon text-primary"></i>
-                  <span class="text-foreground font-medium"
-                    >Powerful AC System</span
-                  >
-                </div>
-                <div class="flex items-center space-x-3">
-                  <i class="fas fa-film detail-icon text-primary"></i>
-                  <span class="text-foreground font-medium"
-                    >Entertainment System</span
-                  >
-                </div>
-                <div class="flex items-center space-x-3">
-                  <i class="fas icon-users detail-icon text-primary"></i>
-                  <span class="text-foreground font-medium">Ample Legroom</span>
-                </div>
-              </div>
-            </div>
-            <div class="order-1 lg:order-2">
-              <img
-                src="./img/option4.jpg"
-                alt="Spacious bus interior"
-                class="w-full h-96 object-cover rounded-2xl shadow-xl hover-scale"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="py-20 px-6">
-        <div class="max-w-6xl mx-auto">
-          <h2 class="text-4xl font-bold text-center text-foreground mb-4">
-            Why Choose Our 407 Coach?
-          </h2>
-          <p class="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-            Discover why our 407 Coaches are the preferred choice for group
-            travel.
-          </p>
-          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div
-              class="card border-border/50 hover:border-primary/50 transition-all duration-300 hover-scale"
-            >
-              <div class="card-content p-6 text-center">
-                <div
-                  class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4"
-                >
-                  <i class="fas icon-users why-choose-icon text-primary"></i>
-                </div>
-                <h3 class="font-semibold text-foreground mb-2">
-                  Ideal for Group Tours
-                </h3>
-                <p class="text-sm text-muted-foreground">
-                  Perfect for large family trips and group outings
-                </p>
-              </div>
-            </div>
-            <div
-              class="card border-border/50 hover:border-primary/50 transition-all duration-300 hover-scale"
-            >
-              <div class="card-content p-6 text-center">
-                <div
-                  class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4"
-                >
-                  <i class="fas icon-map-pin why-choose-icon text-primary"></i>
-                </div>
-                <h3 class="font-semibold text-foreground mb-2">
-                  Group Airport Transfers
-                </h3>
-                <p class="text-sm text-muted-foreground">
-                  Convenient transfers for large groups to/from airports
-                </p>
-              </div>
-            </div>
-            <div
-              class="card border-border/50 hover:border-primary/50 transition-all duration-300 hover-scale"
-            >
-              <div class="card-content p-6 text-center">
-                <div
-                  class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4"
-                >
-                  <i class="fas icon-clock why-choose-icon text-primary"></i>
-                </div>
-                <h3 class="font-semibold text-foreground mb-2">
-                  Long-Distance Group Travel
-                </h3>
-                <p class="text-sm text-muted-foreground">
-                  Reliable and comfortable for extended journeys
-                </p>
-              </div>
-            </div>
-            <div
-              class="card border-border/50 hover:border-primary/50 transition-all duration-300 hover-scale"
-            >
-              <div class="card-content p-6 text-center">
-                <div
-                  class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4"
-                >
-                  <i class="fas fa-bus why-choose-icon text-primary"></i>
-                </div>
-                <h3 class="font-semibold text-foreground mb-2">
-                  Corporate & Event Transport
-                </h3>
-                <p class="text-sm text-muted-foreground">
-                  Efficient transport for business teams and events
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section
-        id="booking-section"
-        class="py-20 px-6 bg-gradient-to-r from-primary to-primary/80"
-      >
-        <div class="max-w-4xl mx-auto text-center text-white">
-          <h2 class="text-4xl font-bold mb-4">Ready to Book Your 407 Coach?</h2>
-          <p class="text-xl mb-8 text-white/90">
-            Plan your next group adventure with comfort and ease.
-          </p>
-          <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="#" class="button size-lg variant-secondary hover-scale">
-              <i class="fas icon-calendar icon"></i>
-              Book Now
-            </a>
-            <a
-              href="tel:+919876543210"
-              class="button size-lg variant-outline border-white text-white hover:bg-white hover:text-primary hover-scale"
-            >
-              <i class="fas icon-phone icon"></i>
-              Call Now: +91 98765 43210
-            </a>
-          </div>
-        </div>
-      </section>
+    <!-- Header Start -->
+    <div class="container-fluid bg_container">
+      <div class="container text-center py-5" style="max-width: 900px">
+        <h4 class="text-white display-4 mb-4">Kerala Tour</h4>
+        <ol class="breadcrumb d-flex justify-content-center mb-0">
+          <li class="text-light breadcrumb-item">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="breadcrumb-item"><a href="#">Pages</a></li>
+          <li class="breadcrumb-item active text-white">Kerala Tour</li>
+        </ol>
+      </div>
     </div>
+    <!-- Header End -->
+
+    <!-- Contant Start -->
+    <div class="container-fluid mt-5">
+      <div class="container">
+        <div class="text-center mx-auto pb-5" style="max-width: 800px">
+          <h1 class="display-5 text-capitalize mb-3">
+            Best Kerala Tour Package <br />
+            <span class="highlight1">from Salem</span>
+          </h1>
+          ----------
+          <i class="fa-solid fa-car fa-beat-fade" style="color: #010005"></i>
+          ----------
+          <p class="mb-0 mt-4" style="line-height: 25px; font-size: 15px">
+            A <span class="text-info">Salem to Kerala tour</span> is a wonderful
+            way to explore the beautiful and diverse landscapes of South India.
+            From serene backwaters to lush hill stations, Kerala offers a unique
+            blend of nature, culture, and relaxation.
+            <span class="text-info">Rainbow Call Taxi</span>
+            offers a range of tour packages for exploring Kerala, including
+            customized options for sightseeing, transportation, and guided tours
+            across popular destinations. They are known for providing convenient
+            and comfortable travel experiences, with a focus on customer
+            satisfaction.
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-12 pt-4">
+            <p style="line-height: 25px; font-size: 15px">
+              A Salem to Kerala tour is an excellent way to explore the stunning
+              landscapes, cultural richness, and relaxing backwaters of Kerala.
+              Whether you’re seeking adventure, relaxation, or a cultural
+              experience, Kerala has something for everyone. A happy tour to
+              Kerala is about planning well before reaching the destination. A
+              better plan comprises transportation, accommodation, hospitality
+              with lovely foods, and great knowledge about the touring spot. So,
+              when you plan a trip to Kerala, the best solution is to pot for
+              <span class="text-info">Kerala Tour packages from Salem</span>
+              with a customer-friendly travel partner.
+            </p>
+            <p>
+              Now, If you look for a customer-friendly travel partner to plan
+              your tour package from Salem to Kerala. Then,
+              <span class="text-info">Rainbow Call Taxi</span> provides
+              customizable
+              <span class="text-info">Kerala Tour packages from Salem</span> as
+              per customer wish and matches their budget for a happy trip to
+              Kerala.
+            </p>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <img
+              src="img/bg-remove/8-removebg (1).png"
+              class="img-fluid mt-5"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="container-fluid mb-5"
+      style="
+        background: linear-gradient(to top, #ffffffd5, #6d7879);
+        margin-top: 100px;
+      "
+    >
+      <br /><br />
+      <h1 class="text-center text-white">
+        Salem to Kerala Tour Package in
+        <span class="highlight1">Famous Place</span>
+      </h1>
+      <div class="container text-center text-dark">
+        ----------
+        <i class="fa-solid fa-car fa-beat-fade" style="color: #010005"></i>
+        ----------
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-12">
+            <img
+              src="img/tour/kerala1.jpg"
+              class="img-fluid mt-5"
+              style="border-radius: 10px"
+            />
+          </div>
+          <br />
+          <div class="col-lg-6 col-md-12 mt-5">
+            <h2 style="font-weight: 550">Kochi</h2>
+            <p class="text-white" style="line-height: 25px; font-size: 16px">
+              Kochi (Cochin) is a vibrant city in Kerala, known for its rich
+              cultural heritage, colonial architecture, scenic waterfronts, and
+              unique blend of old and new. It’s a perfect starting point for a
+              Kerala tour.
+            </p>
+            <ul>
+              <li class="text-white">
+                Visit the <b>Chinese Fishing Nets</b>, one of the most iconic
+                sights of the city.
+              </li>
+              <li class="text-white">
+                <b>Marine Drive</b> is a scenic promenade along the backwaters
+                of Kochi. You can take a leisurely walk here or enjoy a boat
+                ride to get views of the city’s skyline and surrounding waters.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-lg-6 col-md-12">
+            <h2 style="font-weight: 550">Alleppey Boat House</h2>
+            <p class="text-white" style="line-height: 25px; font-size: 16px">
+              Alleppey (Alappuzha) is one of the most famous destinations in
+              Kerala for experiencing the traditional houseboat cruises on its
+              serene backwaters. These houseboats offer a unique way to explore
+              the lush landscape, charming villages, and tranquil waters,
+              providing a peaceful retreat amidst nature.
+            </p>
+            <p class="text-white" style="line-height: 25px; font-size: 16px">
+              The houseboats are equipped with modern amenities, including
+              comfortable bedrooms, a living area, a dining space, and a private
+              bathroom. Some even come with a sun deck where you can relax and
+              enjoy the view.
+            </p>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <img
+              src="img/tour/kerala2.jpg"
+              class="img-fluid"
+              style="border-radius: 10px"
+            />
+          </div>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-lg-6 col-md-12 pt-3">
+            <img
+              src="img/tour/kerala3.jpg"
+              class="img-fluid mt-4"
+              style="border-radius: 10px"
+            />
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <h2 style="font-weight: 550">Varkala Beach</h2>
+            <p class="text-white" style="line-height: 25px; font-size: 16px">
+              Varkala Beach is a stunning coastal destination in Kerala, known
+              for its natural beauty, cliffs, and relaxed vibe. It’s a popular
+              spot for both tourists and locals, offering a mix of scenic views,
+              spiritual experiences, and recreational activities.
+            </p>
+            <h6>Best Time to Visit Varkala:</h6>
+            <ul>
+              <li class="text-white">
+                The best time to visit Varkala is between
+                <b>October and March</b>. During this period, the weather is
+                pleasant, making it ideal for beach activities, sightseeing, and
+                outdoor exploration.
+              </li>
+              <li class="text-white">
+                The monsoon season (<b>June to September</b>) brings lush
+                greenery, but the weather can be unpredictable with heavy
+                rainfall, which may not be ideal for beach visits.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-lg-6 col-md-12">
+            <h2 style="font-weight: 550">Athirappilly Water Falls</h2>
+            <p class="text-dark" style="line-height: 25px; font-size: 16px">
+              Athirappilly Waterfalls, often referred to as the "Niagara of
+              India," is one of the most stunning and popular waterfalls in
+              Kerala. Located in the Vazhachal Forest Range of the Thrissur
+              District, Athirappilly is a must-visit for nature lovers,
+              adventure seekers, and anyone looking to experience the natural
+              beauty of Kerala.
+            </p>
+            <p class="text-dark" style="line-height: 25px; font-size: 16px">
+              And the best way to go there is to book
+              <span class="text-info">Kerala holiday tour packages</span> with
+              <span class="text-info">Rainbow Call Taxi</span>.
+            </p>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <img
+              src="img/tour/kerala4.jpg"
+              class="img-fluid"
+              style="border-radius: 10px"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 col-md-12 mt-4 mb-4">
+            <h4 style="font-weight: 500">
+              Salem to Kerala tour package covering in 4-5 Days.
+            </h4>
+            <br />
+            <ul>
+              <li class="text-dark" style="line-height: 25px; font-size: 16px">
+                <span class="text-secondary" style="font-weight: bold"
+                  >Day 1</span
+                >- Depart from Salem in the night by taxi (approximately 7-9
+                hours travel). Reach Kochi in the Morning. Check-in to your
+                hotel.
+              </li>
+              <p style="line-height: 25px; font-size: 16px">
+                Relax and take a leisurely stroll to experience the sunrise and
+                around Marine Drive or visit the Fort Kochi, Vypin Island and
+                traditional Kerala Kathakali performance area enjoy the local
+                culture.
+              </p>
+              <li class="text-dark" style="line-height: 25px; font-size: 16px">
+                <span class="text-secondary" style="font-weight: bold"
+                  >Day 2</span
+                >- Kochi to Alleppey (about 1.5 to 2 hours drive).
+                <ol class="mt-3 mb-3">
+                  <li class="text-dark">
+                    Experience a traditional houseboat cruise through the scenic
+                    Alleppey backwaters. Enjoy the views of lush landscapes,
+                    paddy fields, and local villages while savoring delicious
+                    Kerala cuisine onboard.
+                  </li>
+                  <li class="text-dark">
+                    Stay overnight on the houseboat or in a resort near the
+                    backwaters (if you prefer staying on land).
+                  </li>
+                </ol>
+              </li>
+              <li class="text-dark" style="line-height: 25px; font-size: 16px">
+                <span class="text-secondary" style="font-weight: bold"
+                  >Day 3</span
+                >- Alleppey to Varkala.
+                <ol class="mt-3 mb-3">
+                  <li class="text-dark">
+                    Visit the Janardana Swamy Temple, a 2,000-year-old temple,
+                    and take in the spiritual atmosphere.
+                  </li>
+                  <li class="text-dark">
+                    Check into your hotel or resort, then spend the rest of the
+                    day at Varkala Beach. You can relax by the beach or take a
+                    walk along the cliffs with beautiful views of the Arabian
+                    Sea.
+                  </li>
+                  <li class="text-dark">
+                    Enjoy a peaceful sunset and explore the local cafes along
+                    the cliffs.
+                  </li>
+                </ol>
+              </li>
+              <li class="text-dark" style="line-height: 25px; font-size: 16px">
+                <span class="text-secondary" style="font-weight: bold"
+                  >Day 4</span
+                >- Varkala to Athirappilly Waterfalls.
+                <ol class="mt-3 mb-3">
+                  <li class="text-dark">
+                    Explore the stunning Athirappilly Waterfalls, one of the
+                    largest in Kerala. You can take a walk around the falls or
+                    simply relax and enjoy the beauty of the surroundings.
+                  </li>
+                  <li class="text-dark">
+                    Visit the smaller but equally beautiful Vazhachal Waterfalls
+                    nearby.
+                  </li>
+                </ol>
+              </li>
+              <li class="text-dark" style="line-height: 25px; font-size: 16px">
+                <span class="text-secondary" style="font-weight: bold"
+                  >Day 5</span
+                >- You will reach Salem, concluding your memorable Kerala trip.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 col-md-12">
+            <h4 class="text-secondary text-center">
+              Custom packages also available.
+            </h4>
+            <p style="line-height: 25px; font-size: 16px; text-align: center">
+              <a href="contactus.html"
+                ><span class="text-danger">Click here</span></a
+              >
+              to contact us or Call: +91 1234567890 / +91 1234567890
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mb-5 mt-4">
+      <h1 style="text-align: center">
+        Salem to Kerala Tour <span class="highlight1">Additional Package</span>
+      </h1>
+      <div class="container text-center">
+        ----------
+        <i class="fa-solid fa-car fa-beat-fade al" style="color: #010005"></i>
+        ----------
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-md-12 mt-4">
+          <img
+            src="img/tour/munnar.webp"
+            class="img-fluid"
+            style="border-radius: 10px"
+          />
+        </div>
+        <div class="col-lg-6 col-md-12 wow fadeInUp pt-3" data-wow-delay="0.1s">
+          <h3>Munnar</h3>
+          <p style="line-height: 25px; font-size: 16px">
+            In God’s own country, Kerala, Munnar is heaven on earth, being the
+            best hill station in the Western Ghats. And the best Munnar tour are
+            only with
+            <span class="text-info" style="font-weight: bold"
+              >Rainbow Call Taxi</span
+            >
+            for years now. Munnar has a mesmerizing landscape set on the banks
+            of three streams.
+          </p>
+          <p style="line-height: 25px; font-size: 16px">
+            With lush green tea plantations and waterfalls, Munnar is the best
+            place for all nature lovers. Munnar Tour from Salem by
+            <span class="text-info" style="font-weight: bold"
+              >Rainbow Call Taxi</span
+            >
+            is the best way to enjoy nature at its best.
+          </p>
+          <p class="mt-2" style="line-height: 25px; font-size: 16px">
+            The Munnar tour from Salem with
+            <span class="text-info" style="font-weight: bold"
+              >Rainbow Call Taxi</span
+            >
+            can rejuvenate anyone. And it is the reason that every year, many of
+            our clients visit Munnar with our Munnar tour packages for family.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12 col-md-12 mt-4">
+          <p class="display-6">Places to Visit in Munnar</p>
+          <ul style="line-height: 25px; font-size: 16px">
+            <li class="text-dark">
+              <span style="font-weight: bold" class="text-info"
+                >Eravikulam National Park</span
+              >
+              : A sanctuary home to the endangered Nilgiri tahr, a mountain goat
+            </li>
+            <li class="text-dark">
+              <span style="font-weight: bold" class="text-info"
+                >Mattupetty Dam and Lake</span
+              >
+              : A scenic spot with boat rides, activities, and the Indo Swiss
+              Dairy Farm
+            </li>
+            <li class="text-dark">
+              <span style="font-weight: bold" class="text-info"
+                >Attukal Waterfalls</span
+              >
+              : A scenic waterfall with a narrow wooden bridge
+            </li>
+            <li class="text-dark">
+              <span style="font-weight: bold" class="text-info"
+                >Kolukkumalai Tea Estate</span
+              >
+              : A high-altitude tea plantation with great views
+            </li>
+            <li class="text-dark">
+              <span style="font-weight: bold" class="text-info"
+                >Pothamedu View Point</span
+              >
+              : A view point with tea, coffee, and cardamom plantations, plus
+              treks and hiking
+            </li>
+            <li class="text-dark">
+              <span style="font-weight: bold" class="text-info"
+                >Kundala Lake</span
+              >
+              : A lake where you can take a Kashmiri-Shikara boat ride
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6 col-md-12 mt-4">
+          <h3>Wayanad</h3>
+          <p style="line-height: 25px; font-size: 16px">
+            Wayanad is a beautiful district in Kerala, known for its lush green
+            landscapes, misty hills, wildlife sanctuaries, waterfalls, and rich
+            cultural heritage. Located in the Western Ghats, Wayanad is a
+            popular destination for nature lovers, adventure seekers, and those
+            looking to escape the hustle and bustle of city life.
+          </p>
+          <p style="line-height: 25px; font-size: 16px">
+            Wayanad is a perfect destination for anyone looking for a peaceful
+            retreat in nature with a mix of adventure, wildlife, and scenic
+            beauty.
+          </p>
+        </div>
+        <div class="col-lg-6 col-md-12 mt-4">
+          <img
+            src="img/tour/wayanad.jpg"
+            class="img-fluid"
+            style="border-radius: 10px"
+          />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12 col-md-12">
+          <p class="display-6">Places to Visit in Wayanad</p>
+          <ul style="line-height: 25px; font-size: 16px">
+            <li class="text-dark">
+              <span style="font-weight: bold" class="text-info"
+                >Edakkal Caves</span
+              >
+              are famous for their ancient petroglyphs (rock carvings) that date
+              back over 6,000 years.
+            </li>
+            <li class="text-dark">
+              <span style="font-weight: bold" class="text-info"
+                >Nilgiri Biosphere Reserve</span
+              >
+              and is home to a wide variety of wildlife, including elephants,
+              tigers, leopards, and many species of birds. It’s an ideal place
+              for wildlife enthusiasts and photographers.
+            </li>
+            <li class="text-dark">
+              <span style="font-weight: bold" class="text-info"
+                >Pookode Lake</span
+              >
+              is perfect for a peaceful day of boating and relaxation. The area
+              around the lake is also ideal for short treks and picnics.
+            </li>
+            <li class="text-dark">
+              <span style="font-weight: bold" class="text-info"
+                >Sentinel Rock Waterfalls</span
+              >
+              Soochipara is a stunning three-tiered waterfall surrounded by
+              dense forests. It’s an excellent spot for nature lovers and
+              photography enthusiasts.
+            </li>
+            <li class="text-dark">
+              <span style="font-weight: bold" class="text-info"
+                >High Wavy Mountains</span
+              >, Meghamalai offers some of the most scenic views in Wayanad.
+              It’s less crowded and ideal for those looking to enjoy nature in
+              peace, with vast tea plantations and forested areas.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mb-5">
+      <div class="row">
+        <div class="col-lg-12 col-md-12">
+          <h3 style="font-weight: 600">Terms & conditions</h3>
+          <ul>
+            <li style="line-height: 25px; font-size: 16px">
+              For Booking Conformation please pay the 60% as Advance before 20
+              Days and Remaining 40% to be Settled Before the tour Starts (hand
+              Over the Driver).
+            </li>
+            <li style="line-height: 25px; font-size: 16px">
+              <b>Distance Calculation:</b> We calculate starting and closing
+              kilometers per hour from our garage to your destination.
+            </li>
+            <li style="line-height: 25px; font-size: 16px">
+              <b>Cancellation Policy:</b> We will charge a cancellation fee if
+              you cancel after the vehicle leaves our garage or does not show
+              up.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Contant End -->
 
     <!-- Footer -->
     <footer class="footer">
@@ -834,7 +928,7 @@
               <li><a href="#home">Home</a></li>
               <li><a href="#services">Services</a></li>
               <li><a href="#fleet">Our Fleet</a></li>
-              <li><a href="about-us.html">About Us</a></li>
+              <li><a href="#about">About Us</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
@@ -892,6 +986,11 @@
     <script type="module" src="js/components.js"></script>
     <script type="module" src="js/animations.js"></script>
     <script type="module" src="js/main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
 
     <script>
       // Desktop dropdowns
@@ -1065,46 +1164,6 @@
             panel.classList.add("open");
           }
         });
-      });
-    </script>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        // Carousel Functionality
-        const carouselContent = document.querySelector(".carousel-content");
-        const carouselItems = document.querySelectorAll(".carousel-item");
-        const prevButton = document.querySelector(".carousel-prev");
-        const nextButton = document.querySelector(".carousel-next");
-        let currentIndex = 0;
-
-        const updateCarousel = () => {
-          const itemWidth = carouselItems[0].offsetWidth;
-          carouselContent.style.transform = `translateX(-${
-            currentIndex * itemWidth
-          }px)`;
-        };
-
-        prevButton.addEventListener("click", () => {
-          currentIndex =
-            currentIndex > 0 ? currentIndex - 1 : carouselItems.length - 1;
-          updateCarousel();
-        });
-
-        nextButton.addEventListener("click", () => {
-          currentIndex =
-            currentIndex < carouselItems.length - 1 ? currentIndex + 1 : 0;
-          updateCarousel();
-        });
-
-        // Auto-slide (Optional)
-        setInterval(() => {
-          currentIndex =
-            currentIndex < carouselItems.length - 1 ? currentIndex + 1 : 0;
-          updateCarousel();
-        }, 5000); // Change image every 5 seconds
-
-        // Initial carousel update
-        updateCarousel();
       });
     </script>
   </body>
