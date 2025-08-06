@@ -681,8 +681,16 @@
           <div class="tab-content active" id="sedans">
             <div class="fleet-grid">
               <div class="fleet-card" data-aos="zoom-in" data-aos-delay="100">
-                <div class="fleet-image">
-                  <img src="img/cars/2.png" alt="Swift Dzire" loading="lazy" />
+                <div class="fleet-image-carousel">
+                  <div class="fleet-image fleet-image-carousel">
+                    <div class="fleet-slider-track">
+                      <img src="img/cars/1.png" alt="Swift Dzire" />
+                      <img src="img/cars/2.png" alt="Swift Dzire" />
+                      <img src="img/cars/3.png" alt="Swift Dzire" />
+                      <img src="img/cars/1.png" alt="Swift Dzire Duplicate" />
+                      <!-- Duplicate for loop -->
+                    </div>
+                  </div>
                 </div>
                 <div class="fleet-info">
                   <h3 class="fleet-name">Swift Dzire</h3>
@@ -697,8 +705,16 @@
               </div>
 
               <div class="fleet-card" data-aos="zoom-in" data-aos-delay="200">
-                <div class="fleet-image">
-                  <img src="img/cars/1.png" alt="Toyota Etios" loading="lazy" />
+                <div class="fleet-image-carousel">
+                  <div class="fleet-image fleet-image-carousel">
+                    <div class="fleet-slider-track">
+                      <img src="img/cars/1.png" alt="Swift Dzire" />
+                      <img src="img/cars/7.png" alt="Swift Dzire" />
+                      <img src="img/cars/8.png" alt="Swift Dzire" />
+                      <img src="img/cars/1.png" alt="Swift Dzire Duplicate" />
+                      <!-- Duplicate for loop -->
+                    </div>
+                  </div>
                 </div>
                 <div class="fleet-info">
                   <h3 class="fleet-name">Toyota Etios</h3>
@@ -713,8 +729,16 @@
               </div>
 
               <div class="fleet-card" data-aos="zoom-in" data-aos-delay="200">
-                <div class="fleet-image">
-                  <img src="img/cars/1.png" alt="Toyota Etios" loading="lazy" />
+                <div class="fleet-image-carousel">
+                  <div class="fleet-image fleet-image-carousel">
+                    <div class="fleet-slider-track">
+                      <img src="img/cars/6.png" alt="Swift Dzire" />
+                      <img src="img/cars/7.png" alt="Swift Dzire" />
+                      <img src="img/cars/8.png" alt="Swift Dzire" />
+                      <img src="img/cars/6.png" alt="Swift Dzire Duplicate" />
+                      <!-- Duplicate for loop -->
+                    </div>
+                  </div>
                 </div>
                 <div class="fleet-info">
                   <h3 class="fleet-name">Toyota Etios</h3>
@@ -1587,6 +1611,30 @@
             panel.classList.add("open");
           }
         });
+      });
+    </script>
+    <script>
+      // Select all slider tracks
+      document.querySelectorAll(".fleet-slider-track").forEach((track) => {
+        const slides = track.querySelectorAll("img");
+        const totalSlides = slides.length;
+        let currentIndex = 0;
+
+        // Create a separate interval for each track
+        setInterval(() => {
+          currentIndex++;
+          track.style.transition = "transform 0.5s ease-in-out";
+          track.style.transform = `translateX(-${currentIndex * 100}%)`;
+
+          // If last (duplicate), reset to first
+          if (currentIndex === totalSlides - 1) {
+            setTimeout(() => {
+              track.style.transition = "none";
+              track.style.transform = "translateX(0%)";
+              currentIndex = 0;
+            }, 500); // match transition duration
+          }
+        }, 3000);
       });
     </script>
   </body>

@@ -2802,3 +2802,29 @@ a,
   margin-right: auto;
   margin-bottom: var(--spacing-md);
 }
+.bg_container {
+  margin-top: 4rem !important;
+}
+.fleet-image {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+}
+
+.fleet-slider-track {
+  display: flex;
+  /* width: 400%;  */
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.fleet-slider-track img {
+  flex: 0 0 100%; /* Each image takes exactly one slide space */
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease-in-out;
+}
+
+.fleet-card:hover .fleet-slider-track img {
+  transform: scale(1.1);
+}
