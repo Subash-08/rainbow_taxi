@@ -1388,7 +1388,7 @@ nav {
   top: 0;
   left: 0;
   right: 0;
-  background: rgba(255, 255, 255, 0.93);
+  background: rgba(255, 255, 255, 1);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border);
   box-shadow: var(--glow);
@@ -1417,19 +1417,17 @@ nav {
   user-select: none;
 }
 .logo-icon {
-  width: 40px;
-  height: 40px;
+  width: 120px;
+  /* height: 40px; */
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 9px;
-  background: var(--secondary-color);
 }
 /* Styling for the SVG icon within logo-icon */
 .logo-icon img {
-  width: 23px; /* Adjusted to match original icon size */
-  height: 23px;
-  filter: brightness(0) invert(1); /* To make the car icon white */
+  width: 100%; /* Adjusted to match original icon size */
+  /* height: 23px; */
+  /* filter: brightness(0) invert(1); */
 }
 ul,
 .nav-list,
@@ -1466,7 +1464,7 @@ a,
   padding: 9px 18px;
   font-size: 1rem;
   font-weight: 500;
-  color: var(--foreground);
+  color: black;
   background: none;
   border: none;
   outline: none;
@@ -1592,7 +1590,6 @@ a,
 .dropdown-link:hover {
   color: var(--primary);
   background: #f4f7fc;
-  text-decoration: underline !important;
 }
 .get-started-btn {
   display: inline-flex;
@@ -1642,13 +1639,15 @@ a,
   left: 0;
   right: 0;
   width: 100vw;
-  min-height: calc(100vh - 64px);
+  height: calc(100vh - 64px); /* Use height instead of min-height */
   background: rgba(255, 255, 255, 0.99);
   box-shadow: 0 8px 32px rgba(41, 80, 135, 0.1);
   padding-bottom: 20px;
   animation: menuFade 0.28s;
   z-index: 1001;
   display: block; /* Show when open */
+  overflow-y: auto; /* ✅ Add this line */
+  -webkit-overflow-scrolling: touch; /* ✅ Smooth scroll on iOS */
 }
 @keyframes menuFade {
   from {

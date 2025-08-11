@@ -397,3 +397,46 @@ a:hover {
     font-size: var(--font-size-sm);
   }
 }
+.hero-left,
+.hero-right,
+.trust-tag,
+.hero-title,
+.hero-subtitle,
+.hero-buttons,
+.hero-stats,
+.features-box,
+.booking-box {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 0.8s ease forwards;
+}
+
+/* Staggered delays */
+.trust-tag {
+  animation-delay: 0.3s;
+}
+.hero-title {
+  animation-delay: 0.6s;
+}
+.hero-subtitle {
+  animation-delay: 0.9s;
+}
+.hero-buttons {
+  animation-delay: 1.2s;
+}
+.hero-stats {
+  animation-delay: 1.5s;
+}
+.features-box {
+  animation-delay: 1.8s;
+}
+.booking-box {
+  animation-delay: 2.1s;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

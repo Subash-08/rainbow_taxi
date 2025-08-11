@@ -3,1367 +3,733 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Innova Crysta Car Rental</title>
+    <title>Contact Us – Call Taxi | Book a Ride</title>
+    <meta
+      name="description"
+      content="Contact our Call Taxi service for bookings and inquiries. Fast response, 24/7 support, and reliable rides."
+    />
+    <link rel="canonical" href="http://example.com/contact" />
+
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/w/w8t6nN+S0y+c1p4c5M/n3h+4L7B9I5c4f2Q6yqgH7B7CjY5lA5w5B5P5c4N5Q5F5"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
 
     <style>
-      /* CSS Variables */
       :root {
-        /* Colors */
-        --primary-color: #ffd700;
-        --primary-dark: #e6c200;
-        --secondary-color: #000000;
-        --accent-color: #ffffff;
-        --text-primary: #333333;
-        --text-secondary: #666666;
-        --text-light: #999999;
-        --background-light: #f8f9fa;
-        --background-dark: #1a1a1a;
-        --border-color: #e5e5e5;
-        --shadow-light: rgba(0, 0, 0, 0.1);
-        --shadow-medium: rgba(0, 0, 0, 0.15);
-        --shadow-dark: rgba(0, 0, 0, 0.25);
-
-        /* Typography */
-        --font-primary: "Inter", sans-serif;
-        --font-secondary: "Poppins", sans-serif;
-        --font-size-xs: 0.75rem;
-        --font-size-sm: 0.875rem;
-        --font-size-base: 1rem;
-        --font-size-lg: 1.125rem;
-        --font-size-xl: 1.25rem;
-        --font-size-2xl: 1.5rem;
-        --font-size-3xl: 1.875rem;
-        --font-size-4xl: 2.25rem;
-        --font-size-5xl: 3rem;
-
-        /* Spacing */
-        --spacing-xs: 0.25rem;
-        --spacing-sm: 0.5rem;
-        --spacing-md: 1rem;
-        --spacing-lg: 1.5rem;
-        --spacing-xl: 2rem;
-        --spacing-2xl: 3rem;
-        --spacing-3xl: 4rem;
-
-        /* Border Radius */
-        --radius-sm: 0.375rem;
-        --radius-md: 0.5rem;
-        --radius-lg: 0.75rem;
-        --radius-xl: 1rem;
-        --radius-full: 9999px;
-
-        /* Transitions */
-        --transition-fast: 0.15s ease;
-        --transition-base: 0.3s ease;
-        --transition-slow: 0.5s ease;
-
-        /* Z-index */
-        --z-dropdown: 1000;
-        --z-sticky: 1020;
-        --z-fixed: 1030;
-        --z-modal: 1040;
-        --z-popover: 1050;
-        --z-tooltip: 1060;
-        --z-toast: 1070;
+        --primary: #4f46e5;
+        --primary-light: #6366f1;
+        --primary-foreground: #ffffff;
+        --background: #f8fafc;
+        --foreground: #0f172a;
+        --muted: #e2e8f0;
+        --muted-foreground: #64748b;
+        --card: #ffffff;
+        --taxi: #f59e0b;
+        --taxi-foreground: #ffffff;
+        --shadow-medium: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+          0 2px 4px -1px rgba(0, 0, 0, 0.06);
       }
 
-      /* Base Styling & Utilities */
       body {
-        font-family: var(--font-primary);
+        font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+          "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+          "Noto Color Emoji";
+        background-color: var(--background);
+        color: var(--foreground);
         margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        background-color: var(--background-light);
-        color: var(--text-primary);
         line-height: 1.5;
+      }
+
+      a {
+        color: var(--primary);
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .container {
+        max-width: 1280px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 1rem;
+        padding-right: 1rem;
       }
 
       .min-h-screen {
         min-height: 100vh;
       }
 
-      .bg-gradient-to-br {
+      /* Hero Section */
+      .header {
+        position: relative;
         background-image: linear-gradient(
           to bottom right,
-          var(--background-light),
-          var(--background-light),
-          rgba(255, 215, 0, 0.05)
-        ); /* Using RGB for --primary-color */
+          var(--primary),
+          var(--primary-light)
+        );
+        color: var(--primary-foreground);
+        padding: 4rem 0;
+        text-align: center;
+        overflow: hidden;
       }
 
-      /* Spacing */
-      .py-20 {
-        padding-top: var(--spacing-3xl);
-        padding-bottom: var(--spacing-3xl);
-      } /* Roughly 20 * 0.25rem = 5rem */
-      .px-6 {
-        padding-left: var(--spacing-lg);
-        padding-right: var(--spacing-lg);
-      } /* Roughly 6 * 0.25rem = 1.5rem */
-      .mb-2 {
-        margin-bottom: var(--spacing-sm);
-      }
-      .mb-4 {
-        margin-bottom: var(--spacing-md);
-      }
-      .mb-6 {
-        margin-bottom: var(--spacing-lg);
-      }
-      .mb-8 {
-        margin-bottom: var(--spacing-xl);
-      }
-      .mb-12 {
-        margin-bottom: var(--spacing-2xl);
-      }
-      .mb-20 {
-        margin-bottom: var(--spacing-3xl);
+      .header::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.2);
+        z-index: 1;
       }
 
-      .mt-2 {
-        margin-top: var(--spacing-sm);
+      .header-content {
+        position: relative;
+        z-index: 2;
       }
 
-      .mx-auto {
-        margin-left: auto;
-        margin-right: auto;
-      }
-      .max-w-7xl {
-        max-width: 1280px;
-      }
-      .max-w-4xl {
-        max-width: 896px;
-      }
-      .max-w-2xl {
-        max-width: 672px;
-      }
-      .max-w-6xl {
-        max-width: 1152px;
+      .header h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        animation: fadeIn 1s ease-out;
       }
 
-      /* Text Styling */
+      .header p {
+        font-size: 1.25rem;
+        margin-bottom: 2rem;
+        opacity: 0.9;
+        animation: fadeIn 1.2s ease-out;
+      }
+
+      .header .btn-group {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+        animation: fadeIn 1.4s ease-out;
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.75rem 1.5rem;
+        border-radius: 0.5rem;
+        font-weight: 600;
+        transition: all 0.2s ease-in-out;
+        border: 1px solid transparent;
+        text-decoration: none;
+        cursor: pointer;
+        box-shadow: var(--shadow-medium);
+      }
+
+      .btn-primary {
+        background-color: var(--taxi);
+        color: var(--taxi-foreground);
+      }
+
+      .btn-primary:hover {
+        background-color: rgba(var(--taxi), 0.9);
+      }
+
+      .btn-outline {
+        background-color: rgba(255, 255, 255, 0.1);
+        border-color: rgba(255, 255, 255, 0.3);
+        color: white;
+      }
+
+      .btn-outline:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+      }
+
+      .hover-scale:hover {
+        transform: scale(1.05);
+      }
+
+      /* Map Section */
+      .map-section {
+        padding: 2.5rem 0;
+        background-color: rgba(var(--muted), 0.3);
+      }
+
+      .map-section h2 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+
+      .map-container {
+        max-width: 900px;
+        margin: 0 auto;
+        height: 300px;
+        border-radius: 0.5rem;
+        overflow: hidden;
+        box-shadow: var(--shadow-medium);
+      }
+
+      .map-container iframe {
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+
+      /* Main Content */
+      .main-content {
+        padding: 2.5rem 0;
+      }
+
+      .main-content h1 {
+        font-size: 2.25rem;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+      }
+
+      .main-content .description {
+        color: var(--muted-foreground);
+        margin-bottom: 2.5rem;
+        max-width: 48rem;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      @media (min-width: 768px) {
+        .grid-container {
+          grid-template-columns: 1fr 1fr;
+        }
+        .header h1 {
+          font-size: 3.75rem;
+        }
+        .header p {
+          font-size: 1.5rem;
+        }
+        .map-container {
+          height: 400px;
+        }
+        .main-content {
+          padding: 3.5rem 0;
+        }
+      }
+
+      .card {
+        background-color: var(--card);
+        border-radius: 0.5rem;
+        box-shadow: var(--shadow-medium);
+        padding: 2rem;
+      }
+
+      .card h2 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+      }
+
+      .contact-details ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .contact-details li {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.75rem;
+      }
+
+      .contact-details li i {
+        color: var(--taxi);
+        margin-top: 0.25rem;
+      }
+
+      .contact-details li p {
+        margin: 0;
+      }
+
+      .contact-details .font-medium {
+        font-weight: 500;
+      }
+
+      .contact-details .text-muted-foreground {
+        color: var(--muted-foreground);
+      }
+
+      .contact-details .btn-group {
+        margin-top: 1.5rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+      }
+
+      /* Form */
+      .contact-form form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .form-group {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .form-group label {
+        font-size: 0.875rem;
+        font-weight: 500;
+        margin-bottom: 0.25rem;
+      }
+
+      .form-group input,
+      .form-group textarea {
+        width: 100%;
+        padding: 0.75rem;
+        border-radius: 0.5rem;
+        border: 1px solid var(--muted);
+        background-color: var(--background);
+        color: var(--foreground);
+        transition: border-color 0.2s ease-in-out;
+      }
+
+      .form-group input:focus,
+      .form-group textarea:focus {
+        outline: none;
+        border-color: var(--primary);
+        box-shadow: 0 0 0 2px rgba(var(--primary), 0.2);
+      }
+
+      .form-group textarea {
+        resize: vertical;
+        min-height: 100px;
+      }
+
+      .form-group .grid-2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+
+      @media (min-width: 768px) {
+        .form-group .grid-2 {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+
+      .form-submit {
+        padding-top: 0.5rem;
+      }
+
+      .btn-submit {
+        background-color: var(--taxi);
+        color: var(--taxi-foreground);
+      }
+
+      .btn-submit:hover {
+        background-color: rgba(var(--taxi), 0.9);
+      }
+
+      /* Quick Help */
+      .quick-help {
+        margin-top: 3rem;
+      }
+
+      @media (min-width: 768px) {
+        .quick-help {
+          margin-top: 4rem;
+        }
+      }
+
+      .quick-help h2 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+      }
+
+      .quick-help-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+
+      @media (min-width: 768px) {
+        .quick-help-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+
+      .quick-help-item {
+        border: 1px solid var(--muted);
+        border-radius: 0.375rem;
+        padding: 1rem;
+      }
+
+      .quick-help-item p:first-child {
+        font-weight: 500;
+        margin: 0 0 0.25rem 0;
+      }
+
+      .quick-help-item p:last-child {
+        color: var(--muted-foreground);
+        margin: 0;
+      }
+
+      /* Floating WhatsApp Button */
+      .whatsapp-float {
+        position: fixed;
+        bottom: 1.25rem;
+        right: 1.25rem;
+        z-index: 50;
+        border-radius: 9999px;
+        padding: 1rem;
+        box-shadow: var(--shadow-medium);
+        background-color: var(--taxi);
+        color: var(--taxi-foreground);
+        transition: transform 0.2s ease-in-out;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .whatsapp-float:hover {
+        transform: scale(1.1);
+      }
+
+      .whatsapp-float i {
+        font-size: 1.5rem;
+      }
+
+      /* Utility Classes */
       .text-center {
         text-align: center;
       }
-      .text-white {
-        color: var(--accent-color);
-      }
-      .text-white\/90 {
-        color: rgba(255, 255, 255, 0.9);
-      }
-      .text-foreground {
-        color: var(--text-primary);
-      }
-      .text-muted-foreground {
-        color: var(--text-secondary);
-      }
-      .text-primary {
-        color: var(--primary-color);
-      }
       .text-sm {
-        font-size: var(--font-size-sm);
+        font-size: 0.875rem;
       }
-      .text-lg {
-        font-size: var(--font-size-lg);
-      }
-      .text-xl {
-        font-size: var(--font-size-xl);
-      }
-      .text-2xl {
-        font-size: var(--font-size-2xl);
-      }
-      .text-4xl {
-        font-size: var(--font-size-4xl);
-      }
-      .text-5xl {
-        font-size: var(--font-size-5xl);
-      }
-      .text-7xl {
-        font-size: calc(var(--font-size-5xl) * 1.5);
-      } /* Approximating 7xl */
-
-      .font-bold {
-        font-weight: 700;
-      }
-      .font-semibold {
-        font-weight: 600;
-      }
-      .font-medium {
-        font-weight: 500;
-      }
-      .italic {
-        font-style: italic;
-      }
-      .leading-relaxed {
-        line-height: 1.625;
-      }
-
-      /* Positioning & Layout */
-      .relative {
-        position: relative;
-      }
-      .absolute {
-        position: absolute;
-      }
-      .inset-0 {
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-      }
-      .z-0 {
-        z-index: 0;
-      }
-      .z-10 {
-        z-index: 10;
-      }
-
       .flex {
         display: flex;
       }
-      .items-center {
-        align-items: center;
+      .items-start {
+        align-items: flex-start;
       }
-      .justify-center {
-        justify-content: center;
+      .gap-3 {
+        gap: 0.75rem;
       }
-      .justify-between {
-        justify-content: space-between;
+      .mt-1 {
+        margin-top: 0.25rem;
       }
-      .flex-col {
+      .mr-2 {
+        margin-right: 0.5rem;
+      }
+      .pt-2 {
+        padding-top: 0.5rem;
+      }
+      .py-16 {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+      }
+      .py-10 {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+      }
+      .mb-4 {
+        margin-bottom: 1rem;
+      }
+      .mb-6 {
+        margin-bottom: 1.5rem;
+      }
+      .mb-8 {
+        margin-bottom: 2rem;
+      }
+      .mb-10 {
+        margin-bottom: 2.5rem;
+      }
+      .mt-6 {
+        margin-top: 1.5rem;
+      }
+      .mt-12 {
+        margin-top: 3rem;
+      }
+      .space-y-4 > * + * {
+        margin-top: 1rem;
+      }
+      .space-y-4 {
+        display: flex;
         flex-direction: column;
       }
-      .flex-row {
-        flex-direction: row;
-      }
-      .space-y-2 > *:not(:last-child) {
-        margin-bottom: var(--spacing-sm);
-      }
-      .space-y-6 > *:not(:last-child) {
-        margin-bottom: var(--spacing-lg);
-      } /* Approximating 6*0.25rem = 1.5rem */
-      .space-y-8 > *:not(:last-child) {
-        margin-bottom: var(--spacing-xl);
-      }
-      .space-x-3 > *:not(:first-child) {
-        margin-left: 0.75rem;
-      } /* No direct variable for 0.75rem */
-
-      .grid {
-        display: grid;
-      }
-      .gap-4 {
-        gap: var(--spacing-md);
-      }
-      .gap-8 {
-        gap: var(--spacing-xl);
-      }
-      .gap-12 {
-        gap: var(--spacing-2xl);
-      } /* Roughly 12 * 0.25rem = 3rem */
-      .gap-16 {
-        gap: var(--spacing-3xl);
-      } /* Roughly 16 * 0.25rem = 4rem */
-      .grid-cols-2 {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-      .grid-cols-3 {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-      }
-      .grid-cols-4 {
-        grid-template-columns: repeat(4, minmax(0, 1fr));
-      }
-
-      /* Sizing */
-      .h-screen {
-        height: 100vh;
+      .block {
+        display: block;
       }
       .w-full {
         width: 100%;
       }
-      .h-full {
-        height: 100%;
+      .opacity-0 {
+        opacity: 0;
       }
-      .h-96 {
-        height: 24rem;
-      } /* 96 * 0.25rem */
-      .w-6 {
-        width: var(--spacing-lg);
-      } /* 6 * 0.25rem = 1.5rem */
-      .h-10 {
-        height: 2.5rem;
-      } /* 10 * 0.25rem */
-      .w-1 {
-        width: var(--spacing-xs);
-      }
-      .h-3 {
-        height: 0.75rem;
-      } /* No direct var for 0.75rem */
-      .w-5 {
-        width: 1.25rem;
-      } /* No direct var for 1.25rem */
-      .h-5 {
-        height: 1.25rem;
-      } /* No direct var for 1.25rem */
-      .w-8 {
-        width: var(--spacing-xl);
-      } /* 8 * 0.25rem = 2rem */
-      .h-8 {
-        height: var(--spacing-xl);
-      } /* 8 * 0.25rem = 2rem */
-      .w-16 {
-        width: var(--spacing-3xl);
-      } /* 16 * 0.25rem = 4rem */
-      .h-16 {
-        height: var(--spacing-3xl);
-      } /* 16 * 0.25rem = 4rem */
-
-      /* Visual Styles */
-      .object-cover {
-        object-fit: cover;
-      }
-      .overflow-hidden {
-        overflow: hidden;
-      }
-      .rounded-2xl {
-        border-radius: var(--radius-xl);
-      } /* Approximating 2xl with 1rem */
-      .rounded-full {
-        border-radius: var(--radius-full);
+      .animate-fade-in {
+        animation: fadeIn 1s ease-in-out forwards;
       }
 
-      .shadow-xl {
-        box-shadow: var(--shadow-medium);
-      } /* Using shadow-medium */
-      .shadow-2xl {
-        box-shadow: var(--shadow-dark);
-      } /* Using shadow-dark */
-
-      .bg-gradient-to-r {
-        background-image: linear-gradient(
-          to right,
-          var(--primary-color),
-          var(--primary-color)
-        );
-      } /* Assuming full primary */
-      .from-black\/70 {
-        background-image: linear-gradient(
-          to right,
-          rgba(0, 0, 0, 0.7),
-          transparent
-        );
-      }
-      .via-black\/50 {
-        background-image: linear-gradient(
-          to right,
-          transparent,
-          rgba(0, 0, 0, 0.5),
-          transparent
-        );
-      }
-      .to-transparent {
-        background-image: linear-gradient(to right, transparent, transparent);
-      }
-
-      .bg-primary {
-        background-color: var(--primary-color);
-      }
-      .bg-primary\/10 {
-        background-color: rgba(255, 215, 0, 0.1);
-      } /* Using RGB for --primary-color */
-      .bg-primary\/20 {
-        background-color: rgba(255, 215, 0, 0.2);
-      } /* Using RGB for --primary-color */
-      .bg-primary\/50 {
-        background-color: rgba(255, 215, 0, 0.5);
-      } /* Using RGB for --primary-color */
-      .bg-primary\/90:hover {
-        background-color: var(--primary-dark);
-      } /* Using primary-dark for hover state */
-      .bg-muted\/30 {
-        background-color: rgba(var(--background-light), 0.3);
-      } /* Using background-light, assuming RGB for rgba */
-      .bg-white {
-        background-color: var(--accent-color);
-      }
-
-      .border-2 {
-        border-width: 2px;
-      }
-      .border-border\/50 {
-        border-color: rgba(var(--border-color), 0.5);
-      } /* Assuming RGB for border-color */
-      .border-primary\/30 {
-        border-color: rgba(255, 215, 0, 0.3);
-      } /* Using RGB for --primary-color */
-      .border-white {
-        border-color: var(--accent-color);
-      }
-
-      .fill-yellow-400 {
-        fill: var(--primary-color);
-      } /* Using primary-color for yellow */
-      .text-yellow-400 {
-        color: var(--primary-color);
-      } /* Using primary-color for yellow */
-
-      /* Custom Components & Animations */
-      .button {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        padding: var(--spacing-md) var(--spacing-xl);
-        border-radius: var(--radius-md);
-        font-weight: 500;
-        cursor: pointer;
-        transition: var(--transition-base);
-        border: 1px solid transparent;
-        text-decoration: none;
-      }
-
-      .button.bg-primary {
-        background-color: var(--primary-color);
-        color: var(
-          --secondary-color
-        ); /* Changed to secondary-color as it's black */
-      }
-      .button.bg-primary:hover {
-        background-color: var(--primary-dark);
-      }
-
-      .button.size-lg {
-        padding: var(--spacing-xl) var(--spacing-3xl); /* Approximating 1rem 2rem */
-        font-size: var(--font-size-lg);
-      }
-
-      .button.variant-secondary {
-        background-color: var(--background-light);
-        color: var(--text-primary);
-        border-color: var(--border-color);
-      }
-      .button.variant-secondary:hover {
-        background-color: var(--border-color);
-      }
-
-      .button.variant-outline {
-        background-color: transparent;
-        color: var(--primary-color);
-        border-color: var(--primary-color);
-      }
-      .button.variant-outline.border-white {
-        border-color: var(--accent-color);
-        color: var(--accent-color);
-      }
-      .button.variant-outline.border-white:hover {
-        background-color: var(--accent-color);
-        color: var(--primary-color);
-      }
-
-      .card {
-        background-color: var(--accent-color);
-        border: 1px solid var(--border-color);
-        border-radius: var(--radius-lg);
-        overflow: hidden;
-      }
-      .card-content {
-        padding: var(--spacing-lg);
-      }
-      .card.hover\:border-primary\/50:hover {
-        border-color: rgba(
-          255,
-          215,
-          0,
-          0.5
-        ); /* Using RGB for --primary-color */
-      }
-
-      .badge {
-        display: inline-flex;
-        align-items: center;
-        padding: var(--spacing-xs) var(--spacing-lg); /* Approximating 0.25rem 0.75rem */
-        border-radius: var(--radius-full);
-        font-size: var(--font-size-sm);
-        font-weight: 500;
-        border: 1px solid transparent;
-      }
-      .badge.bg-primary\/20 {
-        background-color: rgba(
-          255,
-          215,
-          0,
-          0.2
-        ); /* Using RGB for --primary-color */
-        color: var(--accent-color);
-        border-color: rgba(
-          255,
-          215,
-          0,
-          0.3
-        ); /* Using RGB for --primary-color */
-      }
-
-      /* Animations */
-      @keyframes fade-in {
+      @keyframes fadeIn {
         from {
           opacity: 0;
-          transform: translateY(10px);
+          transform: translateY(20px);
         }
         to {
           opacity: 1;
           transform: translateY(0);
         }
       }
-      .animate-fade-in {
-        animation: fade-in 0.6s ease-out forwards;
-      }
-
-      @keyframes scale-in {
-        from {
-          opacity: 0;
-          transform: scale(0.95);
-        }
-        to {
-          opacity: 1;
-          transform: scale(1);
-        }
-      }
-      .animate-scale-in {
-        animation: scale-in 0.5s ease-out forwards;
-      }
-
-      @keyframes bounce {
-        0%,
-        100% {
-          transform: translateY(-25%) translateX(-50%);
-          animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
-        }
-        50% {
-          transform: none;
-          animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
-        }
-      }
-      .animate-bounce {
-        animation: bounce 1s infinite;
-      }
-
-      .hover-scale:hover {
-        transform: scale(1.02);
-        transition: var(--transition-base);
-      }
-
-      .transition-colors {
-        transition-property: background-color, border-color, color;
-        transition-duration: var(--transition-fast);
-      }
-      .transition-all {
-        transition-property: all;
-        transition-duration: var(--transition-base);
-      }
-      .duration-300 {
-        transition-duration: var(--transition-base);
-      }
-
-      /* Carousel Specific Styles */
-      .carousel-container {
-        position: relative;
-        width: 100%;
-        overflow: hidden;
-      }
-
-      .carousel-content {
-        display: flex;
-        transition: var(--transition-slow);
-        width: 100%;
-      }
-
-      .carousel-item {
-        flex-shrink: 0;
-        width: 100%;
-      }
-
-      .aspect-video {
-        position: relative;
-        width: 100%;
-        padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
-      }
-
-      .aspect-video img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-      }
-
-      .carousel-button {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background-color: rgba(
-          var(--accent-color),
-          0.8
-        ); /* Using RGB for accent-color */
-        border: 1px solid var(--border-color);
-        border-radius: var(--radius-full);
-        width: 2.5rem; /* No direct var for 2.5rem */
-        height: 2.5rem; /* No direct var for 2.5rem */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        z-index: var(--z-fixed); /* Using z-fixed for higher layer */
-        box-shadow: var(--shadow-light);
-        transition: var(--transition-fast);
-      }
-
-      .carousel-button:hover {
-        background-color: var(--accent-color);
-      }
-
-      .carousel-button.left-4 {
-        left: var(--spacing-md);
-      }
-      .carousel-button.right-4 {
-        right: var(--spacing-md);
-      }
-
-      .carousel-button svg {
-        width: var(--font-size-xl); /* Approximating icon size */
-        height: var(--font-size-xl); /* Approximating icon size */
-        color: var(--text-primary);
-      }
-
-      /* Responsive Adjustments */
-      @media (min-width: 768px) {
-        .md\:text-7xl {
-          font-size: calc(var(--font-size-5xl) * 1.5);
-        }
-        .md\:text-2xl {
-          font-size: var(--font-size-2xl);
-        }
-        .md\:grid-cols-2 {
-          grid-template-columns: repeat(2, minmax(0, 1fr));
-        }
-        .md\:grid-cols-3 {
-          grid-template-columns: repeat(3, minmax(0, 1fr));
-        }
-        .md\:grid-cols-4 {
-          grid-template-columns: repeat(4, minmax(0, 1fr));
-        }
-        .sm\:flex-row {
-          flex-direction: row;
-        }
-      }
-
-      @media (min-width: 1024px) {
-        .lg\:grid-cols-2 {
-          grid-template-columns: repeat(2, minmax(0, 1fr));
-        }
-        .lg\:grid-cols-4 {
-          grid-template-columns: repeat(4, minmax(0, 1fr));
-        }
-        .lg\:order-1 {
-          order: 1;
-        }
-        .lg\:order-2 {
-          order: 2;
-        }
-      }
-
-      /* Font Awesome Icon Styling (as before) */
-      /* Removed custom icon-shield mapping, relying on Font Awesome directly */
-      .icon-users::before {
-        content: "\f0c0";
-        font-family: "Font Awesome 5 Free";
-        font-weight: 900;
-      }
-      .icon-snowflake::before {
-        content: "\f2dc";
-        font-family: "Font Awesome 5 Free";
-        font-weight: 900;
-      }
-      .icon-luggage::before {
-        content: "\f678";
-        font-family: "Font Awesome 5 Free";
-        font-weight: 900;
-      }
-      .icon-navigation::before {
-        content: "\f095";
-        font-family: "Font Awesome 5 Free";
-        font-weight: 900;
-      }
-      .icon-user-check::before {
-        content: "\f4fc";
-        font-family: "Font Awesome 5 Free";
-        font-weight: 900;
-      }
-      .icon-star::before {
-        content: "\f005";
-        font-family: "Font Awesome 5 Free";
-        font-weight: 900;
-      }
-      .icon-phone::before {
-        content: "\f095";
-        font-family: "Font Awesome 5 Free";
-        font-weight: 900;
-      }
-      .icon-calendar::before {
-        content: "\f073";
-        font-family: "Font Awesome 5 Free";
-        font-weight: 900;
-      }
-      .icon-fuel::before {
-        content: "\f042";
-        font-family: "Font Awesome 5 Free";
-        font-weight: 900;
-      }
-      .icon-gauge::before {
-        content: "\f62d";
-        font-family: "Font Awesome 5 Free";
-        font-weight: 900;
-      }
-      .icon-cog::before {
-        content: "\f013";
-        font-family: "Font Awesome 5 Free";
-        font-weight: 900;
-      }
-      .icon-car::before {
-        content: "\f1b9";
-        font-family: "Font Awesome 5 Free";
-        font-weight: 900;
-      }
-      /* Changed to use fas fa-shield-alt directly */
-      /* .icon-shield::before { content: "\f132"; font-family: "Font Awesome 5 Free"; font-weight: 900; } */
-      .icon-map-pin::before {
-        content: "\f041";
-        font-family: "Font Awesome 5 Free";
-        font-weight: 900;
-      }
-      .icon-clock::before {
-        content: "\f017";
-        font-family: "Font Awesome 5 Free";
-        font-weight: 900;
-      }
-
-      /* Icon sizing for dynamically added icons */
-      .feature-icon,
-      .why-choose-icon,
-      .detail-icon {
-        font-size: var(--spacing-xl); /* w-8 h-8 = 2rem */
-        line-height: 1;
-      }
-      .detail-icon {
-        font-size: var(--font-size-2xl); /* w-6 h-6 = 1.5rem */
-      }
-      .button .icon {
-        font-size: var(--font-size-xl); /* w-5 h-5 = 1.25rem */
-        line-height: 1;
-        margin-right: var(--spacing-sm);
-      }
-      .text-primary.feature-icon,
-      .text-primary.why-choose-icon,
-      .text-primary.detail-icon {
-        color: var(--primary-color);
-      }
-      .w-16.h-16.bg-primary\/10 {
-        width: var(--spacing-3xl);
-        height: var(--spacing-3xl);
-        background-color: rgba(
-          255,
-          215,
-          0,
-          0.1
-        ); /* Using RGB for --primary-color */
-        border-radius: var(--radius-full);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: var(--spacing-md);
-      }
     </style>
   </head>
-  <body>
-    <div class="min-h-screen bg-gradient-to-br">
-      <section
-        class="relative h-screen flex items-center justify-center overflow-hidden"
-      >
-        <div class="absolute inset-0 z-0">
-          <img
-            src="https://images.unsplash.com/photo-1606016159991-e42f6f7ce0bb?w=1920&h=1080&fit=crop"
-            alt="Innova Crysta"
-            class="w-full h-full object-cover"
-          />
-          <div
-            class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent"
-          ></div>
-        </div>
-
-        <div
-          class="relative z-10 text-center text-white max-w-4xl mx-auto px-6"
-        >
-          <div class="animate-fade-in">
-            <span class="badge mb-6 bg-primary/20 text-white border-primary/30">
-              Premium Vehicle
-            </span>
-            <h1 class="text-5xl md:text-7xl font-bold mb-6 animate-scale-in">
-              Innova Crysta
-            </h1>
-            <div class="text-xl md:text-2xl mb-8 space-y-2">
-              <div class="animate-fade-in" style="animation-delay: 0.2s">
-                Spacious. Reliable. Premium.
-              </div>
-              <div class="animate-fade-in" style="animation-delay: 0.4s">
-                Ride in Comfort and Style
-              </div>
-            </div>
-            <div class="animate-fade-in" style="animation-delay: 0.6s">
-              <a
-                href="#booking-section"
-                class="button size-lg bg-primary text-white px-8 py-4 text-lg"
-              >
-                Book Your Ride Now
-              </a>
-            </div>
-          </div>
-
-          <div
-            class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce"
+  <body class="min-h-screen">
+    <header class="header">
+      <div class="header-content container">
+        <h1 class="animate-fade-in">Contact Our Call Taxi</h1>
+        <p class="animate-fade-in">
+          24/7 Service • Quick Response • Reliable Rides
+        </p>
+        <div class="btn-group animate-fade-in">
+          <a href="tel:+919876543210" class="btn btn-primary hover-scale">
+            <i class="fa-solid fa-phone mr-2"></i>
+            Call Now
+          </a>
+          <a
+            href="https://wa.me/919876543210"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-outline hover-scale"
           >
-            <div
-              class="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center"
-            >
-              <div class="w-1 h-3 bg-white/50 rounded-full mt-2"></div>
-            </div>
-          </div>
+            <i class="fa-brands fa-whatsapp mr-2"></i>
+            WhatsApp
+          </a>
         </div>
-      </section>
+      </div>
+    </header>
 
-      <section id="car-details" class="py-20 px-6">
-        <div class="max-w-7xl mx-auto">
-          <div class="grid lg:grid-cols-2 gap-12 items-center">
-            <div class="animate-fade-in carousel-container">
-              <div class="carousel-content">
-                <div class="carousel-item">
-                  <div
-                    class="aspect-video rounded-2xl overflow-hidden shadow-2xl"
-                  >
-                    <img
-                      src="https://images.unsplash.com/photo-1606016159991-e42f6f7ce0bb?w=800&h=600&fit=crop"
-                      alt="Innova Crysta 1"
-                      class="w-full h-full object-cover hover-scale"
-                    />
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div
-                    class="aspect-video rounded-2xl overflow-hidden shadow-2xl"
-                  >
-                    <img
-                      src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=800&h=600&fit=crop"
-                      alt="Innova Crysta 2"
-                      class="w-full h-full object-cover hover-scale"
-                    />
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div
-                    class="aspect-video rounded-2xl overflow-hidden shadow-2xl"
-                  >
-                    <img
-                      src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=800&h=600&fit=crop"
-                      alt="Innova Crysta 3"
-                      class="w-full h-full object-cover hover-scale"
-                    />
-                  </div>
-                </div>
-              </div>
-              <button class="carousel-button carousel-prev left-4">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-chevron-left"
-                >
-                  <path d="m15 18-6-6 6-6" />
-                </svg>
-              </button>
-              <button class="carousel-button carousel-next right-4">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-chevron-right"
-                >
-                  <path d="m9 18 6-6-6-6" />
-                </svg>
-              </button>
-            </div>
+    <section class="map-section">
+      <div class="container">
+        <h2>Our Location</h2>
+        <div class="map-container">
+          <iframe
+            title="Call Taxi Location Map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31098.64158418656!2d80.2091697!3d13.0587479!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265ddf4c3f31f%3A0x5b7a3e8e2b2a3d5e!2sChennai%20Central!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
 
-            <div class="space-y-8">
+    <main class="main-content container">
+      <h1 class="opacity-0" data-animate>Contact Us – Call Taxi</h1>
+      <p class="description opacity-0" data-animate>
+        We're here 24/7 for bookings and support. Reach us by phone, WhatsApp,
+        or the form below.
+      </p>
+
+      <section class="grid-container">
+        <article class="card contact-details opacity-0" data-animate>
+          <h2>Get in Touch</h2>
+          <ul>
+            <li>
+              <i class="fa-solid fa-phone mt-1"></i>
               <div>
-                <h2 class="text-4xl font-bold text-foreground mb-4">
-                  Toyota Innova Crysta
-                </h2>
-                <p class="text-lg text-muted-foreground leading-relaxed">
-                  Experience the perfect blend of comfort, space, and
-                  reliability with the Toyota Innova Crysta. This premium MPV
-                  offers exceptional comfort for families and groups, making
-                  every journey memorable. With its powerful engine, spacious
-                  interiors, and advanced safety features, it's the ideal choice
-                  for both city rides and long-distance travel.
+                <p class="font-medium">Phone</p>
+                <a href="tel:+919876543210">+91 98765 43210</a>
+              </div>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope mt-1"></i>
+              <div>
+                <p class="font-medium">Email</p>
+                <a href="mailto:bookings@calltaxi.com">bookings@calltaxi.com</a>
+              </div>
+            </li>
+            <li>
+              <i class="fa-solid fa-location-dot mt-1"></i>
+              <div>
+                <p class="font-medium">Address</p>
+                <p class="text-muted-foreground">
+                  Main Road, Chennai, TN 600001
                 </p>
               </div>
-
-              <div class="grid grid-cols-2 gap-4">
-                <div
-                  class="card border-border/50 hover:border-primary/50 transition-colors"
-                >
-                  <div class="card-content p-4 text-center">
-                    <i
-                      class="fas icon-users feature-icon text-primary mx-auto mb-2"
-                    ></i>
-                    <h3 class="font-semibold text-foreground">7-Seater</h3>
-                    <p class="text-sm text-muted-foreground">
-                      Spacious seating for the whole family
-                    </p>
-                  </div>
-                </div>
-                <div
-                  class="card border-border/50 hover:border-primary/50 transition-colors"
-                >
-                  <div class="card-content p-4 text-center">
-                    <i
-                      class="fas icon-snowflake feature-icon text-primary mx-auto mb-2"
-                    ></i>
-                    <h3 class="font-semibold text-foreground">AC</h3>
-                    <p class="text-sm text-muted-foreground">
-                      Dual-zone climate control
-                    </p>
-                  </div>
-                </div>
-                <div
-                  class="card border-border/50 hover:border-primary/50 transition-colors"
-                >
-                  <div class="card-content p-4 text-center">
-                    <i
-                      class="fas icon-luggage feature-icon text-primary mx-auto mb-2"
-                    ></i>
-                    <h3 class="font-semibold text-foreground">
-                      Large Boot Space
-                    </h3>
-                    <p class="text-sm text-muted-foreground">
-                      Ample storage for luggage
-                    </p>
-                  </div>
-                </div>
-                <div
-                  class="card border-border/50 hover:border-primary/50 transition-colors"
-                >
-                  <div class="card-content p-4 text-center">
-                    <i
-                      class="fas icon-navigation feature-icon text-primary mx-auto mb-2"
-                    ></i>
-                    <h3 class="font-semibold text-foreground">
-                      GPS Navigation
-                    </h3>
-                    <p class="text-sm text-muted-foreground">
-                      Real-time navigation system
-                    </p>
-                  </div>
-                </div>
-                <div
-                  class="card border-border/50 hover:border-primary/50 transition-colors"
-                >
-                  <div class="card-content p-4 text-center">
-                    <i
-                      class="fas icon-user-check feature-icon text-primary mx-auto mb-2"
-                    ></i>
-                    <h3 class="font-semibold text-foreground">
-                      Experienced Driver
-                    </h3>
-                    <p class="text-sm text-muted-foreground">
-                      Professional and courteous drivers
-                    </p>
-                  </div>
-                </div>
-                <div
-                  class="card border-border/50 hover:border-primary/50 transition-colors"
-                >
-                  <div class="card-content p-4 text-center">
-                    <i
-                      class="fas fa-shield-alt feature-icon text-primary mx-auto mb-2"
-                    ></i>
-                    <h3 class="font-semibold text-foreground">
-                      Insurance Covered
-                    </h3>
-                    <p class="text-sm text-muted-foreground">
-                      Comprehensive insurance protection
-                    </p>
-                  </div>
-                </div>
+            </li>
+            <li>
+              <i class="fa-solid fa-clock mt-1"></i>
+              <div>
+                <p class="font-medium">Working Hours</p>
+                <p class="text-muted-foreground">24/7 – Always on time</p>
               </div>
+            </li>
+          </ul>
 
-              <div
-                class="bg-gradient-to-r from-primary/10 to-primary/5 rounded-2xl p-6"
-              >
-                <div class="text-center">
-                  <h3 class="text-xl font-semibold text-foreground mb-4">
-                    Ready to Experience Premium Travel?
-                  </h3>
-                  <a href="#booking-section" class="button size-lg hover-scale">
-                    <i class="fas icon-phone icon"></i>
-                    Book Your Innova Crysta
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="py-20 px-6 bg-muted/30">
-        <div class="max-w-7xl mx-auto">
-          <div class="grid lg:grid-cols-2 gap-16 items-center mb-20">
-            <div class="order-1 lg:order-1">
-              <img
-                src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=600&h=400&fit=crop"
-                alt="Car Safety Features"
-                class="w-full h-96 object-cover rounded-2xl shadow-xl hover-scale"
-              />
-            </div>
-            <div class="order-2 lg:order-2 space-y-6">
-              <h2 class="text-4xl font-bold text-foreground">
-                Advanced Safety Features
-              </h2>
-              <p class="text-lg text-muted-foreground leading-relaxed">
-                The Innova Crysta comes equipped with multiple airbags, ABS with
-                EBD, and Vehicle Stability Control. Your safety is our top
-                priority with features like brake assist, hill-start assist, and
-                a reinforced body structure that meets international safety
-                standards.
-              </p>
-              <div class="grid grid-cols-2 gap-4">
-                <div class="flex items-center space-x-3">
-                  <i class="fas fa-shield-alt detail-icon text-primary"></i>
-                  <span class="text-foreground font-medium">7 Airbags</span>
-                </div>
-                <div class="flex items-center space-x-3">
-                  <i class="fas fa-shield-alt detail-icon text-primary"></i>
-                  <span class="text-foreground font-medium">ABS + EBD</span>
-                </div>
-                <div class="flex items-center space-x-3">
-                  <i class="fas fa-shield-alt detail-icon text-primary"></i>
-                  <span class="text-foreground font-medium">VSC</span>
-                </div>
-                <div class="flex items-center space-x-3">
-                  <i class="fas fa-shield-alt detail-icon text-primary"></i>
-                  <span class="text-foreground font-medium">Hill Assist</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="grid lg:grid-cols-2 gap-16 items-center">
-            <div class="order-2 lg:order-1 space-y-6">
-              <h2 class="text-4xl font-bold text-foreground">
-                Luxurious Interior & Entertainment
-              </h2>
-              <p class="text-lg text-muted-foreground leading-relaxed">
-                Experience premium comfort with leather seats, automatic climate
-                control, and a state-of-the-art infotainment system. The
-                spacious cabin ensures every passenger enjoys the journey with
-                ample legroom and headspace.
-              </p>
-              <div class="grid grid-cols-2 gap-4">
-                <div class="flex items-center space-x-3">
-                  <i class="fas icon-car detail-icon text-primary"></i>
-                  <span class="text-foreground font-medium">Leather Seats</span>
-                </div>
-                <div class="flex items-center space-x-3">
-                  <i class="fas icon-snowflake detail-icon text-primary"></i>
-                  <span class="text-foreground font-medium">Auto AC</span>
-                </div>
-                <div class="flex items-center space-x-3">
-                  <i class="fas icon-navigation detail-icon text-primary"></i>
-                  <span class="text-foreground font-medium">Touchscreen</span>
-                </div>
-                <div class="flex items-center space-x-3">
-                  <i class="fas icon-users detail-icon text-primary"></i>
-                  <span class="text-foreground font-medium">Captain Seats</span>
-                </div>
-              </div>
-            </div>
-            <div class="order-1 lg:order-2">
-              <img
-                src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=600&h=400&fit=crop"
-                alt="Car Interior"
-                class="w-full h-96 object-cover rounded-2xl shadow-xl hover-scale"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="py-20 px-6">
-        <div class="max-w-6xl mx-auto">
-          <h2 class="text-4xl font-bold text-center text-foreground mb-4">
-            Why Choose Innova Crysta?
-          </h2>
-          <p class="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-            Discover why thousands of customers trust us for their travel needs
-          </p>
-          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div
-              class="card border-border/50 hover:border-primary/50 transition-all duration-300 hover-scale"
+          <div class="btn-group">
+            <a href="tel:+919876543210" class="btn btn-primary hover-scale"
+              >Call Now</a
             >
-              <div class="card-content p-6 text-center">
-                <div
-                  class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4"
-                >
-                  <i class="fas icon-users why-choose-icon text-primary"></i>
-                </div>
-                <h3 class="font-semibold text-foreground mb-2">
-                  Great for Families
-                </h3>
-                <p class="text-sm text-muted-foreground">
-                  Perfect for family trips and outings
-                </p>
-              </div>
-            </div>
-            <div
-              class="card border-border/50 hover:border-primary/50 transition-all duration-300 hover-scale"
-            >
-              <div class="card-content p-6 text-center">
-                <div
-                  class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4"
-                >
-                  <i class="fas icon-map-pin why-choose-icon text-primary"></i>
-                </div>
-                <h3 class="font-semibold text-foreground mb-2">
-                  Airport Pickups
-                </h3>
-                <p class="text-sm text-muted-foreground">
-                  Reliable airport transfer service
-                </p>
-              </div>
-            </div>
-            <div
-              class="card border-border/50 hover:border-primary/50 transition-all duration-300 hover-scale"
-            >
-              <div class="card-content p-6 text-center">
-                <div
-                  class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4"
-                >
-                  <i class="fas icon-clock why-choose-icon text-primary"></i>
-                </div>
-                <h3 class="font-semibold text-foreground mb-2">
-                  Outstation Trips
-                </h3>
-                <p class="text-sm text-muted-foreground">
-                  Comfortable long-distance travel
-                </p>
-              </div>
-            </div>
-            <div
-              class="card border-border/50 hover:border-primary/50 transition-all duration-300 hover-scale"
-            >
-              <div class="card-content p-6 text-center">
-                <div
-                  class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4"
-                >
-                  <i class="fas icon-car why-choose-icon text-primary"></i>
-                </div>
-                <h3 class="font-semibold text-foreground mb-2">
-                  Corporate Travel
-                </h3>
-                <p class="text-sm text-muted-foreground">
-                  Professional business transportation
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="py-20 px-6 bg-muted/30">
-        <div class="max-w-6xl mx-auto">
-          <h2 class="text-4xl font-bold text-center text-foreground mb-12">
-            What Our Customers Say
-          </h2>
-          <div class="grid md:grid-cols-3 gap-8">
-            <div class="card border-border/50">
-              <div class="card-content p-6">
-                <div class="flex items-center mb-4">
-                  <i
-                    class="fas icon-star w-5 h-5 fill-yellow-400 text-yellow-400"
-                  ></i>
-                  <i
-                    class="fas icon-star w-5 h-5 fill-yellow-400 text-yellow-400"
-                  ></i>
-                  <i
-                    class="fas icon-star w-5 h-5 fill-yellow-400 text-yellow-400"
-                  ></i>
-                  <i
-                    class="fas icon-star w-5 h-5 fill-yellow-400 text-yellow-400"
-                  ></i>
-                  <i
-                    class="fas icon-star w-5 h-5 fill-yellow-400 text-yellow-400"
-                  ></i>
-                </div>
-                <p class="text-muted-foreground mb-4 italic">
-                  "Excellent service! The Innova was spotless and the driver was
-                  very professional. Perfect for our family trip to Goa."
-                </p>
-                <div>
-                  <div class="font-semibold text-foreground">Rajesh Kumar</div>
-                  <div class="text-sm text-muted-foreground">Mumbai</div>
-                </div>
-              </div>
-            </div>
-            <div class="card border-border/50">
-              <div class="card-content p-6">
-                <div class="flex items-center mb-4">
-                  <i
-                    class="fas icon-star w-5 h-5 fill-yellow-400 text-yellow-400"
-                  ></i>
-                  <i
-                    class="fas icon-star w-5 h-5 fill-yellow-400 text-yellow-400"
-                  ></i>
-                  <i
-                    class="fas icon-star w-5 h-5 fill-yellow-400 text-yellow-400"
-                  ></i>
-                  <i
-                    class="fas icon-star w-5 h-5 fill-yellow-400 text-yellow-400"
-                  ></i>
-                  <i
-                    class="fas icon-star w-5 h-5 fill-yellow-400 text-yellow-400"
-                  ></i>
-                </div>
-                <p class="text-muted-foreground mb-4 italic">
-                  "Booked for airport pickup. Driver arrived on time and the car
-                  was comfortable. Highly recommended!"
-                </p>
-                <div>
-                  <div class="font-semibold text-foreground">Priya Sharma</div>
-                  <div class="text-sm text-muted-foreground">Delhi</div>
-                </div>
-              </div>
-            </div>
-            <div class="card border-border/50">
-              <div class="card-content p-6">
-                <div class="flex items-center mb-4">
-                  <i
-                    class="fas icon-star w-5 h-5 fill-yellow-400 text-yellow-400"
-                  ></i>
-                  <i
-                    class="fas icon-star w-5 h-5 fill-yellow-400 text-yellow-400"
-                  ></i>
-                  <i
-                    class="fas icon-star w-5 h-5 fill-yellow-400 text-yellow-400"
-                  ></i>
-                  <i
-                    class="fas icon-star w-5 h-5 fill-yellow-400 text-yellow-400"
-                  ></i>
-                  <i
-                    class="fas icon-star w-5 h-5 fill-yellow-400 text-yellow-400"
-                  ></i>
-                </div>
-                <p class="text-muted-foreground mb-4 italic">
-                  "Used for a corporate event. The Innova Crysta gave a premium
-                  feel. Will definitely book again."
-                </p>
-                <div>
-                  <div class="font-semibold text-foreground">Amit Patel</div>
-                  <div class="text-sm text-muted-foreground">Bangalore</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section
-        id="booking-section"
-        class="py-20 px-6 bg-gradient-to-r from-primary to-primary/80"
-      >
-        <div class="max-w-4xl mx-auto text-center text-white">
-          <h2 class="text-4xl font-bold mb-4">
-            Ready to Book the Innova Crysta?
-          </h2>
-          <p class="text-xl mb-8 text-white/90">
-            Experience premium comfort and reliability for your next journey
-          </p>
-          <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="#" class="button size-lg variant-secondary hover-scale">
-              <i class="fas icon-calendar icon"></i>
-              Book Now
-            </a>
             <a
-              href="tel:+919876543210"
-              class="button size-lg variant-outline border-white text-white hover:bg-white hover:text-primary hover-scale"
+              href="mailto:bookings@calltaxi.com"
+              class="btn btn-outline hover-scale"
+              >Email Us</a
             >
-              <i class="fas icon-phone icon"></i>
-              Call Now: +91 98765 43210
-            </a>
+          </div>
+        </article>
+
+        <article class="card contact-form opacity-0" data-animate>
+          <h2>Send a Message</h2>
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your full name"
+                required
+              />
+            </div>
+            <div class="form-group grid-2">
+              <div>
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="you@example.com"
+                  required
+                />
+              </div>
+              <div>
+                <label for="phone">Phone</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="+91 98765 43210"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Tell us your pickup, drop location and time"
+                required
+              ></textarea>
+            </div>
+            <div class="form-submit">
+              <button
+                type="submit"
+                class="btn btn-primary btn-submit hover-scale"
+              >
+                Submit
+              </button>
+            </div>
+          </form>
+        </article>
+      </section>
+
+      <section class="quick-help opacity-0" data-animate>
+        <h2>Quick Help</h2>
+        <div class="quick-help-grid">
+          <div class="quick-help-item">
+            <p>Can I book for outstation trips?</p>
+            <p>Yes, we offer outstation services at competitive rates.</p>
+          </div>
+          <div class="quick-help-item">
+            <p>Do you have airport pickup?</p>
+            <p>24/7 airport pickups and drops with flight tracking.</p>
+          </div>
+          <div class="quick-help-item">
+            <p>How fast is confirmation?</p>
+            <p>Instant confirmation via call or WhatsApp.</p>
           </div>
         </div>
       </section>
-    </div>
+    </main>
+
+    <a
+      href="https://wa.me/919876543210?text=Hi%2C%20I%20want%20to%20book%20a%20taxi"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Chat on WhatsApp"
+      class="whatsapp-float hover-scale"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
 
     <script>
       document.addEventListener("DOMContentLoaded", () => {
-        // Carousel Functionality
-        const carouselContent = document.querySelector(".carousel-content");
-        const carouselItems = document.querySelectorAll(".carousel-item");
-        const prevButton = document.querySelector(".carousel-prev");
-        const nextButton = document.querySelector(".carousel-next");
-        let currentIndex = 0;
+        // SEO Structured Data (JSON-LD)
+        const faqScript = document.createElement("script");
+        faqScript.type = "application/ld+json";
+        faqScript.text = JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "How do I book a Call Taxi?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Use the contact form or click the WhatsApp/Call buttons for instant booking.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Do you provide airport pickups?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes, we provide 24/7 airport pickups and drop-offs with experienced drivers.",
+              },
+            },
+          ],
+        });
+        document.head.appendChild(faqScript);
 
-        const updateCarousel = () => {
-          const itemWidth = carouselItems[0].offsetWidth;
-          carouselContent.style.transform = `translateX(-${
-            currentIndex * itemWidth
-          }px)`;
-        };
+        // On-scroll animations
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("animate-fade-in");
+                entry.target.classList.remove("opacity-0");
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.15 }
+        );
 
-        prevButton.addEventListener("click", () => {
-          currentIndex =
-            currentIndex > 0 ? currentIndex - 1 : carouselItems.length - 1;
-          updateCarousel();
+        document.querySelectorAll("[data-animate]").forEach((el) => {
+          observer.observe(el);
         });
 
-        nextButton.addEventListener("click", () => {
-          currentIndex =
-            currentIndex < carouselItems.length - 1 ? currentIndex + 1 : 0;
-          updateCarousel();
+        // Form submission logic (basic example)
+        const contactForm = document.getElementById("contactForm");
+        contactForm.addEventListener("submit", (e) => {
+          e.preventDefault();
+          const formData = new FormData(e.target);
+          const name = formData.get("name") || "Customer";
+          alert(`Thanks, ${name}! We'll get back to you shortly.`);
+          e.target.reset();
         });
-
-        // Auto-slide (Optional)
-        setInterval(() => {
-          currentIndex =
-            currentIndex < carouselItems.length - 1 ? currentIndex + 1 : 0;
-          updateCarousel();
-        }, 5000); // Change image every 5 seconds
-
-        // Initial carousel update
-        updateCarousel();
       });
     </script>
   </body>

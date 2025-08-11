@@ -18,8 +18,12 @@
     />
 
     <!-- Bootstrap CSS -->
-         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
 
     <!-- Font Awesome -->
     <link
@@ -30,21 +34,28 @@
     <!-- AOS Animation Library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/components.css" />
     <link rel="stylesheet" href="css/animations.css" />
 
     <!-- inline_css -->
-     <style>
+    <style>
       .bg_container {
         margin-top: 5rem;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/tour/valparai-bg.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 300px;
-}
-     </style>
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+          ),
+          url(img/tour/valparai-bg.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 300px;
+      }
+    </style>
   </head>
   <body>
     <!-- Preloader -->
@@ -63,12 +74,8 @@
         <div class="navbar-inner">
           <div class="logo-area">
             <div class="logo-icon">
-              <img
-                src="https://unpkg.com/lucide-static@latest/icons/car.svg"
-                alt="Car Icon"
-              />
+              <img src="./img/logo.jpeg" alt="Car Icon" />
             </div>
-            <span>Rainbow call taxi</span>
           </div>
 
           <ul class="nav-list" id="nav-menu">
@@ -391,285 +398,446 @@
         </div>
       </div>
     </nav>
-<!-- Navigation End -->
+    <!-- Navigation End -->
 
     <!-- Header Start -->
     <div class="container-fluid bg_container">
-        <div class="container text-center py-5" style="max-width: 900px;">
-            <h4 class="text-white display-4 mb-4">Valparai Hills Tour</h4>
-            <ol class="breadcrumb d-flex justify-content-center mb-0">
-                <li class="text-light breadcrumb-item"><a href="index.html">Home</a></li>
-                <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                <li class="breadcrumb-item active text-white">Valparai Hills Tour</li>
-            </ol>
-        </div>
+      <div class="container text-center py-5" style="max-width: 900px">
+        <h4 class="text-white display-4 mb-4">Valparai Hills Tour</h4>
+        <ol class="breadcrumb d-flex justify-content-center mb-0">
+          <li class="text-light breadcrumb-item">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="breadcrumb-item"><a href="#">Pages</a></li>
+          <li class="breadcrumb-item active text-white">Valparai Hills Tour</li>
+        </ol>
+      </div>
     </div>
     <!-- Header End -->
 
     <!-- Contant Start -->
     <div class="container-fluid mt-5">
-        <div class="container">
-            <div class="text-center mx-auto pb-5" style="max-width: 800px;">
-                <h1 class="display-5 text-capitalize mb-3">Best Valparai Tour Package <br> <span
-                        class="highlight1">from Salem</span>
-                </h1>
-                ---------- <i class="fa-solid fa-car fa-beat-fade" style="color: #010005;"></i> ----------
-                <p class="mb-0 mt-4" style="line-height: 25px; font-size: 15px;">Valparai is one of the cool hill stations
-                    suitable for a holiday trip. You can stay in Valparai by choosing one of your favorite hotels at an
-                    affordable price. So many places are there in and around Valparai to visit and all the places are
-                    praiseworthy to visit and enjoy. <span style="font-weight: bold;" class="text-info">Rainbow Call
-                        Taxi</span> offers a variety of travel services, including tour packages in and around <span
-                        style="font-weight: bold;">Valparai tour package</span>, which is a scenic hill station located
-                    in Tamil Nadu. Though I don't have access to specific current packages, their tours typically focus
-                    on showcasing the beautiful landscapes, tea estates, and wildlife in the region.</p>
-            </div>
+      <div class="container">
+        <div class="text-center mx-auto pb-5" style="max-width: 800px">
+          <h1 class="display-5 text-capitalize mb-3">
+            Best Valparai Tour Package <br />
+            <span class="highlight1">from Salem</span>
+          </h1>
+          ----------
+          <i class="fa-solid fa-car fa-beat-fade" style="color: #010005"></i>
+          ----------
+          <p class="mb-0 mt-4" style="line-height: 25px; font-size: 15px">
+            Valparai is one of the cool hill stations suitable for a holiday
+            trip. You can stay in Valparai by choosing one of your favorite
+            hotels at an affordable price. So many places are there in and
+            around Valparai to visit and all the places are praiseworthy to
+            visit and enjoy.
+            <span style="font-weight: bold" class="text-info"
+              >Rainbow Call Taxi</span
+            >
+            offers a variety of travel services, including tour packages in and
+            around <span style="font-weight: bold">Valparai tour package</span>,
+            which is a scenic hill station located in Tamil Nadu. Though I don't
+            have access to specific current packages, their tours typically
+            focus on showcasing the beautiful landscapes, tea estates, and
+            wildlife in the region.
+          </p>
         </div>
+      </div>
     </div>
 
     <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-12">
+          <img src="img/bg-remove/9-removebg1.png" class="img-fluid" />
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <p style="line-height: 25px; font-size: 16px">
+            Valparai Hill station is considered the best tourist place in Tamil
+            Nadu. This place is extremely pollution-free heavenly land
+            surrounded with full of tea estates. This green lush area is the
+            most suitable climate to make your trips super amazing featured with
+            all the majestic heavens. This hill station is popularly enriched
+            with the exotic experience in the place of mountain range stations
+            that held with the level on the Anamalai mountain range. This place
+            has several tea and coffee estates that are suitable for the
+            climates of Valparai hilly areas. The forested areas of Valparai are
+            known to establish dedicated and experienced suitable coffee and tea
+            plantations. This place has several dedicated to the tourism
+            industry that is well known for the Valparai experience to cause
+            profitable hits and assist the practices of dedication to your tour.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="container-fluid mb-5"
+      style="
+        background: linear-gradient(to top, #ffffffd5, #6d7879);
+        margin-top: 100px;
+      "
+    >
+      <br /><br />
+      <h1 class="text-center text-white">
+        Famous places to visit in <span class="highlight1">Valparai</span>
+      </h1>
+      <div class="container text-center text-dark">
+        ----------
+        <i class="fa-solid fa-car fa-beat-fade" style="color: #010005"></i>
+        ----------
+      </div>
+      <div class="container">
+        <p
+          class="text-center mt-4"
+          style="line-height: 28px; font-size: 18px; color: white"
+        >
+          Valparai Hill station is located above 3500 feet high from sea level.
+          This area is a must place to have a tour for the adventurers. Also,
+          the portions and the surroundings of the hills are heavily dropped up
+          with the greenery overall and the level of attraction makes the record
+          to spread the mountains and picturesque all around. You must be
+          familiar with the Chinna Kallar place located in Valparai which is
+          counted under heavy rainfall areas in India. This region is rich in
+          elephant tract and highly known to have many leopards. However, the
+          Valparai range is also considered the habitat of Nilhiti Tahr. Also,
+          tourists can visit the Indira Gandhi Wildlife Sanctuary, which is one
+          of the most prominent attractions in Valparai.
+          <span style="font-weight: bold" class="text-info"
+            >Rainbow Call Taxi</span
+          >
+          services include a complete tour of these attractions including every
+          great place for bird watching.
+        </p>
+        <p
+          class="text-center"
+          style="line-height: 28px; font-size: 18px; color: white"
+        >
+          Our
+          <span style="font-weight: bold" class="text-info"
+            >Valparai tour packages from Salem</span
+          >
+          packages include a high range of services with perfect management and
+          a comfortable stay that covers all the local tours with finite
+          scenario planning. Also, tour packages are one of the best ways to
+          travel with perfect planning and arrangements that are required to be
+          taken care of and booking tour packages with a lot of travel
+          experience. Our most popular packages are the best way to explore the
+          Pollachi and Valparai.
+        </p>
+      </div>
+      <div class="container">
         <div class="row">
-            <div class="col-lg-6 col-md-12">
-                <img src="img/bg-remove/9-removebg1.png" class="img-fluid">
-            </div>
-            <div class="col-lg-6 col-md-12">
-                <p style="line-height: 25px; font-size: 16px;">Valparai Hill station is considered the best tourist
-                    place in Tamil Nadu. This place is extremely pollution-free heavenly land surrounded with full of
-                    tea estates. This green lush area is the most suitable climate to make your trips super amazing
-                    featured with all the majestic heavens. This hill station is popularly enriched with the exotic
-                    experience in the place of mountain range stations that held with the level on the Anamalai mountain
-                    range. This place has several tea and coffee estates that are suitable for the climates of Valparai
-                    hilly areas. The forested areas of Valparai are known to establish dedicated and experienced
-                    suitable coffee and tea plantations. This place has several dedicated to the tourism industry that
-                    is well known for the Valparai experience to cause profitable hits and assist the practices of
-                    dedication to your tour.</p>
-            </div>
+          <div class="col-lg-6 col-md-12">
+            <img
+              src="img/tour/Valparai1.jpg"
+              class="img-fluid"
+              style="border-radius: 10px"
+            />
+          </div>
+          <br />
+          <div class="col-lg-6 col-md-12 mt-2">
+            <ul>
+              <li class="text-dark" style="line-height: 28px; font-size: 16px">
+                <span style="font-weight: bold" class="text-dark"
+                  >Aliyar Dam</span
+                >
+                : Aliyar Dam is located near Aliyar village that is situated in
+                Pollachi town in Coimbatore District, Tamil Nadu, South India.
+                This place is an ideal location to chill out with friends, which
+                makes sure to give an amazing majestic view of the hilly
+                mountains. This tourist spot is well maintained which gives the
+                ideal look to give a shit thrilling of a waterfall.
+              </li>
+              <li class="text-dark" style="line-height: 28px; font-size: 16px">
+                <span style="font-weight: bold" class="text-dark"
+                  >Sholayar Dam</span
+                >
+                : The Sholayar Dam is located 20km from Valparai, a Hill station
+                in the Anaimalai Hills of the Coimbatore. This tourist place is
+                extremely maintained with a special reservoir to make a water
+                capacity project. People visit here to make the special moments
+                a part of happiness. This hill station is beautiful in actuality
+                and makes the turns very entertaining.
+              </li>
+            </ul>
+          </div>
         </div>
-    </div>
+        <br />
+        <div class="row">
+          <div class="col-lg-6 col-md-12 mt-5">
+            <ul>
+              <li class="text-dark" style="line-height: 28px; font-size: 16px">
+                <span style="font-weight: bold" class="text-dark"
+                  >Chinnakallar Falls</span
+                >
+                : Chinnakallar Falls is a waterfall in the Coimbatore district
+                in Tamil Nadu. This area is the third wettest area in India that
+                leads us to the waterfall. This place is well maintained to make
+                an entertaining visit to the frequent moments accompanied by
+                elephants. Also, there is an entry fee which is the
+                third-highest rainfall receiving a place in India.
+              </li>
+              <li class="text-dark" style="line-height: 28px; font-size: 16px">
+                <span style="font-weight: bold" class="text-dark"
+                  >Monkey Falls</span
+                >
+                : Money falls is very close to a famous tourist attraction with
+                waterfalls which is a safe place with a waterfall to reach from
+                the road. This tourist place is also blessed with a small temple
+                that is a famous and pleasant place to spend the weekend with
+                your friends. This place is a famous attraction with a waterfall
+                within the reach of the road and is a safe place except in
+                monsoon time.
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <img
+              src="img/tour/valparai2.avif"
+              class="img-fluid"
+              style="border-radius: 10px"
+            />
+          </div>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-lg-6 col-md-12 pt-3">
+            <img
+              src="img/tour/valparai3.webp"
+              class="img-fluid"
+              style="border-radius: 10px"
+            />
+          </div>
+          <div class="col-lg-6 col-md-12 mt-1">
+            <ul>
+              <li class="text-dark" style="line-height: 28px; font-size: 16px">
+                <span style="font-weight: bold" class="text-dark"
+                  >Loam’s View Falls</span
+                >
+                : The loam’s view falls is the best place to visit and have a
+                breathtaking tourism experience. It is a natural habitat that is
+                blessed with a reservoir that is perfect to see the top view and
+                get the soothing tourism experience. This place is quite filled
+                up with natural attractions that are aware of getting you over
+                to the mountain ranges and a beautiful place to drive for a long
+                time.
+              </li>
+              <li class="text-dark" style="line-height: 28px; font-size: 16px">
+                <span style="font-weight: bold" class="text-dark"
+                  >Nallamudi Poonjolai</span
+                >
+                : This place is an amazing refreshing drive featured with
+                winding gestures and a rolling trace to get the tea gardens
+                uphill and benefit their imbibe essence of the surrounding. This
+                edge of the rocky platform on the mighty falls gives the feeling
+                of the tallest mountain in South India that is a thick forest
+                spreading out among the flowering trees that include numerous
+                waterfalls cascading the down step built up with thick forests.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-lg-6 col-md-12">
+            <ul>
+              <li class="text-dark" style="line-height: 28px; font-size: 16px">
+                <span style="font-weight: bold" class="text-dark"
+                  >Grass Hills</span
+                >
+                : The sweetgrass hills is a small group of low mountains that
+                are high above sea level. This landscape is a combination of
+                peaks that are composed to give an attractive look towards the
+                higher ranges. This surrounding landscape is a unique range to
+                put a light on the creeping significant scenarios deep-rooted
+                with the hillsides.
+              </li>
+              <li class="text-dark" style="line-height: 28px; font-size: 16px">
+                <span style="font-weight: bold" class="text-dark"
+                  >Tea Estates</span
+                >
+                : This tourist place is a plantation area that is the most
+                extreme place of attraction for the specific contribution. This
+                area is quite a slot of promotion towards the techniques
+                inclined surrounding waterways. However, this place is a
+                must-visit if you are looking for an amazing sector of
+                specifical plantation sprung up over the greenery areas.
+              </li>
+            </ul>
 
-    <div class="container-fluid mb-5"
-        style="background: linear-gradient(to top, #ffffffd5, #6d7879); margin-top: 100px;"><br><br>
-        <h1 class="text-center text-white">Famous places to visit in <span class="highlight1">Valparai</span>
-        </h1>
-        <div class="container text-center text-dark">
-            ---------- <i class="fa-solid fa-car fa-beat-fade" style="color: #010005;"></i> ----------
+            <p style="font-size: 18px; line-height: 27px" class="text-dark">
+              Custom packages also available for booking your trip & having the
+              most memorable devotional experience. Call: +91 9894338777
+            </p>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <img
+              src="img/tour/valparai4.jpg"
+              class="img-fluid"
+              style="border-radius: 10px"
+            />
+          </div>
         </div>
-        <div class="container">
-            <p class="text-center mt-4" style="line-height: 28px; font-size: 18px; color: white;">
-                Valparai Hill station is located above 3500 feet high from sea level. This area is a must place to have
-                a tour for the adventurers. Also, the portions and the surroundings of the hills are heavily dropped up
-                with the greenery overall and the level of attraction makes the record to spread the mountains and
-                picturesque all around. You must be familiar with the Chinna Kallar place located in Valparai which is
-                counted under heavy rainfall areas in India. This region is rich in elephant tract and highly known to
-                have many leopards. However, the Valparai range is also considered the habitat of Nilhiti Tahr. Also,
-                tourists can visit the Indira Gandhi Wildlife Sanctuary, which is one of the most prominent attractions
-                in Valparai. <span style="font-weight: bold;" class="text-info">Rainbow Call Taxi</span> services
-                include a complete tour of these attractions including every great place for bird watching.</p>
-            <p class="text-center" style="line-height: 28px; font-size: 18px; color: white;">Our
-                <span style="font-weight: bold;" class="text-info">Valparai tour packages from Salem</span>
-                packages include a high range of services with perfect management and a comfortable stay that covers all
-                the local tours with finite scenario planning. Also, tour packages are one of the best ways to travel
-                with perfect planning and arrangements that are required to be taken care of and booking tour packages
-                with a lot of travel experience. Our most popular packages are the best way to explore the Pollachi and
-                Valparai.</p>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-12">
-                    <img src="img/tour/Valparai1.jpg" class="img-fluid" style="border-radius: 10px;">
-                </div><br>
-                <div class="col-lg-6 col-md-12 mt-2">
-                    <ul>
-                        <li class="text-dark" style="line-height: 28px; font-size: 16px;"><span
-                                style="font-weight: bold;" class="text-dark">Aliyar Dam</span> : Aliyar Dam is
-                            located near Aliyar village that is situated in Pollachi town in Coimbatore District, Tamil
-                            Nadu, South India. This place is an ideal location to chill out with friends, which makes
-                            sure to give an amazing majestic view of the hilly mountains. This tourist spot is well
-                            maintained which gives the ideal look to give a shit thrilling of a waterfall.</li>
-                        <li class="text-dark" style="line-height: 28px; font-size: 16px;"><span
-                                style="font-weight: bold;" class="text-dark">Sholayar Dam</span> : The Sholayar Dam
-                            is located 20km from Valparai, a Hill station in the Anaimalai Hills of the Coimbatore. This
-                            tourist place is extremely maintained with a special reservoir to make a water capacity
-                            project. People visit here to make the special moments a part of happiness. This hill
-                            station is beautiful in actuality and makes the turns very entertaining.</li>
-                    </ul>
-                </div>
-            </div>
-            <br>
-            <div class="row">
-                <div class="col-lg-6 col-md-12 mt-5">
-                    <ul>
-                        <li class="text-dark" style="line-height: 28px; font-size: 16px;"><span
-                                style="font-weight: bold;" class="text-dark">Chinnakallar Falls</span> :
-                            Chinnakallar Falls is a waterfall in the Coimbatore district in Tamil Nadu. This area is the
-                            third wettest area in India that leads us to the waterfall. This place is well maintained to
-                            make an entertaining visit to the frequent moments accompanied by elephants. Also, there is
-                            an entry fee which is the third-highest rainfall receiving a place in India.</li>
-                        <li class="text-dark" style="line-height: 28px; font-size: 16px;"><span
-                                style="font-weight: bold;" class="text-dark">Monkey Falls</span> : Money falls is
-                            very close to a famous tourist attraction with waterfalls which is a safe place with a
-                            waterfall to reach from the road. This tourist place is also blessed with a small temple
-                            that is a famous and pleasant place to spend the weekend with your friends. This place is a
-                            famous attraction with a waterfall within the reach of the road and is a safe place except
-                            in monsoon time.</li>
-                    </ul>
-                </div>
-                <div class="col-lg-6 col-md-12">
-                    <img src="img/tour/valparai2.avif" class="img-fluid" style="border-radius: 10px;">
-                </div>
-            </div>
-            <br>
-            <div class="row">
-                <div class="col-lg-6 col-md-12 pt-3">
-                    <img src="img/tour/valparai3.webp" class="img-fluid" style="border-radius: 10px;">
-                </div>
-                <div class="col-lg-6 col-md-12 mt-1">
-                    <ul>
-                        <li class="text-dark" style="line-height: 28px; font-size: 16px;"><span
-                                style="font-weight: bold;" class="text-dark">Loam’s View Falls</span> : The loam’s
-                            view falls is the best place to visit and have a breathtaking tourism experience. It is a
-                            natural habitat that is blessed with a reservoir that is perfect to see the top view and get
-                            the soothing tourism experience. This place is quite filled up with natural attractions that
-                            are aware of getting you over to the mountain ranges and a beautiful place to drive for a
-                            long time.</li>
-                        <li class="text-dark" style="line-height: 28px; font-size: 16px;"><span
-                                style="font-weight: bold;" class="text-dark">Nallamudi Poonjolai</span> : This place
-                            is an amazing refreshing drive featured with winding gestures and a rolling trace to get the
-                            tea gardens uphill and benefit their imbibe essence of the surrounding. This edge of the
-                            rocky platform on the mighty falls gives the feeling of the tallest mountain in South India
-                            that is a thick forest spreading out among the flowering trees that include numerous
-                            waterfalls cascading the down step built up with thick forests.</li>
-                    </ul>
-                </div>
-            </div>
-            <br>
-            <div class="row">
-                <div class="col-lg-6 col-md-12">
-                    <ul>
-                        <li class="text-dark" style="line-height: 28px; font-size: 16px;"><span
-                                style="font-weight: bold;" class="text-dark">Grass Hills</span> : The sweetgrass
-                            hills is a small group of low mountains that are high above sea level. This landscape is a
-                            combination of peaks that are composed to give an attractive look towards the higher ranges.
-                            This surrounding landscape is a unique range to put a light on the creeping significant
-                            scenarios deep-rooted with the hillsides.</li>
-                        <li class="text-dark" style="line-height: 28px; font-size: 16px;"><span
-                                style="font-weight: bold;" class="text-dark">Tea Estates</span> : This tourist place
-                            is a plantation area that is the most extreme place of attraction for the specific
-                            contribution. This area is quite a slot of promotion towards the techniques inclined
-                            surrounding waterways. However, this place is a must-visit if you are looking for an amazing
-                            sector of specifical plantation sprung up over the greenery areas. </li>
-                    </ul>
-
-                    <p style="font-size: 18px; line-height: 27px;" class="text-dark">Custom packages also available
-                        for booking your trip &
-                        having the most memorable devotional experience. Call: +91 9894338777</p>
-                </div>
-                <div class="col-lg-6 col-md-12">
-                    <img src="img/tour/valparai4.jpg" class="img-fluid" style="border-radius: 10px;">
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
-    <br>
+    <br />
     <div class="container mb-5 mt-5">
-        <h1 style="text-align: center;">Salem to Valparai Family <span
-                class="highlight1">Tour Packages</span></h1>
-        <div class="container text-center">
-            ---------- <i class="fa-solid fa-car fa-beat-fade al" style="color: #010005;"></i> ----------
+      <h1 style="text-align: center">
+        Salem to Valparai Family <span class="highlight1">Tour Packages</span>
+      </h1>
+      <div class="container text-center">
+        ----------
+        <i class="fa-solid fa-car fa-beat-fade al" style="color: #010005"></i>
+        ----------
+      </div>
+      <p class="display-6">Car rental for Valparai tour</p>
+      <p style="line-height: 25px; font-size: 16px">
+        We offer a wide range of car rental services for holiday tours. As per
+        your choice, you are free to choose your favorable cars on rent and
+        experience the comfortable and happy rides with the luxurious feelings
+        to symbolize your standards in choosing
+        <span style="font-weight: bold" class="text-info"
+          >Valparai family tour packages from Salem</span
+        >
+        and style in hand.
+      </p>
+      <div class="row">
+        <div class="col-lg-6 col-md-12 pt-3">
+          <p style="line-height: 25px; font-size: 16px">
+            <span class="text-dark" style="font-weight: bold"
+              >Innova Car Rental</span
+            >
+            : Innova is a luxury eight seater car that is driven by the dreamy
+            standard people to prove their worth to the world. They hold a
+            fashion statement with an excellent service serving with the utmost
+            comfortable tour. This car makes sure to offer you a secure and safe
+            drive anywhere you want.
+          </p>
+          <p style="line-height: 25px; font-size: 16px">
+            <span class="text-dark" style="font-weight: bold"
+              >Etios Car Rental</span
+            >
+            : The Toyota Etios is a subcompact car that is extremely giant to
+            provide you the quality experience of traveling featured with the
+            higher quality seats along with the creamy colored interior. This is
+            a well standard car that holds the comfortable and safe driven
+            practices involved in this.
+          </p>
         </div>
-        <p class="display-6">Car rental for Valparai tour</p>
-        <p style="line-height: 25px; font-size: 16px;">We offer a wide range of car rental services for holiday tours.
-            As per your choice, you are free to choose your favorable cars on rent and experience the comfortable and
-            happy rides with the luxurious feelings to symbolize your standards in choosing <span
-                style="font-weight: bold;" class="text-info">Valparai family tour packages from Salem</span> and
-            style in hand.</p>
-        <div class="row">
-            <div class="col-lg-6 col-md-12 pt-3">
-                <p style="line-height: 25px; font-size: 16px;"><span class="text-dark"
-                        style="font-weight: bold;">Innova Car Rental</span> : Innova is a luxury eight seater car that is
-                    driven by the dreamy standard people to prove their worth to the world. They hold a fashion
-                    statement with an excellent service serving with the utmost comfortable tour. This car makes sure to
-                    offer you a secure and safe drive anywhere you want.</p>
-                <p style="line-height: 25px; font-size: 16px;"><span class="text-dark"
-                        style="font-weight: bold;">Etios Car Rental</span> : The Toyota Etios is a subcompact car that is
-                    extremely giant to provide you the quality experience of traveling featured with the higher quality
-                    seats along with the creamy colored interior. This is a well standard car that holds the comfortable
-                    and safe driven practices involved in this.</p>
-            </div>
-            <div class="col-lg-6 col-md-12">
-                <img src="img/bg-remove/8-removebg (1).png" class="img-fluid mt-3">
-            </div>
+        <div class="col-lg-6 col-md-12">
+          <img src="img/bg-remove/8-removebg (1).png" class="img-fluid mt-3" />
         </div>
-        <br>
-        <p class="display-6">Van rental for Valparai tour</p>
-        <div class="row pt-3">
-            <div class="col-lg-6 col-md-12">
-                <img src="img/bg-remove/22-removebg.png" class="img-fluid mt-2">
-            </div>
-            <div class="col-lg-6 col-md-12 pt-3">
-                <p style="line-height: 25px; font-size: 16px;"><span class="text-dark"
-                        style="font-weight: bold;">Tempo traveler</span> : Our team offers our tourist’s a tempo traveler
-                    that enables our clients to experience the best affordable price packages serving them with the most
-                    comfortable outing plans.</p>
-                <p style="line-height: 25px; font-size: 16px;"><span class="text-dark"
-                        style="font-weight: bold;">14 seater</span> : This fourteen seater van helps the travelers to
-                    serve them with an amazing dream that fills up a lot of excitement and essential ride to our happy
-                    customers.</p>
-                <p style="line-height: 25px; font-size: 16px;"><span class="text-dark"
-                        style="font-weight: bold;">18 seater</span> : Our Salem to valparai Tour Packages help the
-                    tourists to choose their counting seats. If you’re eighteen people traveling to the Valparai hills
-                    then you can opt for our 18 seater van facility.</p>
-            </div>
+      </div>
+      <br />
+      <p class="display-6">Van rental for Valparai tour</p>
+      <div class="row pt-3">
+        <div class="col-lg-6 col-md-12">
+          <img src="img/bg-remove/22-removebg.png" class="img-fluid mt-2" />
         </div>
+        <div class="col-lg-6 col-md-12 pt-3">
+          <p style="line-height: 25px; font-size: 16px">
+            <span class="text-dark" style="font-weight: bold"
+              >Tempo traveler</span
+            >
+            : Our team offers our tourist’s a tempo traveler that enables our
+            clients to experience the best affordable price packages serving
+            them with the most comfortable outing plans.
+          </p>
+          <p style="line-height: 25px; font-size: 16px">
+            <span class="text-dark" style="font-weight: bold">14 seater</span> :
+            This fourteen seater van helps the travelers to serve them with an
+            amazing dream that fills up a lot of excitement and essential ride
+            to our happy customers.
+          </p>
+          <p style="line-height: 25px; font-size: 16px">
+            <span class="text-dark" style="font-weight: bold">18 seater</span> :
+            Our Salem to valparai Tour Packages help the tourists to choose
+            their counting seats. If you’re eighteen people traveling to the
+            Valparai hills then you can opt for our 18 seater van facility.
+          </p>
+        </div>
+      </div>
     </div>
 
     <div class="container mb-5">
-        <div class="row">
-            <div class="col-lg-6 col-md-12">
-                <h2 style="font-weight: 600; padding-bottom: 15px;">Why Choose Us?</h2>
-                <ol>
-                    <li style="font-weight: bold; font-size: 17px;">Reasonable price</li>
-                    <p style="font-size: 17px; color: #6d7879; line-height: 23px;">We offer the most affordable prices
-                        for <span style="font-weight: bold; color: rgb(1, 161, 161);">Valparai Tour Packages</span>, and
-                        you
-                        can pick your favorite one package for making your trip unforgettable.</p>
+      <div class="row">
+        <div class="col-lg-6 col-md-12">
+          <h2 style="font-weight: 600; padding-bottom: 15px">Why Choose Us?</h2>
+          <ol>
+            <li style="font-weight: bold; font-size: 17px">Reasonable price</li>
+            <p style="font-size: 17px; color: #6d7879; line-height: 23px">
+              We offer the most affordable prices for
+              <span style="font-weight: bold; color: rgb(1, 161, 161)"
+                >Valparai Tour Packages</span
+              >, and you can pick your favorite one package for making your trip
+              unforgettable.
+            </p>
 
-                    <li style="font-weight: bold; font-size: 17px;">Customer Friendly relationship</li>
-                    <p style="font-size: 17px; color: #6d7879; line-height: 23px;">The main reason to choose our
-                        services is price relaxation and customer friendly services from our drivers and cleaners.<br>
-                        <span style="font-weight: bold;">Have a variety of vans, buses, minibuses and cars of many
-                            models and different seating arrangements as per the need of our customers for Salem to
-                            Valparai
-                            tour packages.</span>
-                    </p>
+            <li style="font-weight: bold; font-size: 17px">
+              Customer Friendly relationship
+            </li>
+            <p style="font-size: 17px; color: #6d7879; line-height: 23px">
+              The main reason to choose our services is price relaxation and
+              customer friendly services from our drivers and cleaners.<br />
+              <span style="font-weight: bold"
+                >Have a variety of vans, buses, minibuses and cars of many
+                models and different seating arrangements as per the need of our
+                customers for Salem to Valparai tour packages.</span
+              >
+            </p>
 
-                    <li style="font-weight: bold; font-size: 17px;">100% Proper Vehicle With driver</li>
-                    <p style="font-size: 17px; color: #6d7879; line-height: 23px;">Completely fit vehicles are put in to
-                        use and all the places and temples will be covered in the single package and complete assistance
-                        is exerted from our authorities all through the journey.</p>
+            <li style="font-weight: bold; font-size: 17px">
+              100% Proper Vehicle With driver
+            </li>
+            <p style="font-size: 17px; color: #6d7879; line-height: 23px">
+              Completely fit vehicles are put in to use and all the places and
+              temples will be covered in the single package and complete
+              assistance is exerted from our authorities all through the
+              journey.
+            </p>
 
-                    <li style="font-weight: bold; font-size: 17px;">24/7 Support</li>
-                    <p style="font-size: 17px; color: #6d7879; line-height: 23px;">We will be always ready to serve our
-                        customers. You can expect a service for 24 hours.</p>
-                </ol>
-            </div>
-            <div class="col-lg-6 col-md-12 wow fadeInUp" data-wow-delay="0.1s">
-                <h2 style="font-weight: 600; padding-bottom: 15px; text-align: center;">Trip Features</h2>
-                <li style="font-weight: bold; font-size: 17px; list-style: none;">Salem to Valparai Taxi Fare</li>
-                <p style="font-size: 17px; color: #6d7879; line-height: 27px;">Avail the lowest fares on Salem to
-                    Valparai
-                    cabs on Rainbow Call Taxi. Book from a variety of car rental options in Salem - hatchbacks, sedans,
-                    SUVs or Tempo travellers. Rainbow Call Taxi recommends Indica if you are looking for a compact ride
-                    for a solo trip or a trip with your partner. If you are traveling with a small family, you can go
-                    for the more spacious sedan range of cars. However, if you are travelling in groups, go for a 7
-                    seater Innova or a 12 to 16 seater luxury Tempo traveller in Salem, the one which suits your
-                    requirement. Get the best deals on the various car rental options, with Salem to Valparai</p>
-                <p style="font-size: 17px; color: #6d7879; line-height: 27px;">Boarding Point: Salem New Bus Stand,
-                    Salem junction, Salem Old Bus Stand, Kondalampatty, Elampillai, Ammapet and More Areas.</p>
-                <li style="font-weight: bold; font-size: 17px; list-style: none;">Custom packages also available.</li>
-                <p style="font-size: 17px; color: #6d7879; line-height: 27px;">Contact us today for booking your trip &
-                    having the most memorable devotional experience. Call: +91 9894338777</p>
-            </div>
+            <li style="font-weight: bold; font-size: 17px">24/7 Support</li>
+            <p style="font-size: 17px; color: #6d7879; line-height: 23px">
+              We will be always ready to serve our customers. You can expect a
+              service for 24 hours.
+            </p>
+          </ol>
         </div>
+        <div class="col-lg-6 col-md-12 wow fadeInUp" data-wow-delay="0.1s">
+          <h2
+            style="font-weight: 600; padding-bottom: 15px; text-align: center"
+          >
+            Trip Features
+          </h2>
+          <li style="font-weight: bold; font-size: 17px; list-style: none">
+            Salem to Valparai Taxi Fare
+          </li>
+          <p style="font-size: 17px; color: #6d7879; line-height: 27px">
+            Avail the lowest fares on Salem to Valparai cabs on Rainbow Call
+            Taxi. Book from a variety of car rental options in Salem -
+            hatchbacks, sedans, SUVs or Tempo travellers. Rainbow Call Taxi
+            recommends Indica if you are looking for a compact ride for a solo
+            trip or a trip with your partner. If you are traveling with a small
+            family, you can go for the more spacious sedan range of cars.
+            However, if you are travelling in groups, go for a 7 seater Innova
+            or a 12 to 16 seater luxury Tempo traveller in Salem, the one which
+            suits your requirement. Get the best deals on the various car rental
+            options, with Salem to Valparai
+          </p>
+          <p style="font-size: 17px; color: #6d7879; line-height: 27px">
+            Boarding Point: Salem New Bus Stand, Salem junction, Salem Old Bus
+            Stand, Kondalampatty, Elampillai, Ammapet and More Areas.
+          </p>
+          <li style="font-weight: bold; font-size: 17px; list-style: none">
+            Custom packages also available.
+          </li>
+          <p style="font-size: 17px; color: #6d7879; line-height: 27px">
+            Contact us today for booking your trip & having the most memorable
+            devotional experience. Call: +91 9894338777
+          </p>
+        </div>
+      </div>
     </div>
     <!-- Contant End -->
 
@@ -763,8 +931,11 @@
     <script type="module" src="js/components.js"></script>
     <script type="module" src="js/animations.js"></script>
     <script type="module" src="js/main.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
 
     <script>
       // Desktop dropdowns

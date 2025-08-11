@@ -528,3 +528,27 @@ export class IntersectionAnimationController {
     });
   }
 }
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.from(".hero-left > *", {
+  scrollTrigger: {
+    trigger: ".hero-section",
+    start: "top 80%",
+  },
+  opacity: 0,
+  y: 40,
+  duration: 0.8,
+  stagger: 0.2
+});
+
+gsap.from(".hero-right > *", {
+  scrollTrigger: {
+    trigger: ".hero-section",
+    start: "top 80%",
+  },
+  opacity: 0,
+  x: 40,
+  duration: 0.8,
+  delay: 0.5,
+  stagger: 0.2
+});
