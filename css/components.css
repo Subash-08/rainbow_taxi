@@ -2621,7 +2621,7 @@ a,
 
 .carousel-button {
   position: absolute;
-  top: 50%;
+  top: 40%;
   transform: translateY(-50%);
   background-color: rgba(
     var(--accent-color),
@@ -2826,4 +2826,10 @@ a,
 
 .fleet-card:hover .fleet-slider-track img {
   transform: scale(1.1);
+}
+.txt-black {
+  color: black;
+}
+.txt-black:hover {
+  color: black;
 }
