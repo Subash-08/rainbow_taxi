@@ -2833,3 +2833,6 @@ a,
 .txt-black:hover {
   color: black;
 }
+.sp-bt {
+  padding: 20px;
+}
