@@ -470,7 +470,7 @@
 }
 
 .fleet-card:hover .fleet-image img {
-  transform: scale(1.1);
+  transform: scale(1) !important;
 }
 
 .fleet-info {
@@ -2363,9 +2363,13 @@ a,
   height: var(--spacing-3xl);
 } /* 16 * 0.25rem = 4rem */
 
-/* Visual Styles */
+/* Visual Style[s */
 .object-cover {
   object-fit: cover;
+}
+.object-contain {
+  object-fit: contain;
+  transform: scale(1.3);
 }
 .overflow-hidden {
   overflow: hidden;
@@ -2825,7 +2829,7 @@ a,
 }
 
 .fleet-card:hover .fleet-slider-track img {
-  transform: scale(1.1);
+  transform: scale(1);
 }
 .txt-black {
   color: black;
