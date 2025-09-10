@@ -155,7 +155,6 @@ h3 {
   margin: var(--spacing-md) 0;
   font-weight: 700;
   line-height: 1.2;
-  color: var(--text-primary);
   font-family: var(
     --font-secondary
   ); /* Using secondary font for all headings */
