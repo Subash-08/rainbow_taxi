@@ -3,13 +3,54 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rainbow Call Taxi - Premium Taxi Services in Salem</title>
+    <title>
+      Rainbow Call Taxi | 24/7 Affordable Taxi & Cab Service in Salem
+    </title>
     <meta
       name="description"
-      content="Professional taxi services in Salem. Book reliable rides for local trips, outstation tours, and airport transfers. Available 24/7."
+      content="Book safe & affordable call taxi in Salem. 24/7 service, experienced drivers, and comfortable rides for local & outstation travel."
     />
 
-    <!-- Google Fonts -->
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://rainbowtaxiandtravels.in/" />
+    <link
+      rel="alternate"
+      hreflang="en-in"
+      href="https://rainbowtaxiandtravels.in/index.html"
+    />
+    <link
+      rel="alternate"
+      hreflang="en-us"
+      href="https://rainbowtaxiandtravels.in/index.html"
+    />
+    <meta
+      property="og:title"
+      content="Rainbow Call Taxi – 24/7 Affordable Taxi in Salem"
+    />
+    <meta
+      property="og:description"
+      content="Book safe & affordable call taxi in Salem. 24/7 service, experienced drivers, and comfortable rides for local & outstation travel."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://rainbowtaxiandtravels.in/" />
+    <meta
+      property="og:image"
+      content="https://rainbowtaxiandtravels.in/images/seo-default.jpg"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Rainbow Call Taxi – 24/7 Affordable Taxi in Salem"
+    />
+    <meta
+      name="twitter:description"
+      content="Book safe & affordable call taxi in Tamil Nadu. 24/7 service, experienced drivers, and comfortable rides for local & outstation travel."
+    />
+    <meta
+      name="twitter:image"
+      content="https://rainbowtaxiandtravels.in/images/homepage-social-image.jpg"
+    />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,23 +58,33 @@
       rel="stylesheet"
     />
 
-    <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+      defer
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
 
-    <!-- AOS Animation Library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="preload"
+      href="/css/main.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript><link rel="stylesheet" href="/css/main.css" /></noscript>
+
     <link rel="stylesheet" href="css/components.css" />
     <link rel="stylesheet" href="css/animations.css" />
   </head>
-
   <body>
     <!-- Preloader -->
     <div id="preloader" class="preloader">
@@ -181,8 +232,8 @@
                   </div>
                   <div class="menu-items">
                     <a class="dropdown-link" href="coorg.html">Coorg Tour</a>
-                    <a class="dropdown-link" href="javaathu.html"
-                      >Javaathu Tour</a
+                    <a class="dropdown-link" href="jawadhu-hills.html"
+                      >Jawadhu Hills Tour</a
                     >
                     <a class="dropdown-link" href="kerala-tour.html"
                       >Kerala Tour</a
@@ -323,8 +374,8 @@
                 <div>
                   <div class="mobile-item-label">Vacation Tours</div>
                   <a class="mobile-sub-link" href="coorg.html">Coorg Tour</a>
-                  <a class="mobile-sub-link" href="javaathu.html"
-                    >Javaathu Tour</a
+                  <a class="mobile-sub-link" href="jawadhu-hills.html"
+                    >Jawadhu Hills Tour</a
                   >
                   <a class="mobile-sub-link" href="kerala-tour.html"
                     >Kerala Tour</a
@@ -505,9 +556,9 @@
       <div class="hero-content">
         <div class="container">
           <div class="hero-text" data-aos="fade-up" data-aos-duration="1000">
-            <h1 class="hero-title">
+            <h2 class="hero-title">
               Your Trusted <span class="highlight1">Taxi Service</span> in Salem
-            </h1>
+            </h2>
             <p class="hero-subtitle1">
               Professional, reliable, and comfortable rides for all your travel
               needs. Available 24/7 with experienced drivers.
@@ -609,6 +660,7 @@
         </div>
 
         <div class="services-grid">
+          <!-- City Rides -->
           <div class="service-card" data-aos="fade-up" data-aos-delay="100">
             <div class="service-icon">
               <i class="fas fa-city"></i>
@@ -629,6 +681,7 @@
             >
           </div>
 
+          <!-- Airport Transfers -->
           <div
             class="service-card featured"
             data-aos="fade-up"
@@ -654,6 +707,7 @@
             >
           </div>
 
+          <!-- Outstation Tours -->
           <div class="service-card" data-aos="fade-up" data-aos-delay="300">
             <div class="service-icon">
               <i class="fas fa-route"></i>
@@ -670,6 +724,48 @@
             <a href="tel:9894338777" aria-label="Call Us"
               ><button class="btn btn-primary service-btn">
                 Explore Tours
+              </button></a
+            >
+          </div>
+
+          <!-- Corporate Travel -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <h3 class="service-title">Corporate Travel</h3>
+            <p class="service-description">
+              Professional travel solutions tailored for business meetings,
+              conferences, and corporate events.
+            </p>
+            <div class="service-features">
+              <span class="feature-tag">On-Time Guarantee</span>
+              <span class="feature-tag">Executive Cars</span>
+            </div>
+            <a href="tel:9894338777" aria-label="Call Us"
+              ><button class="btn btn-primary service-btn">
+                Book Corporate Ride
+              </button></a
+            >
+          </div>
+
+          <!-- Wedding Transportation -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-icon">
+              <i class="fas fa-car-side"></i>
+            </div>
+            <h3 class="service-title">Wedding Transportation</h3>
+            <p class="service-description">
+              Elegant and reliable transport services for weddings and special
+              occasions to make your day memorable.
+            </p>
+            <div class="service-features">
+              <span class="feature-tag">Luxury Cars</span>
+              <span class="feature-tag">Decor Options</span>
+            </div>
+            <a href="tel:9894338777" aria-label="Call Us"
+              ><button class="btn btn-primary service-btn">
+                Book Wedding Car
               </button></a
             >
           </div>
@@ -1481,10 +1577,9 @@
             <h4 class="footer-title">Quick Links</h4>
             <ul class="footer-links">
               <li><a href="#home">Home</a></li>
-              <li><a href="#services">Services</a></li>
               <li><a href="#fleet">Our Fleet</a></li>
               <li><a href="about-us.html">About Us</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a href="contact.html">Contact</a></li>
             </ul>
           </div>
 
